@@ -38,7 +38,6 @@ var getState = (state) => {
 			let wether = JSON.parse(body)
 			description = "it's " + wether.weather[0].description + " in " + wether.name
 			resolve(description);
-			console.log(description);
 		});
 	});
 }
