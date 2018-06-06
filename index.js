@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-	if((req.body.queryResult.parameters["states"] || req.body.queryResult.parameters["geo-city"]) && req.body.queryResult.parameters["states"] != ""){
+	if(req.body.queryResult.parameters["states"] || req.body.queryResult.parameters["geo-city"] && req.body.queryResult.parameters["states"] != ""){
 		let state = req.body.queryResult.parameters["states"];
 		getState(state).then(() => {
 			res.json({
