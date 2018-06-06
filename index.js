@@ -54,17 +54,24 @@ app.post('/webhook', (req, res) => {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
 				"fulfillmentMessages": [{
-					"platform": "FACEBOOK",	
-					"card": {
-						"text":{
-							"text": [texts.ifrsHistory]
-						},
-						"buttons": [
-							{
-								"text": "More history"
-							}
-						]
-					}				
+					"text":{
+						"text": [texts.ifrsHistory]
+					},
+					"messages": [
+					  {
+					    "buttons": [
+					      {
+					        "postback": "Card Link URL or text",
+					        "text": "Card Link Title"
+					      }
+					    ],
+					    "imageUrl": "http://urltoimage.com",
+					    "platform": "facebook",
+					    "subtitle": "Card Subtitle",
+					    "title": "Card Title",
+					    "type": 1
+					  }
+					]				
 				}]
 			})
 	}else{
