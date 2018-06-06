@@ -24,7 +24,13 @@ app.post('/webhook', (req, res) => {
 	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
 		getState(state).then(() => {
-			res.send(description);
+			res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [description];
+					}
+				}]
+			})
 		});
 	}
 	// let state = 'Ogun';
