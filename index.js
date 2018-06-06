@@ -47,9 +47,9 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
-app.get('*', (req, res) => {
-	res.render('not');
-});
+// app.get('*', (req, res) => {
+// 	res.render('not');
+// });
 
 const PORT = 5100;
 
