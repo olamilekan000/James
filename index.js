@@ -5,6 +5,7 @@ const request = require('request');
 const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
+const texts = require('./texts');
 
 const app = express();
 
@@ -58,7 +59,24 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 	}
-	// let state = 'Ogun';
+	
+	if (req.body.queryResult.parameters["history-of-ifrs"]) {
+		res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [texts.ifrsHistory]
+					},
+					"platform": "FACEBOOK",	
+					"Card": {
+						"buttons": [
+							{
+								"text": "More history"
+							}
+						]
+					}				
+				}]
+			})
+	}
 });
 
 var getState = (state) => {
@@ -77,8 +95,6 @@ var getState = (state) => {
 				description = "city not found";
 				resolve(description);
 			}
-			
-			
 		});
 	});
 }
