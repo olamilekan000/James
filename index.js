@@ -66,7 +66,27 @@ app.post('/webhook', (req, res) => {
 					        }
 				      	]
 			    	}				
-				}]
+				}],
+				"payload": {
+				  "google": {
+				    "expectUserResponse": true,
+				    "richResponse": {
+				      "items": [
+				        {
+				          "simpleResponse": {
+				            "textToSpeech": "this is a simple response"
+				          }
+				        }
+				      ]
+				    }
+				  },
+				  "facebook": {
+				    "text": "Hello, Facebook! I did it"
+				  },
+				  "slack": {
+				    "text": "This is a text response for Slack."
+				  }
+				}
 			})
 	}else{
 		res.json({	
