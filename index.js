@@ -51,14 +51,14 @@ app.post('/webhook', (req, res) => {
 			})
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		// let history = req.body.queryResult.parameters["history-of-ifrs"];
+		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
 				"fulfillmentMessages": [{
-					"text":{
-						"text": [texts.ifrsHistory]
-					},
 					"platform": "FACEBOOK",	
 					"card": {
+						"text":{
+							"text": [texts.ifrsHistory]
+						},
 						"buttons": [
 							{
 								"text": "More history"
