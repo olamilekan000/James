@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dialogflow-fulfillment": "^0.4.0",
     "express": "^4.16.3",
+    "firebase-functions": "^1.0.4",
     "request": "^2.86.0"
   }
 }
