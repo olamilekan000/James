@@ -20,7 +20,7 @@ const app = express();
 // });
 var description = {}
 
-app.get('/webhook', (req, res) => {
+app.post('/webhook', (req, res) => {
 	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
 		getState(state).then(() => {
