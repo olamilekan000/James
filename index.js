@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-	if(req.body.queryResult.parameters["states"] || req.body.queryResult.parameters["geo-city"] && req.body.queryResult.parameters["states"] != ""){
+	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
 		getState(state).then(() => {
 			res.json({
@@ -27,6 +27,28 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});
+	}else if(req.body.queryResult.parameters["geo-city"]){
+		let state = req.body.queryResult.parameters["geo-city"];
+		getState(state).then(() => {
+			res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [description]
+					}
+				}]
+			})
+		});		
+	}else if(req.body.queryResult.parameters["geo-country"]){
+		let state = req.body.queryResult.parameters["geo-country"];
+		getState(state).then(() => {
+			res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [description]
+					}
+				}]
+			})
+		});			
 	}else{
 		res.json({	
 				"fulfillmentMessages": [{
