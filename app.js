@@ -5,8 +5,10 @@ const express = require('express');
 const request = require('request');
 const {WebhookClient} = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
+
 const app = express();
 
+app.set('view engine', 'ejs');
 // exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
 // 	console.log('Dialogflow Request body: ' + JSON.stringify(request.body));
 // 	if (request.body.result) {
@@ -27,7 +29,7 @@ app.post('/webhook', (req, res) => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
-						"text": [description];
+						"text": [description]
 					}
 				}]
 			})
@@ -249,7 +251,7 @@ curl -H "Content-Type: application/json; charset=utf-8"  -H "Authorization: Bear
 // ];
 
 app.get('/', (req, res) => {
-	res.send('yipeeeeee');
+	res.render('index');
 });
 
 const PORT = 5100;

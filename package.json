@@ -2,19 +2,19 @@
   "name": "myBot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Olalekan Odukoya",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dialogflow-fulfillment": "^0.4.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "firebase-functions": "^1.0.4",
-    "request": "^2.86.0",
-    "express": "^4.16.3"
+    "request": "^2.86.0"
   }
 }
