@@ -50,6 +50,23 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});			
+	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
+		// let history = req.body.queryResult.parameters["history-of-ifrs"];
+		res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [texts.ifrsHistory]
+					},
+					"platform": "FACEBOOK",	
+					"card": {
+						"buttons": [
+							{
+								"text": "More history"
+							}
+						]
+					}				
+				}]
+			})
 	}else{
 		res.json({	
 				"fulfillmentMessages": [{
@@ -59,25 +76,21 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 	}
-	
-	if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		res.json({
-				"fulfillmentMessages": [{
-					"text":{
-						"text": [texts.ifrsHistory]
-					},
-					"platform": "FACEBOOK",	
-					"Card": {
-						"buttons": [
-							{
-								"text": "More history"
-							}
-						]
-					}				
-				}]
-			})
-	}
 });
+
+
+
+const richResponseV2Card = {
+  'title': 'Title: this is a title',
+  'subtitle': 'This is an subtitle.  Text can include unicode characters including emoji 📱.',
+  'imageUri': 'https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png',
+  'buttons': [
+    {
+      'text': 'This is a button',
+      'postback': 'https://assistant.google.com/'
+    }
+  ]
+};
 
 var getState = (state) => {
 	return new Promise((resolve, reject) => {
@@ -112,4 +125,5 @@ const PORT = 5100;
 
 app.listen(process.env.PORT || PORT, () => {
 	console.log('now listening to ' + PORT)
+	// console.log(texts.ifrsHistory);
 });
