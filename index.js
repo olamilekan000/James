@@ -40,8 +40,13 @@ var getState = (state) => {
 			if(err) console.log(err)
 
 			let wether = JSON.parse(body)
-			description = "it's " + wether.weather[0].description + " in " + wether.name
-			resolve(description);
+			if (wether.cod == 200 ) {
+				description = "it's " + wether.weather[0].description + " in " + wether.name
+				resolve(description);
+			}else{
+				description = "city not found";
+			}
+			
 		});
 	});
 }
