@@ -31,7 +31,7 @@ app.post('/webhook', (req, res) => {
 		res.json({	
 				"fulfillmentMessages": [{
 					"text":{
-						"text": "I didn't get your message!"
+						"text": ["I didn't get your message!"]
 					}
 				}]
 			})
