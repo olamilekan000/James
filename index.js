@@ -53,25 +53,19 @@ app.post('/webhook', (req, res) => {
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
+				"fulfillmentText": "This is a text response",
 				"fulfillmentMessages": [{
-					"text":{
-						"text": [texts.ifrsHistory]
-					},
-					"messages": [
-					  {
-					    "buttons": [
-					      {
-					        "postback": "Card Link URL or text",
-					        "text": "Card Link Title"
-					      }
-					    ],
-					    "imageUrl": "http://urltoimage.com",
-					    "platform": "facebook",
-					    "subtitle": "Card Subtitle",
-					    "title": "Card Title",
-					    "type": 1
-					  }
-					]				
+					"card": {
+				    	"title": "card title",
+				    	"subtitle": "card text",
+				    	"imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
+				    	"buttons": [
+					        {
+					          "text": "button text",
+					          "postback": "https://assistant.google.com/"
+					        }
+				      	]
+			    	}				
 				}]
 			})
 	}else{
