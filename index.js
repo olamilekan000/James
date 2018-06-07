@@ -66,7 +66,12 @@ app.post('/webhook', (req, res) => {
 				        }
 				      ]
 				    }				
-				}]
+				}],
+				"payload":{
+					"facebook": {
+						"text": "give me your location please"
+					}
+				}
 			})
 	}else{
 		res.json({	
