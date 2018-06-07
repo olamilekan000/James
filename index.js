@@ -56,18 +56,19 @@ app.post('/webhook', (req, res) => {
 				"fulfillmentText": "This is a text response",
 				"fulfillmentMessages": [{
 					"platform": "FACEBOOK",
-					// "card": {
-				 //    	"title": "card title",
-				 //    	"subtitle": "card text",
-				 //    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
-				 //    	"buttons": [
-					//         {
-					//           "text": "button text",
-					//           "postback": "https://assistant.google.com/"
-					//         }
-				 //      	]
-			  //   	}
-			  		"payload": {
+					"card": {
+				    	"title": "card title",
+				    	"subtitle": "card text",
+				    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
+				    	"buttons": [
+					        {
+					          "text": "button text",
+					          "postback": "https://assistant.google.com/"
+					        }
+				      	]
+			    	}			
+				}],
+			  	"payload": {
 			  			"facebook":{
 					       "template_type":"generic",
 					        "elements":[
@@ -101,28 +102,7 @@ app.post('/webhook', (req, res) => {
 						      ]
 						    }
 						  },
-			  		}				
-				}]
-				// "payload": {
-				//   "google": {
-				//     "expectUserResponse": true,
-				//     "richResponse": {
-				//       "items": [
-				//         {
-				//           "simpleResponse": {
-				//             "textToSpeech": "this is a simple response"
-				//           }
-				//         }
-				//       ]
-				//     }
-				//   },
-				//   "facebook": {
-				//     "text": "Hello, Facebook! I did it"
-				//   },
-				//   "slack": {
-				//     "text": "This is a text response for Slack."
-				//   }
-				// }
+			  		}	
 			})
 	}else{
 		res.json({	
