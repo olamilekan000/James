@@ -69,7 +69,7 @@ app.post('/webhook', (req, res) => {
 				}],
 				"payload":{
 					"facebook": {
-						"text": "give me your location please",
+						// "text": "give me your location please",
 						"template_type":"generic",
 						"elements":[
 						     {
