@@ -55,63 +55,57 @@ app.post('/webhook', (req, res) => {
 		res.json({
 				"fulfillmentText": "This is a text response",
 				"fulfillmentMessages": [{
-					"card": {
-				    	"title": "card title",
-				    	"subtitle": "card text",
-				    	"imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-				    	"buttons": [
-					        {
-					          "text": "button text",
-					          "postback": "https://assistant.google.com/"
-					        }
-				      	]
-			    	}				
+					"text":{
+						"text": [texts.ifrsHistory]
+					}
+					// "card": {
+				 //    	"title": "card title",
+				 //    	"subtitle": "card text",
+				 //    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
+				 //    	"buttons": [
+					//         {
+					//           "text": "button text",
+					//           "postback": "https://assistant.google.com/"
+					//         }
+				 //      	]
+			  //   	}				
 				}],
-				"payload": {
-				  "google": {
-				    "expectUserResponse": true,
-				    "richResponse": {
-				      "items": [
-				        {
-				          "simpleResponse": {
-				            "textToSpeech": "this is a simple response"
-				          }
-				        }
-				      ]
-				    }
-				  },
-				  "facebook": {
-				  	"template_type":"generic",
-					  "elements":[
-					     {
-					      "title":"my texx",
-					      "image_url": "https://petersfancybrownhats.com/company_image.png",
-					      "subtitle": 	"JUST GOOGLE",
-					      "default_action": {
-					        "type": "web_url",
-					        "url": "https://assistant.google.com/",
-					        "messenger_extensions": false,
-					        "webview_height_ratio": "tall"
-					      },
-					      "buttons":[
+				"messages": [
+
+					{
+					    "buttons": [
 					      {
-					      	"type":"web_url",
-			                "url":"https://petersfancybrownhats.com",
-			                "title":"View Website"					      	
-					      },{
-			                "type":"postback",
-			                "title":"Start Chatting",
-			                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-			              }   
-					      ]      
-					    },
-					  ]
-				   
-				  },
-				  "slack": {
-				    "text": "This is a text response for Slack."
-				  }
-				}
+					        "postback": "https://petersfancybrownhats.com/company_image.png",
+					        "text": "Card Link Title"
+					      }
+					    ],
+					    "imageUrl": "http://urltoimage.com",
+					    "platform": "facebook",
+					    "subtitle": "Card Subtitle",
+					    "title": "Card Title",
+					    "type": 1
+					}
+				]
+				// "payload": {
+				//   "google": {
+				//     "expectUserResponse": true,
+				//     "richResponse": {
+				//       "items": [
+				//         {
+				//           "simpleResponse": {
+				//             "textToSpeech": "this is a simple response"
+				//           }
+				//         }
+				//       ]
+				//     }
+				//   },
+				//   "facebook": {
+				//     "text": "Hello, Facebook! I did it"
+				//   },
+				//   "slack": {
+				//     "text": "This is a text response for Slack."
+				//   }
+				// }
 			})
 	}else{
 		res.json({	
