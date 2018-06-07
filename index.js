@@ -81,7 +81,32 @@ app.post('/webhook', (req, res) => {
 				    }
 				  },
 				  "facebook": {
-				    "text": "Hello, Facebook! I did it"
+				  	"template_type":"generic",
+					  "elements":[
+					     {
+					      "title":"my texx",
+					      "image_url": "https://petersfancybrownhats.com/company_image.png",
+					      "subtitle": 	"JUST GOOGLE",
+					      "default_action": {
+					        "type": "web_url",
+					        "url": "https://assistant.google.com/",
+					        "messenger_extensions": false,
+					        "webview_height_ratio": "tall"
+					      },
+					      "buttons":[
+					      {
+					      	"type":"web_url",
+			                "url":"https://petersfancybrownhats.com",
+			                "title":"View Website"					      	
+					      },{
+			                "type":"postback",
+			                "title":"Start Chatting",
+			                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+			              }   
+					      ]      
+					    },
+					  ]
+				   
 				  },
 				  "slack": {
 				    "text": "This is a text response for Slack."
