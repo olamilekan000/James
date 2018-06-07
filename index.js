@@ -63,25 +63,14 @@ app.post('/webhook', (req, res) => {
 				        {
 				          "text": "button text",
 				          "postback": "https://assistant.google.com/"
+				        },
+				        {
+				          	"text": "button text 2",
+				        	"postback": "https://assistant.google.com/"
 				        }
 				      ]
 				    }				
-				}],
-				"payload":{
-					"facebook": {
-						"card": {
-				      		"title": "facerbook",
-				      		"subtitle": "card text",
-				      		"imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-				      		"buttons": [
-				       		 {
-				          		"text": "button text",
-				          		"postback": "https://assistant.google.com/"
-				        	}
-				      	]
-				    	}							
-					}
-				}
+				}]
 			})
 	}else{
 		res.json({	
