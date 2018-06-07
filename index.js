@@ -73,7 +73,7 @@ app.post('/webhook', (req, res) => {
 					        "elements":[
 						     {
 						      "title":"the title",
-						      "image_url":"https://avatars2.githubusercontent.com/u/24735571?v=4",
+						      "image_url":"https://i.pinimg.com/564x/da/51/26/da5126d9c1704ea95f511e8cf106ca77.jpg",
 						      "subtitle":"sub",
 						      "default_action": {
 						        "type": "web_url",
@@ -81,6 +81,7 @@ app.post('/webhook', (req, res) => {
 						        "messenger_extensions": false,
 						        "webview_height_ratio": "tall"
 						      },
+						      "text": "Hello, Facebook! I did it",
 						      "buttons":[
 								{   "type":"web_url",
 					                "url":"https://petersfancybrownhats.com",
@@ -93,7 +94,19 @@ app.post('/webhook', (req, res) => {
 						    ]      
 						    },
 						  ]  
-			  			}
+			  			},
+			  			"google": {
+						    "expectUserResponse": true,
+						    "richResponse": {
+						      "items": [
+						        {
+						          "simpleResponse": {
+						            "textToSpeech": "this is a simple response"
+						          }
+						        }
+						      ]
+						    }
+						  },
 			  		}				
 				}]
 				// "payload": {
