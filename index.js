@@ -56,17 +56,45 @@ app.post('/webhook', (req, res) => {
 				"fulfillmentText": "This is a text response",
 				"fulfillmentMessages": [{
 					"platform": "FACEBOOK",
-					"card": {
-				    	"title": "card title",
-				    	"subtitle": "card text",
-				    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
-				    	"buttons": [
-					        {
-					          "text": "button text",
-					          "postback": "https://assistant.google.com/"
-					        }
-				      	]
-			    	}				
+					// "card": {
+				 //    	"title": "card title",
+				 //    	"subtitle": "card text",
+				 //    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
+				 //    	"buttons": [
+					//         {
+					//           "text": "button text",
+					//           "postback": "https://assistant.google.com/"
+					//         }
+				 //      	]
+			  //   	}
+			  		"payload": {
+			  			"facebook":{
+					       "template_type":"generic",
+					        "elements":[
+						     {
+						      "title":"the title",
+						      "image_url":"https://avatars2.githubusercontent.com/u/24735571?v=4",
+						      "subtitle":"sub",
+						      "default_action": {
+						        "type": "web_url",
+						        "url": "https://assistant.google.com/",
+						        "messenger_extensions": false,
+						        "webview_height_ratio": "tall"
+						      },
+						      "buttons":[
+								{   "type":"web_url",
+					                "url":"https://petersfancybrownhats.com",
+					                "title":"View Website"
+					              },{
+					                "type":"postback",
+					                "title":"Start Chatting",
+					                "payload":"DEVELOPER_DEFINED_PAYLOAD"
+					              }  
+						    ]      
+						    },
+						  ]  
+			  			}
+			  		}				
 				}]
 				// "payload": {
 				//   "google": {
