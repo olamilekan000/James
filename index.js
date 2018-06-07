@@ -69,33 +69,17 @@ app.post('/webhook', (req, res) => {
 				}],
 				"payload":{
 					"facebook": {
-						// "text": "give me your location please",
-						"template_type":"generic",
-						"elements":[
-						     {
-						      "title":"<TITLE_TEXT>",
-						      "image_url":"https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-						      "subtitle":"<SUBTITLE_TEXT>",
-						      "default_action": {
-						        "type": "web_url",
-						        "url": "https://assistant.google.com/",
-						        "messenger_extensions": false,
-						        "webview_height_ratio": "full"
-						      },
-						      "buttons":[
-							      {
-							      	"type":"web_url",
-					                "url":"https://petersfancybrownhats.com",
-					                "title":"View Website"
-							      },
-							      {
-							      	"type":"postback",
-					                "title":"Start Chatting",
-					                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-							      }
-						      ]      
-						    },
-						]
+						"card": {
+				      		"title": "facerbook",
+				      		"subtitle": "card text",
+				      		"imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
+				      		"buttons": [
+				       		 {
+				          		"text": "button text",
+				          		"postback": "https://assistant.google.com/"
+				        	}
+				      	]
+				    	}							
 					}
 				}
 			})
