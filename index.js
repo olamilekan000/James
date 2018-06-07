@@ -53,56 +53,20 @@ app.post('/webhook', (req, res) => {
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
-				"fulfillmentText": "This is a text response",
 				"fulfillmentMessages": [{
-					"platform": "FACEBOOK",
+
 					"card": {
-				    	"title": "card title",
-				    	"subtitle": "card text",
-				    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
-				    	"buttons": [
-					        {
-					          "text": "button text",
-					          "postback": "https://assistant.google.com/"
-					        }
-				      	]
-			    	}			
-				}],
-			  	"payload": {
-			  			"facebook":{
-					       "template_type":"generic",
-					        "elements":[
-						     {
-						      "title":"the title",
-						      "image_url":"https://i.pinimg.com/564x/da/51/26/da5126d9c1704ea95f511e8cf106ca77.jpg",
-						      "subtitle":"sub",
-						      "text": "Hello, Facebook! I did it",
-						      "buttons":[
-								{   "type":"web_url",
-					                "url":"https://assistant.google.com/",
-					                "title":"View Website"
-					              },{
-					                "type":"postback",
-					                "title":"Start Chatting",
-					                "payload":"DEVELOPER_DEFINED_PAYLOAD"
-					              }  
-						    ]      
-						    },
-						  ]  
-			  			},
-			  			"google": {
-						    "expectUserResponse": true,
-						    "richResponse": {
-						      "items": [
-						        {
-						          "simpleResponse": {
-						            "textToSpeech": "this is a simple response"
-						          }
-						        }
-						      ]
-						    }
-						  },
-			  		}	
+				      "title": "card title",
+				      "subtitle": "card text",
+				      "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
+				      "buttons": [
+				        {
+				          "text": "button text",
+				          "postback": "https://assistant.google.com/"
+				        }
+				      ]
+				    }				
+				}]
 			})
 	}else{
 		res.json({	
