@@ -55,37 +55,19 @@ app.post('/webhook', (req, res) => {
 		res.json({
 				"fulfillmentText": "This is a text response",
 				"fulfillmentMessages": [{
-					"text":{
-						"text": [texts.ifrsHistory]
-					}
-					// "card": {
-				 //    	"title": "card title",
-				 //    	"subtitle": "card text",
-				 //    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
-				 //    	"buttons": [
-					//         {
-					//           "text": "button text",
-					//           "postback": "https://assistant.google.com/"
-					//         }
-				 //      	]
-			  //   	}				
-				}],
-				"messages": [
-
-					{
-					    "buttons": [
-					      {
-					        "postback": "https://petersfancybrownhats.com/company_image.png",
-					        "text": "Card Link Title"
-					      }
-					    ],
-					    "imageUrl": "http://urltoimage.com",
-					    "platform": "facebook",
-					    "subtitle": "Card Subtitle",
-					    "title": "Card Title",
-					    "type": 1
-					}
-				]
+					"platform": "FACEBOOK",
+					"card": {
+				    	"title": "card title",
+				    	"subtitle": "card text",
+				    	"imageUri": "https://petersfancybrownhats.com/company_image.png",
+				    	"buttons": [
+					        {
+					          "text": "button text",
+					          "postback": "https://assistant.google.com/"
+					        }
+				      	]
+			    	}				
+				}]
 				// "payload": {
 				//   "google": {
 				//     "expectUserResponse": true,
