@@ -21,39 +21,39 @@ app.post('/webhook', (req, res) => {
 	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
 		if (state == "") {
-			errFulfilment();
+			res.json(errFulfilment())
 			res.end();
 		}else{
 			getState(state).then(() => {
-				fulfilment(description);
+				res.json(fulfilment(description));
 			});
 			res.end();
 		}
 	}else if(req.body.queryResult.parameters["geo-city"]){
 		let state = req.body.queryResult.parameters["geo-city"];
 		if (state == "") {
-			errFulfilment();
+			res.json(errFulfilment())
 			res.end();
 		}else{
 			getState(state).then(() => {
-				fulfilment(description);
+				res.json(fulfilment(description));
 			});			
 		}
 	}else if(req.body.queryResult.parameters["geo-country"]){
 		let state = req.body.queryResult.parameters["geo-country"];
 		if (state == "") {
-			errFulfilment();
+			res.json(errFulfilment())
 			res.end();
 		}else{
 			getState(state).then(() => {
-				fulfilment(description);
+				res.json(fulfilment(description));
 				res.end();
 			});		
 		}
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		if (history == "") {
-			errFulfilment();
+			res.json(errFulfilment())
 			res.end();
 		}else{	
 			res.json({
@@ -128,23 +128,23 @@ app.get('/', (req, res) => {
 //functions
 
 const fulfilment = (description) => {
-	res.json({
-		"fulfillmentMessages": [{
+	{
+		fulfillmentMessages: [{
 			"text":{
 				"text": [description]
 			}
 		}]
-	})
+	}
 }
 
 const errFulfilment = () => {
-	res.json({	
-		"fulfillmentMessages": [{
+	{
+		fulfillmentMessages: [{
 			"text":{
-					"text": ["I didn't get your message!"] // executes if parameter is empty.
-				}
-			}]
-	})
+				"text": ["I didn't get your message!"] // executes if parameter is empty.
+			}
+		}]	
+	}
 }
 
 
