@@ -78,6 +78,8 @@ app.post('/webhook', (req, res) => {
 				})
 			res.end();
 		}
+	}else{
+		res.json(errFulfilment());
 	}
 });
 
