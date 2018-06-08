@@ -17,20 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-
-	if(typeof req.body.queryResult.parameters["states"] !== ""){
-		const state = req.body.queryResult.parameters["states"];
-		if(typeof state === ""){
-			res.json(
-				{	
-					"fulfillmentMessages": [{
-						"text":{
-							"text": ["I didn't get your message!"]
-						}
-					}]
-				}
-			)
-		}
+	if(req.body.queryResult.parameters["states"]){
+		let state = req.body.queryResult.parameters["states"];
 		getState(state).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
@@ -40,20 +28,9 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});
-	}else if(typeof req.body.queryResult.parameters["geo-city"] !== ""){
-		const city = req.body.queryResult.parameters["geo-city"];
-		if(typeof city === ""){
-			res.json(
-				{	
-					"fulfillmentMessages": [{
-						"text":{
-							"text": ["I didn't get your message!"]
-						}
-					}]
-				}
-			)
-		}		
-		getState(city).then(() => {
+	}else if(req.body.queryResult.parameters["geo-city"]){
+		let state = req.body.queryResult.parameters["geo-city"];
+		getState(state).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
@@ -62,20 +39,9 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});		
-	}else if(typeof req.body.queryResult.parameters["geo-country"] !== ""){
-		const country = req.body.queryResult.parameters["geo-country"];
-		if(typeof country === ""){
-			res.json(
-				{	
-					"fulfillmentMessages": [{
-						"text":{
-							"text": ["I didn't get your message!"]
-						}
-					}]
-				}
-			)
-		}
-		getState(country).then(() => {
+	}else if(req.body.queryResult.parameters["geo-country"]){
+		let state = req.body.queryResult.parameters["geo-country"];
+		getState(state).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
@@ -84,21 +50,18 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});			
-	}else if (typeof req.body.queryResult.parameters["history-of-ifrs"] !== "") {
-		const ifrsHistory = req.body.queryResult.parameters["history-of-ifrs"]
-		if(typeof ifrsHistory === ""){
-			res.json(
-				{	
-					"fulfillmentMessages": [{
-						"text":{
-							"text": ["I didn't get your message!"]
-						}
-					}]
-				}
-			)
+	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
+		if (req.body.queryResult.parameters["history-of-ifrs"] === "" ) {
+			res.json({	
+				"fulfillmentMessages": [{
+					"text":{
+						"text": ["I didn't get your message!"]
+					}
+				}]
+			})
 		}
-		res.json(
-			{
+		let history = req.body.queryResult.parameters["history-of-ifrs"];
+		res.json({
 				"fulfillmentMessages": [{
 
 					"card": {
@@ -117,8 +80,7 @@ app.post('/webhook', (req, res) => {
 				      ]
 				    }				
 				}]
-			}
-		)
+			})
 	}
 });
 
