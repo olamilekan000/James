@@ -80,8 +80,8 @@ app.post('/webhook', (req, res) => {
 					}
 				}]
 			})
+		res.end();
 	}
-	res.end();
 });
 
 
