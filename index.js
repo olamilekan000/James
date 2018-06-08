@@ -51,7 +51,7 @@ app.post('/webhook', (req, res) => {
 			})
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		if (req.body.queryResult.parameters["history-of-ifrs"] == "" ) {
+		if (req.body.queryResult.parameters["history-of-ifrs"].isEmpty()) {
 			res.json({	
 				"fulfillmentMessages": [{
 					"text":{
@@ -60,7 +60,7 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		}
-		
+
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
 				"fulfillmentMessages": [{
