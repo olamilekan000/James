@@ -17,12 +17,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-	const state = req.body.queryResult.parameters["states"];
-	const city = req.body.queryResult.parameters["geo-city"];
-	const country = req.body.queryResult.parameters["geo-country"];
-	const ifrsHistory = req.body.queryResult.parameters["history-of-ifrs"];
 
-	if(typeof state !== ""){
+	if(typeof req.body.queryResult.parameters["states"] !== ""){
+		const state = req.body.queryResult.parameters["states"];
 		if(typeof state === ""){
 			res.json(
 				{	
@@ -43,7 +40,8 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});
-	}else if(typeof city !== ""){
+	}else if(typeof req.body.queryResult.parameters["geo-city"] !== ""){
+		const city = req.body.queryResult.parameters["geo-city"];
 		if(typeof city === ""){
 			res.json(
 				{	
@@ -64,7 +62,8 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});		
-	}else if(typeof country !== ""){
+	}else if(typeof req.body.queryResult.parameters["geo-country"] !== ""){
+		const country = req.body.queryResult.parameters["geo-country"];
 		if(typeof country === ""){
 			res.json(
 				{	
@@ -85,7 +84,8 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});			
-	}else if (typeof ifrsHistory !== "") {
+	}else if (typeof req.body.queryResult.parameters["history-of-ifrs"] !== "") {
+		const ifrsHistory = req.body.queryResult.parameters["history-of-ifrs"]
 		if(typeof ifrsHistory === ""){
 			res.json(
 				{	
