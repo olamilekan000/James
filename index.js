@@ -146,11 +146,7 @@ app.get('/', (req, res) => {
 // });
 
 //functions
-const errVarFulfil = {fulfillmentMessages: [{
-					"text":{
-						"text": ["I didn't get your message!"] // executes if parameter is empty.
-					}
-				}]}
+const errVarFulfil = {fulfillmentMessages: [{"text":{"text": ["I didn't get your message!"] }}]}
 const errFufil = () => {
 	return JSON.stringify(errVarFulfil);
 }
