@@ -28,6 +28,7 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});
+		res.end();
 	}else if(req.body.queryResult.parameters["geo-city"]){
 		let state = req.body.queryResult.parameters["geo-city"];
 		getState(state).then(() => {
@@ -38,7 +39,8 @@ app.post('/webhook', (req, res) => {
 					}
 				}]
 			})
-		});		
+		});	
+		res.end();	
 	}else if(req.body.queryResult.parameters["geo-country"]){
 		let state = req.body.queryResult.parameters["geo-country"];
 		getState(state).then(() => {
@@ -49,7 +51,8 @@ app.post('/webhook', (req, res) => {
 					}
 				}]
 			})
-		});			
+			res.end();
+		});		
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
@@ -72,6 +75,7 @@ app.post('/webhook', (req, res) => {
 				    }				
 				}]
 			})
+		res.end();
 	}else{
 		res.json({	
 				"fulfillmentMessages": [{
