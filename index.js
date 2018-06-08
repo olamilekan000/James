@@ -17,76 +17,111 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
+
 	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
-		getState(state).then(() => {
-			res.json({
+		if (state == "") {
+			res.json({	
 				"fulfillmentMessages": [{
 					"text":{
-						"text": [description]
-					}
-				}]
-			})
-		});
-		res.end();
-	}else if(req.body.queryResult.parameters["geo-city"]){
-		let state = req.body.queryResult.parameters["geo-city"];
-		getState(state).then(() => {
-			res.json({
-				"fulfillmentMessages": [{
-					"text":{
-						"text": [description]
-					}
-				}]
-			})
-		});	
-		res.end();	
-	}else if(req.body.queryResult.parameters["geo-country"]){
-		let state = req.body.queryResult.parameters["geo-country"];
-		getState(state).then(() => {
-			res.json({
-				"fulfillmentMessages": [{
-					"text":{
-						"text": [description]
+						"text": ["I didn't get your message!"] // executes if parameter is empty.
 					}
 				}]
 			})
 			res.end();
-		});		
-	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		let history = req.body.queryResult.parameters["history-of-ifrs"];
-		res.json({
+		}else{
+			getState(state).then(() => {
+				res.json({
+					"fulfillmentMessages": [{
+						"text":{
+							"text": [description]
+						}
+					}]
+				})
+			});
+			res.end();
+		}
+	}else if(req.body.queryResult.parameters["geo-city"]){
+		let state = req.body.queryResult.parameters["geo-city"];
+		if (state == "") {
+			res.json({	
 				"fulfillmentMessages": [{
-
-					"card": {
-				      "title": "card title",
-				      "subtitle": "card text",
-				      "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-				      "buttons": [
-				        {
-				          "text": "button text",
-				          "postback": "https://assistant.google.com/"
-				        },
-				        {
-				          	"text": "button text 2",
-				        	"postback": "https://assistant.google.com/"
-				        }
-				      ]
-				    }				
+					"text":{
+						"text": ["I didn't get your message!"] // executes if parameter is empty.
+					}
 				}]
 			})
-		res.end();
+			res.end();
+		}else{
+			getState(state).then(() => {
+				res.json({
+					"fulfillmentMessages": [{
+						"text":{
+							"text": [description]
+						}
+					}]
+				})
+			});	
+			res.end();		
+		}
+	}else if(req.body.queryResult.parameters["geo-country"]){
+		let state = req.body.queryResult.parameters["geo-country"];
+		if (state == "") {
+			res.json({	
+				"fulfillmentMessages": [{
+					"text":{
+						"text": ["I didn't get your message!"] // executes if parameter is empty.
+					}
+				}]
+			})
+			res.end();
+		}else{
+			getState(state).then(() => {
+				res.json({
+					"fulfillmentMessages": [{
+						"text":{
+							"text": [description]
+						}
+					}]
+				})
+				res.end();
+			});		
+		}
+	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
+		let history = req.body.queryResult.parameters["history-of-ifrs"];
+		if (history == "") {
+			res.json({	
+				"fulfillmentMessages": [{
+					"text":{
+						"text": ["I didn't get your message!"] // executes if parameter is empty.
+					}
+				}]
+			})
+			res.end();
+		}else{	
+			res.json({
+					"fulfillmentMessages": [{
+
+						"card": {
+					      "title": "card title",
+					      "subtitle": "card text",
+					      "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
+					      "buttons": [
+					        {
+					          "text": "button text",
+					          "postback": "https://assistant.google.com/"
+					        },
+					        {
+					          	"text": "button text 2",
+					        	"postback": "https://assistant.google.com/"
+					        }
+					      ]
+					    }				
+					}]
+				})
+			res.end();
+		}
 	}
-	// }else{
-	// 	res.json({	
-	// 			"fulfillmentMessages": [{
-	// 				"text":{
-	// 					"text": ["I didn't get your message!"]
-	// 				}
-	// 			}]
-	// 		})
-	// 	res.end();
-	// }
 });
 
 
