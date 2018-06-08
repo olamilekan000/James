@@ -76,16 +76,17 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		res.end();
-	}else{
-		res.json({	
-				"fulfillmentMessages": [{
-					"text":{
-						"text": ["I didn't get your message!"]
-					}
-				}]
-			})
-		res.end();
 	}
+	// }else{
+	// 	res.json({	
+	// 			"fulfillmentMessages": [{
+	// 				"text":{
+	// 					"text": ["I didn't get your message!"]
+	// 				}
+	// 			}]
+	// 		})
+	// 	res.end();
+	// }
 });
 
 
