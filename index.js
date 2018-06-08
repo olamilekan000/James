@@ -17,8 +17,23 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-	if(req.body.queryResult.parameters["states"]){
-		let state = req.body.queryResult.parameters["states"];
+	const state = req.body.queryResult.parameters["states"];
+	const city = req.body.queryResult.parameters["geo-city"];
+	const country = req.body.queryResult.parameters["geo-country"];
+	const ifrsHistory = req.body.queryResult.parameters["history-of-ifrs"];
+
+	if(typeof state !== ""){
+		if(typeof state === ""){
+			res.json(
+				{	
+					"fulfillmentMessages": [{
+						"text":{
+							"text": ["I didn't get your message!"]
+						}
+					}]
+				}
+			)
+		}
 		getState(state).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
@@ -28,9 +43,19 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});
-	}else if(req.body.queryResult.parameters["geo-city"]){
-		let state = req.body.queryResult.parameters["geo-city"];
-		getState(state).then(() => {
+	}else if(typeof city !== ""){
+		if(typeof city === ""){
+			res.json(
+				{	
+					"fulfillmentMessages": [{
+						"text":{
+							"text": ["I didn't get your message!"]
+						}
+					}]
+				}
+			)
+		}		
+		getState(city).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
@@ -39,9 +64,19 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});		
-	}else if(req.body.queryResult.parameters["geo-country"]){
-		let state = req.body.queryResult.parameters["geo-country"];
-		getState(state).then(() => {
+	}else if(typeof country !== ""){
+		if(typeof country === ""){
+			res.json(
+				{	
+					"fulfillmentMessages": [{
+						"text":{
+							"text": ["I didn't get your message!"]
+						}
+					}]
+				}
+			)
+		}
+		getState(country).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
@@ -50,19 +85,20 @@ app.post('/webhook', (req, res) => {
 				}]
 			})
 		});			
-	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		if (req.body.queryResult.parameters["history-of-ifrs"].isEmpty()) {
-			res.json({	
-				"fulfillmentMessages": [{
-					"text":{
-						"text": ["I didn't get your message!"]
-					}
-				}]
-			})
+	}else if (typeof ifrsHistory !== "") {
+		if(typeof ifrsHistory === ""){
+			res.json(
+				{	
+					"fulfillmentMessages": [{
+						"text":{
+							"text": ["I didn't get your message!"]
+						}
+					}]
+				}
+			)
 		}
-
-		let history = req.body.queryResult.parameters["history-of-ifrs"];
-		res.json({
+		res.json(
+			{
 				"fulfillmentMessages": [{
 
 					"card": {
@@ -81,7 +117,8 @@ app.post('/webhook', (req, res) => {
 				      ]
 				    }				
 				}]
-			})
+			}
+		)
 	}
 });
 
