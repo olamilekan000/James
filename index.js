@@ -21,82 +21,39 @@ app.post('/webhook', (req, res) => {
 	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
 		if (state == "") {
-			res.json({	
-				"fulfillmentMessages": [{
-					"text":{
-						"text": ["I didn't get your message!"] // executes if parameter is empty.
-					}
-				}]
-			})
+			errFulfilment();
 			res.end();
 		}else{
 			getState(state).then(() => {
-				res.json({
-					"fulfillmentMessages": [{
-						"text":{
-							"text": [description]
-						}
-					}]
-				})
+				fulfilment(description);
 			});
 			res.end();
 		}
 	}else if(req.body.queryResult.parameters["geo-city"]){
 		let state = req.body.queryResult.parameters["geo-city"];
 		if (state == "") {
-			res.json({	
-				"fulfillmentMessages": [{
-					"text":{
-						"text": ["I didn't get your message!"] // executes if parameter is empty.
-					}
-				}]
-			})
+			errFulfilment();
 			res.end();
 		}else{
 			getState(state).then(() => {
-				res.json({
-					"fulfillmentMessages": [{
-						"text":{
-							"text": [description]
-						}
-					}]
-				})
-			});	
-			res.end();		
+				fulfilment(description);
+			});			
 		}
 	}else if(req.body.queryResult.parameters["geo-country"]){
 		let state = req.body.queryResult.parameters["geo-country"];
 		if (state == "") {
-			res.json({	
-				"fulfillmentMessages": [{
-					"text":{
-						"text": ["I didn't get your message!"] // executes if parameter is empty.
-					}
-				}]
-			})
+			errFulfilment();
 			res.end();
 		}else{
 			getState(state).then(() => {
-				res.json({
-					"fulfillmentMessages": [{
-						"text":{
-							"text": [description]
-						}
-					}]
-				})
+				fulfilment(description);
 				res.end();
 			});		
 		}
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		if (history == "") {
-			res.json({	
-				"fulfillmentMessages": [{
-					"text":{
-						"text": ["I didn't get your message!"] // executes if parameter is empty.
-					}
-				}]
-			})
+			errFulfilment();
 			res.end();
 		}else{	
 			res.json({
@@ -138,6 +95,7 @@ const richResponseV2Card = {
   ]
 };
 
+//weather api
 var getState = (state) => {
 	return new Promise((resolve, reject) => {
 		const apiKey = '1545ad0038b38ead324bfab9e11bb464';
@@ -166,6 +124,29 @@ app.get('/', (req, res) => {
 // app.get('*', (req, res) => {
 // 	res.render('not');
 // });
+
+//functions
+
+const fulfilment = (description) => {
+	res.json({
+		"fulfillmentMessages": [{
+			"text":{
+				"text": [description]
+			}
+		}]
+	})
+}
+
+const errFulfilment = () => {
+	res.json({	
+		"fulfillmentMessages": [{
+			"text":{
+					"text": ["I didn't get your message!"] // executes if parameter is empty.
+				}
+			}]
+	})
+}
+
 
 const PORT = 5100;
 
