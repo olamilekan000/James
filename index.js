@@ -17,88 +17,69 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-
 	if(req.body.queryResult.parameters["states"]){
 		let state = req.body.queryResult.parameters["states"];
-		if (state == "") {
-			res.json(errFufil());
-			res.end();
-		}else{
-			getState(state).then(() => {
-				res.json({
-					"fulfillmentMessages": [{
-						"text":{
-							"text": [description]
-						}
-					}]
-				})
-			});
-			res.end();
-		}
+		getState(state).then(() => {
+			res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [description]
+					}
+				}]
+			})
+		});
 	}else if(req.body.queryResult.parameters["geo-city"]){
 		let state = req.body.queryResult.parameters["geo-city"];
-		if (state == "") {
-			res.json(errFufil());
-			res.end();
-		}else{
-			getState(state).then(() => {
-				res.json({
-					"fulfillmentMessages": [{
-						"text":{
-							"text": [description]
-						}
-					}]
-				})
-			});	
-			res.end();		
-		}
+		getState(state).then(() => {
+			res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [description]
+					}
+				}]
+			})
+		});		
 	}else if(req.body.queryResult.parameters["geo-country"]){
 		let state = req.body.queryResult.parameters["geo-country"];
-		if (state == "") {
-			res.json(errFufil());			
-			res.end();
-		}else{
-			getState(state).then(() => {
-				res.json({
-					"fulfillmentMessages": [{
-						"text":{
-							"text": [description]
-						}
-					}]
-				})
-				res.end();
-			});		
-		}
+		getState(state).then(() => {
+			res.json({
+				"fulfillmentMessages": [{
+					"text":{
+						"text": [description]
+					}
+				}]
+			})
+		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
-		if (history == "") {
-			res.json(errFufil());
-			res.end();
-		}else{	
-			res.json({
-					"fulfillmentMessages": [{
+		res.json({
+				"fulfillmentMessages": [{
 
-						"card": {
-					      "title": "card title",
-					      "subtitle": "card text",
-					      "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-					      "buttons": [
-					        {
-					          "text": "button text",
-					          "postback": "https://assistant.google.com/"
-					        },
-					        {
-					          	"text": "button text 2",
-					        	"postback": "https://assistant.google.com/"
-					        }
-					      ]
-					    }				
-					}]
-				})
-			res.end();
-		}
+					"card": {
+				      "title": "card title",
+				      "subtitle": "card text",
+				      "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
+				      "buttons": [
+				        {
+				          "text": "button text",
+				          "postback": "https://assistant.google.com/"
+				        },
+				        {
+				          	"text": "button text 2",
+				        	"postback": "https://assistant.google.com/"
+				        }
+				      ]
+				    }				
+				}]
+			})
 	}else{
-		res.json(errFufil());
+		res.json({	
+				"fulfillmentMessages": [{
+					"text":{
+						"text": ["I didn't get your message!"]
+					}
+				}]
+			})
 	}
 });
 
@@ -144,12 +125,6 @@ app.get('/', (req, res) => {
 // app.get('*', (req, res) => {
 // 	res.render('not');
 // });
-
-//functions
-const errVarFulfil = {fulfillmentMessages: [{"text":{"text": ["I didn't get your message!"] }}]}
-const errFufil = () => {
-	return JSON.stringify(errVarFulfil);
-}
 
 const PORT = 5100;
 
