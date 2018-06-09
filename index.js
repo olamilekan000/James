@@ -54,24 +54,20 @@ app.post('/webhook', (req, res) => {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json(
 			{
-				"fulfillmentMessages": [{
-
-					"card": {
-				      "title": "card title",
-				      "subtitle": "card text",
-				      "imageUri": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png",
-				      "buttons": [
-				        {
-				          "text": "button text",
-				          "postback": "https://assistant.google.com/"
-				        },
-				        {
-				          	"text": "button text 2",
-				        	"postback": "https://assistant.google.com/"
-				        }
-				      ]
-				    }				
-				}]
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech": "this is a simple response"
+			            }
+			          }
+			        ]
+			      }
+			    }
+			  }
 			}
 		)
 	}
