@@ -52,24 +52,25 @@ app.post('/webhook', (req, res) => {
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
-		res.json(
-			{
-			  "payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech": "this is a simple response"
+		res.json({
+				"fulfillmentMessages": [
+			      {
+			        "payload": {
+			          "messages": [
+			            {
+			              "type": 2,
+			              "platform": "facebook",
+			              "replies": [
+			                "Tell me about ifrs1",
+			                "what is the weather in Lagos"
+			              ],
+			              "title": "Quick Reply Title"
 			            }
-			          }
-			        ]
+			          ]
+			        }
 			      }
-			    }
-			  }
-			}
-		)
+			    ]
+		})
 	}
 });
 
@@ -123,3 +124,54 @@ app.listen(process.env.PORT || PORT, () => {
 	console.log('now listening to ' + PORT)
 	// console.log(texts.ifrsHistory);
 });
+
+
+
+
+
+
+
+
+    // "fulfillmentMessages": [
+    //   {
+    //     "text": {
+    //       "text": [
+    //         "hey"
+    //       ]
+    //     }
+    //   },
+    //   {
+    //     "payload": {
+    //       "messages": [
+    //         {
+    //           "type": 2,
+    //           "platform": "facebook",
+    //           "replies": [
+    //             "Tell me about ifrs1",
+    //             "what is the weather in Lagos"
+    //           ],
+    //           "title": "Quick Reply Title"
+    //         }
+    //       ]
+    //     }
+    //   }
+    // ]\
+
+
+
+    // {
+			 //  "payload": {
+			 //    "google": {
+			 //      "expectUserResponse": true,
+			 //      "richResponse": {
+			 //        "items": [
+			 //          {
+			 //            "simpleResponse": {
+			 //              "textToSpeech": "this is a simple response"
+			 //            }
+			 //          }
+			 //        ]
+			 //      }
+			 //    }
+			 //  }
+			// }
