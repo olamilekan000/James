@@ -72,6 +72,38 @@ app.post('/webhook', (req, res) => {
 				      ]
 				    }				
 				}]
+			},
+			{
+				 "facebook": { 
+				 	"attachment": {
+				 		"type": "template",
+				 		"payload": {
+				 			"template_type":"generic",
+				 			"elements": [
+				 				{
+				 					"title":"Welcome!",
+						            "image_url":"https://petersfancybrownhats.com/company_image.png",
+						            "subtitle":"We have the right hat for everyone.",
+						            "default_action": {
+						              "type": "web_url",
+						              "url": "https://petersfancybrownhats.com/view?item=103",
+						              "messenger_extensions": false,
+						              "webview_height_ratio": "tall",
+						              "fallback_url": "https://petersfancybrownhats.com/"
+						            },
+						            "buttons": [
+						            	{
+						            		"type":"web_url",
+								            "url":"https://petersfancybrownhats.com",
+								            "title":"View Website"
+						            	}
+						            ]
+				 				}
+
+				 			]
+				 		}
+				 	}
+  				},
 			}
 		)
 	}
@@ -91,6 +123,7 @@ const richResponseV2Card = {
   ]
 };
 
+//function which connects to the weather api
 var getState = (state) => {
 	return new Promise((resolve, reject) => {
 		const apiKey = '1545ad0038b38ead324bfab9e11bb464';
