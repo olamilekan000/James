@@ -54,29 +54,83 @@ app.post('/webhook', (req, res) => {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
 				"fulfillmentMessages": [
-			      {
-			        "payload": {
-			        	"template_type":"generic",
-			        	"elements":[
-			        		{
-			        			"title": "please work",
-			        			"image_url": "https://avatars2.githubusercontent.com/u/24735571?v=4",
-			        			"buttons":[
-				        			{
-						                "type":"web_url",
-						                "url":"https://petersfancybrownhats.com",
-						                "title":"View Website"
-						            }
-				        		]
-			        		}
-			        	]
-			        }
-			      }
+					{
+						"facebook": {
+							"attachment": {
+								"type": "2",
+								"payload": {
+									"messages": [
+									  {
+									    "platform": "facebook",
+									    "replies": [
+									      "Quick reply 1",
+									      "Quick reply 2",
+									      "Quick reply 3"
+									    ],
+									    "title": "Quick Reply Title",
+									    "type": 2
+									  }
+									]
+								}
+							}
+						}
+					}
 			    ]
 		})
 	}
 });
 
+
+
+// {
+//   "payload": {
+//     "google": {
+//       "expectUserResponse": true,
+//       "richResponse": {
+//         "items": [
+//           {
+//             "simpleResponse": {
+//               "textToSpeech": "Choose a item"
+//             }
+//           }
+//         ]
+//       },
+//       "systemIntent": {
+//         "intent": "actions.intent.OPTION",
+//         "data": {
+//           "@type": "type.googleapis.com/google.actions.v2.OptionValueSpec",
+//           "listSelect": {
+//             "title": "Hello",
+//             "items": [
+//               {
+//                 "optionInfo": {
+//                   "key": "first title key"
+//                 },
+//                 "description": "first description",
+//                 "image": {
+//                   "url": "/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png",
+//                   "accessibilityText": "first alt"
+//                 },
+//                 "title": "first title"
+//               },
+//               {
+//                 "optionInfo": {
+//                   "key": "second"
+//                 },
+//                 "description": "second description",
+//                 "image": {
+//                   "url": "https://lh3.googleusercontent.com/Nu3a6F80WfixUqf_ec_vgXy_c0-0r4VLJRXjVFF_X_CIilEu8B9fT35qyTEj_PEsKw",
+//                   "accessibilityText": "second alt"
+//                 },
+//                 "title": "second title"
+//               }
+//             ]
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 
 const richResponseV2Card = {
