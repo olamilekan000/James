@@ -56,17 +56,20 @@ app.post('/webhook', (req, res) => {
 				"fulfillmentMessages": [
 			      {
 			        "payload": {
-			          "messages": [
-			            {
-			              "type": 2,
-			              "platform": "facebook",
-			              "replies": [
-			                "Tell me about ifrs1",
-			                "what is the weather in Lagos"
-			              ],
-			              "title": "Quick Reply Title"
-			            }
-			          ]
+			        	"template_type":"generic",
+			        	"elements":[
+			        		{
+			        			"title": "please work",
+			        			"image_url": "https://avatars2.githubusercontent.com/u/24735571?v=4"
+			        		},
+			        		"buttons":[
+			        			{
+					                "type":"web_url",
+					                "url":"https://petersfancybrownhats.com",
+					                "title":"View Website"
+					            }
+			        		]
+			        	]
 			        }
 			      }
 			    ]
