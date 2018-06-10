@@ -52,31 +52,22 @@ app.post('/webhook', (req, res) => {
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
-		res.json({
-				"fulfillmentMessages": [
-					{
-						"facebook": {
-							"attachment": {
-								"type": "2",
-								"payload": {
-									"messages": [
-									  {
-									    "platform": "facebook",
-									    "replies": [
-									      "Quick reply 1",
-									      "Quick reply 2",
-									      "Quick reply 3"
-									    ],
-									    "title": "Quick Reply Title",
-									    "type": 2
-									  }
-									]
-								}
-							}
-						}
-					}
-			    ]
-		})
+		res.json(
+				{
+					"messages": [
+					  {
+					    "platform": "facebook",
+					    "replies": [
+					      "Quick reply 1",
+					      "Quick reply 2",
+					      "Quick reply 3"
+					    ],
+					    "title": "Quick Reply Title",
+					    "type": 2
+					  }
+					]
+				}
+			)
 	}
 });
 
