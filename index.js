@@ -54,14 +54,17 @@ app.post('/webhook', (req, res) => {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json(
 			{
-				"fulfillmentMessages": [{
-					"QuickReplies":{
-						"title": "string",
-						 "quickReplies": [
-						    "string"
-						  ]
-					}			
-				}]
+			  "title": "string",
+			  "subtitle": "string",
+			  "imageUri": "https://avatars2.githubusercontent.com/u/24735571?v=4",
+			  "buttons": [
+			    {
+						     	
+				  "text": "string",
+				  "postback": "string"
+			
+			    }
+			  ]
 			}
 		)
 	}
