@@ -90,6 +90,19 @@ app.post('/webhook', (req, res) => {
 					}
 				]
 			})
+
+			if (req.body.queryResult.intent.displayName == "IFRS1 - objective") {
+				res.json({
+					"fulfillmentMessages": [{
+						"quickReplies": {
+							  "title": "A restructured version of IFRS 1 was issued in November 2008 and applies if an entity's first IFRS financial statements are for a period beginning on or after 1 July 2009.",
+							  "quickReplies": [
+							    "ifrs 1"
+							  ]
+						}
+					}]
+				})
+			}
 	}
 
 });
