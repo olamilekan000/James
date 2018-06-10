@@ -72,17 +72,19 @@ app.post('/webhook', (req, res) => {
 							"imageUri": "https://www.secto.fi/wp-content/uploads/IFRS-2-480x320.jpg",
 							"buttons": [
 							    {
-										     	
+									"type": "postback",	     	
 								  	"text": "Objective",
-								  	"postback": "https://assistant.google.com/"
+								  	"postback": "Objective"
 								 },
 								 {
+								 	"type": "postback",
 								 	"text": "Measurement",
-								  	"postback": "https://assistant.google.com/"
+								  	"postback": "Measurement"
 								 },
 								 {
+								 	"type": "postback",
 								 	"text": "Disclosure",
-								  	"postback": "https://assistant.google.com/"
+								  	"postback": "Measurement"
 								 }
 							  ]
 							}
