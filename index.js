@@ -73,16 +73,16 @@ app.post('/webhook', (req, res) => {
 							"buttons": [
 							    {
 										     	
-								  	"text": "Objective of IFRS 1"
-								  	// "postback": "Objective"
+								  	"text": "Objective of IFRS 1",
+								  	"postback": "Objective"
 								 },
 								 {
-								 	"text": "Measurement OF IFRS 1"
-								  	// "postback": "Measurement"
+								 	"text": "Measurement OF IFRS 1",
+								  	"postback": "Measurement"
 								 },
 								 {
-								 	"text": "Disclosure of IFRS 1"
-								  	// "postback": "Disclosure"
+								 	"text": "Disclosure of IFRS 1",
+								  	"postback": "Disclosure"
 								 }
 							  ]
 							}
@@ -91,7 +91,7 @@ app.post('/webhook', (req, res) => {
 				]
 			})
 
-	}else if (req.body.queryResult.intent.displayName == "IFRS1 - objective") {
+	}else if (req.body.queryResult.parameters["IFRS1"] && req.body.queryResult.intent.displayName === "IFRS1 - objective") {
 				res.json({
 					"fulfillmentMessages": [{
 						"quickReplies": {
@@ -106,25 +106,6 @@ app.post('/webhook', (req, res) => {
 
 });
 
-// {
-//     'platform': 'ACTIONS_ON_GOOGLE',
-//     'basic_card': {
-//       'title': 'Title: this is a title',
-//       'subtitle': 'This is an subtitle.',
-//       'formatted_text': 'Body text can include unicode characters including emoji 📱.',
-//       'image': {
-//         'image_uri': 'https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png'
-//       },
-//       'buttons': [
-//         {
-//           'title': 'This is a button',
-//           'open_uri_action': {
-//             'uri': 'https://assistant.google.com/'
-//           }
-//         }
-//       ]
-//     }
-//   }
 
 const richResponseV2Card = {
   'title': 'Title: this is a title',
