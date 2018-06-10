@@ -84,7 +84,7 @@ app.post('/webhook', (req, res) => {
 								  	"postback": "Disclosure"
 								 },
 								 {
-								 	"text": "Read more about the Standard",
+								 	"text": "Read more",
 								 	"postback": "https://www.iasplus.com/en/standards/ifrs/ifrs1"
 								 }
 							  ]
