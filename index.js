@@ -63,7 +63,7 @@ app.post('/webhook', (req, res) => {
 			}]
 		})
 	}else if (req.body.queryResult.parameters["IFRS1"]) {
-			req.json({
+			res.json({
 				"fulfillmentMessages": [
 					{
 						"card": {
