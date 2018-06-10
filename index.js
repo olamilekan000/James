@@ -73,16 +73,16 @@ app.post('/webhook', (req, res) => {
 							"buttons": [
 							    {
 										     	
-								  	"text": "Objective of IFRS 1",
-								  	"postback": "Objective"
+								  	"text": "Objective of IFRS 1"
+								  	// "postback": "Objective"
 								 },
 								 {
-								 	"text": "Measurement OF IFRS 1",
-								  	"postback": "Measurement"
+								 	"text": "Measurement OF IFRS 1"
+								  	// "postback": "Measurement"
 								 },
 								 {
-								 	"text": "Disclosure of IFRS 1",
-								  	"postback": "Disclosure"
+								 	"text": "Disclosure of IFRS 1"
+								  	// "postback": "Disclosure"
 								 }
 							  ]
 							}
