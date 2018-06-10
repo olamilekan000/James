@@ -51,27 +51,15 @@ app.post('/webhook', (req, res) => {
 			})
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		let history = req.body.queryResult.parameters["history-of-ifrs"];
+		// let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
-		
-					   "data": {
-					      "facebook": {
-					         "text": "Pick a color:",
-					         "quick_replies": [
-					            {
-					               "content_type": "text",
-					               "title": "Red",
-					               "payload": "red"
-					            },
-					            {
-					               "content_type": "text",
-					               "title": "Green",
-					               "payload": "green"
-					            }
-					         ]
-					      }
-					   }
-			
+				"fulfillmentMessages": [{
+					"messages": [
+						{
+							"text": ["hello, cold world!"]
+						}
+					]
+				}]			
 		})
 	}
 });
