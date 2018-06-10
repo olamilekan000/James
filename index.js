@@ -55,18 +55,23 @@ app.post('/webhook', (req, res) => {
 		res.json({
 				"fulfillmentMessages": [
 					{
-						"messages": [
-						  {
-						    "platform": "facebook",
-						    "replies": [
-						      "Quick reply 1",
-						      "Quick reply 2",
-						      "Quick reply 3"
-						    ],
-						    "title": "Quick Reply Title",
-						    "type": 2
-						  }
-						]
+					   "data": {
+					      "facebook": {
+					         "text": "Pick a color:",
+					         "quick_replies": [
+					            {
+					               "content_type": "text",
+					               "title": "Red",
+					               "payload": "red"
+					            },
+					            {
+					               "content_type": "text",
+					               "title": "Green",
+					               "payload": "green"
+					            }
+					         ]
+					      }
+					   }
 					}
 			    ]
 		})
