@@ -74,15 +74,15 @@ app.post('/webhook', (req, res) => {
 							    {
 										     	
 								  	"text": "Objective",
-								  	"postback": "https://assistant.google.com/"
+								  	"postback": "Objective of IFRS 1"
 								 },
 								 {
 								 	"text": "Measurement",
-								  	"postback": "https://assistant.google.com/"
+								  	"postback": "Measurement OF IFRS 1"
 								 },
 								 {
 								 	"text": "Disclosure",
-								  	"postback": "https://assistant.google.com/"
+								  	"postback": "Disclosure of IFRS 1"
 								 }
 							  ]
 							}
