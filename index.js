@@ -88,25 +88,6 @@ app.post('/webhook', (req, res) => {
 
 });
 
-	request({
- 		url: 'https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAGipafzbGwBAIdyhsYZBZCvfBGmKJ8kTN6mgtygOIVKzq7ynx8dApOuDwHtBRnsA5RH8PsMwTs7pjUhtyQSIVQK0s7JEJwZCigfeeUJkFnpWIUmAbOTZC7qjMeBZAxkxIJQ3C2QMapACOB2ZAOcKIHC2mAzOcIYX10qE3UMM59AZDZD',
-		method: `POST`,
-		json: {
-			message: { 
-				"greeting": [
-				    {
-				      "locale":"default",
-				      "text":"Hello!" 
-				    }, {
-				      "locale":"en_US",
-				      "text":"Timeless apparel for the masses."
-				    }
-			  ] 
-			},
-		}
-	});
-
-
 const richResponseV2Card = {
   'title': 'Title: this is a title',
   'subtitle': 'This is an subtitle.  Text can include unicode characters including emoji 📱.',
