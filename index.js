@@ -62,7 +62,7 @@ app.post('/webhook', (req, res) => {
 				}
 			}]
 		})
-	}else if (req.body.queryResult..intent.displayName === "IFRS1") {
+	}else if (req.body.queryResult.intent.displayName === "IFRS1") {
 			res.json({
 				"fulfillmentMessages": [
 					{
