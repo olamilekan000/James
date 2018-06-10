@@ -62,28 +62,26 @@ app.post('/webhook', (req, res) => {
 				}
 			}]
 		})
-	}
+	}else if (req.body.queryResult.parameters["IFRS1"]) {
+			req.json({
+				"fulfillmentMessages": [
+					{
+						"card": {
+							"title": "IFRS 1",
+							"subtitle": "IFRS 1 — First-time Adoption of International Financial Reporting Standards",
+							"imageUri": "https://avatars2.githubusercontent.com/u/24735571?v=4",
+							"buttons": [
+							    {
+										     	
+								  "text": "Objective",
+								  "postback": "Objective"
+								 }
+							  ]
+							}
 
-	if (req.body.queryResult.parameters["IFRS1"]) {
-		req.json({
-			"fulfillmentMessages": [
-				{
-					"card": {
-						"title": "IFRS 1",
-						"subtitle": "IFRS 1 — First-time Adoption of International Financial Reporting Standards",
-						"imageUri": "https://www.iasplus.com/en/standards/ifrs/ifrs1",
-						"buttons": [
-						    {
-									     	
-							  "text": "Objective",
-							  "postback": "Objective"
-							 }
-						  ]
-						}
-
-				}
-			]
-		})
+					}
+				]
+			})
 	}
 
 });
