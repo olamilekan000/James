@@ -69,12 +69,20 @@ app.post('/webhook', (req, res) => {
 						"card": {
 							"title": "IFRS 1",
 							"subtitle": "IFRS 1 — First-time Adoption of International Financial Reporting Standards",
-							"imageUri": "https://www.iasplus.com/en/standards/ifrs/ifrs1",
+							"imageUri": "https://www.secto.fi/wp-content/uploads/IFRS-2-480x320.jpg",
 							"buttons": [
 							    {
 										     	
-								  "text": "Objective",
-								  "postback": "Objective"
+								  	"text": "Objective",
+								  	"postback": "Objective"
+								 },
+								 {
+								 	"text": "Measurement",
+								  	"postback": "Measurement"
+								 },
+								 {
+								 	"text": "Disclosure",
+								  	"postback": "Disclosure"
 								 }
 							  ]
 							}
