@@ -62,7 +62,7 @@ app.post('/webhook', (req, res) => {
 				}
 			}]
 		})
-	}else if (req.body.queryResult.parameters["IFRS1"]) {
+	}else if (req.body.queryResult.parameters["IFRS1"] === "IFRS1") {
 			res.json({
 				"fulfillmentMessages": [
 					{
@@ -91,7 +91,7 @@ app.post('/webhook', (req, res) => {
 				]
 			})
 
-	}else if (req.body.queryResult.parameters["IFRS1"] && req.body.queryResult.intent.displayName === "IFRS1 - objective") {
+	}else if (req.body.queryResult.intent.displayName === "IFRS1 - objective") {
 				res.json({
 					"fulfillmentMessages": [{
 						"quickReplies": {
