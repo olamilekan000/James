@@ -82,11 +82,11 @@ app.post('/webhook', (req, res) => {
 								 {
 								 	"text": "Disclosure of IFRS 1",
 								  	"postback": "Disclosure"
-								 },
-								 {
-								 	"text": "Read more",
-								 	"postback": "https://www.iasplus.com/en/standards/ifrs/ifrs1"
 								 }
+								 // {
+								 // 	"text": "Read more",
+								 // 	"postback": "https://www.iasplus.com/en/standards/ifrs/ifrs1"
+								 // }
 							  ]
 							}
 
