@@ -68,7 +68,7 @@ app.post('/webhook', (req, res) => {
 					{
 						"card": {
 							"title": "IFRS 1",
-							"subtitle": "IFRS 1 — First-time Adoption of International Financial Reporting Standards",
+							"subtitle": "IFRS 1 First-time Adoption of International Financial Reporting Standards sets out the procedures that an entity must follow when it adopts IFRSs for the first time as the basis for preparing its general purpose financial statements. The IFRS grants limited exemptions from the general requirement to comply with each IFRS effective at the end of its first IFRS reporting period.",
 							"imageUri": "https://www.secto.fi/wp-content/uploads/IFRS-2-480x320.jpg",
 							"buttons": [
 							    {
