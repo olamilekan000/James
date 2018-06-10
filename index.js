@@ -55,7 +55,7 @@ app.post('/webhook', (req, res) => {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": string,
+					  "title": "string",
 					  "quickReplies": [
 					    "string"
 					  ]
@@ -127,3 +127,5 @@ app.listen(process.env.PORT || PORT, () => {
 	console.log('now listening to ' + PORT)
 	// console.log(texts.ifrsHistory);
 });
+
+// originalDetectIntentRequest
