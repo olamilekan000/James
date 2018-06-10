@@ -117,7 +117,7 @@ app.post('/webhook', (req, res) => {
 				}
 			]
 		})
-	}else if (req.body.queryResult.parameters["IFRS1"] === "disclosure ifrs 1") {
+	}else if (req.body.queryResult.intent.displayName === "IFRS1 - disclosure") {
 		res.json({
 			"fulfillmentMessages": [
 				{
