@@ -91,7 +91,7 @@ app.post('/webhook', (req, res) => {
 				]
 			})
 
-			if (req.body.queryResult.intent.displayName == "IFRS1 - objective") {
+	}else if (req.body.queryResult.intent.displayName == "IFRS1 - objective") {
 				res.json({
 					"fulfillmentMessages": [{
 						"quickReplies": {
@@ -103,7 +103,6 @@ app.post('/webhook', (req, res) => {
 					}]
 				})
 			}
-	}
 
 });
 
