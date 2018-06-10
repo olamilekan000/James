@@ -74,15 +74,15 @@ app.post('/webhook', (req, res) => {
 							    {
 										     	
 								  	"text": "Objective",
-								  	"postback": "Objective"
+								  	"postback": "https://assistant.google.com/"
 								 },
 								 {
 								 	"text": "Measurement",
-								  	"postback": "Measurement"
+								  	"postback": "https://assistant.google.com/"
 								 },
 								 {
 								 	"text": "Disclosure",
-								  	"postback": "Disclosure"
+								  	"postback": "https://assistant.google.com/"
 								 }
 							  ]
 							}
