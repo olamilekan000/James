@@ -51,17 +51,23 @@ app.post('/webhook', (req, res) => {
 			})
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		// let history = req.body.queryResult.parameters["history-of-ifrs"];
-		res.json({
+		let history = req.body.queryResult.parameters["history-of-ifrs"];
+		res.json(
+			{
 				"fulfillmentMessages": [{
-					"title": "ayyee",
-					  "quickReplies": [
-					    "string"
-					  ]
-				}]			
-		})
+					"QuickReplies":{
+						"title": "string",
+						 "quickReplies": [
+						    "string"
+						  ]
+					}			
+				}]
+			}
+		)
 	}
 });
+
+
 
 const richResponseV2Card = {
   'title': 'Title: this is a title',
@@ -75,7 +81,6 @@ const richResponseV2Card = {
   ]
 };
 
-//function which connects to the weather api.
 var getState = (state) => {
 	return new Promise((resolve, reject) => {
 		const apiKey = '1545ad0038b38ead324bfab9e11bb464';
@@ -111,54 +116,3 @@ app.listen(process.env.PORT || PORT, () => {
 	console.log('now listening to ' + PORT)
 	// console.log(texts.ifrsHistory);
 });
-
-
-
-
-
-
-
-
-    // "fulfillmentMessages": [
-    //   {
-    //     "text": {
-    //       "text": [
-    //         "hey"
-    //       ]
-    //     }
-    //   },
-    //   {
-    //     "payload": {
-    //       "messages": [
-    //         {
-    //           "type": 2,
-    //           "platform": "facebook",
-    //           "replies": [
-    //             "Tell me about ifrs1",
-    //             "what is the weather in Lagos"
-    //           ],
-    //           "title": "Quick Reply Title"
-    //         }
-    //       ]
-    //     }
-    //   }
-    // ]\
-
-
-
-    // {
-			 //  "payload": {
-			 //    "google": {
-			 //      "expectUserResponse": true,
-			 //      "richResponse": {
-			 //        "items": [
-			 //          {
-			 //            "simpleResponse": {
-			 //              "textToSpeech": "this is a simple response"
-			 //            }
-			 //          }
-			 //        ]
-			 //      }
-			 //    }
-			 //  }
-			// }
