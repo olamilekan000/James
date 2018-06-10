@@ -52,21 +52,23 @@ app.post('/webhook', (req, res) => {
 		});			
 	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
-		res.json(
-			{
-			  "title": "string",
-			  "subtitle": "string",
-			  "imageUri": "https://avatars2.githubusercontent.com/u/24735571?v=4",
-			  "buttons": [
-			    {
-						     	
-				  "text": "string",
-				  "postback": "string"
-			
-			    }
-			  ]
-			}
-		)
+		res.json({
+			"fulfillmentMessages": [{
+				"card": {
+				  "title": "string",
+				  "subtitle": "string",
+				  "imageUri": "https://avatars2.githubusercontent.com/u/24735571?v=4",
+				  "buttons": [
+				    {
+							     	
+					  "text": "string",
+					  "postback": "string"
+				
+				    }
+				  ]
+				}
+			}]
+		})
 	}
 });
 
