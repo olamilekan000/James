@@ -66,19 +66,23 @@ app.post('/webhook', (req, res) => {
 
 	if (req.body.queryResult.parameters["IFRS1"]) {
 		req.json({
-			"card": {
-				  "title": "IFRS 1",
-				  "subtitle": "IFRS 1 — First-time Adoption of International Financial Reporting Standards",
-				  "imageUri": "https://www.iasplus.com/en/standards/ifrs/ifrs1",
-				  "buttons": [
-				    {
-							     	
-					  "text": "Objective",
-					  "postback": "Objective"
-				
-				    }
-				  ]
+			"fulfillmentMessages": [
+				{
+					"card": {
+						"title": "IFRS 1",
+						"subtitle": "IFRS 1 — First-time Adoption of International Financial Reporting Standards",
+						"imageUri": "https://www.iasplus.com/en/standards/ifrs/ifrs1",
+						"buttons": [
+						    {
+									     	
+							  "text": "Objective",
+							  "postback": "Objective"
+							 }
+						  ]
+						}
+
 				}
+			]
 		})
 	}
 
