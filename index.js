@@ -123,6 +123,24 @@ app.post('/webhook', (req, res) => {
 				}
 			]
 		})
+	}else if (req.body.queryResult.intent.displayName === "IFRS1 - Read more") {
+		res.json({
+			"fulfillmentMessages": [
+				{
+					"card":{
+						"title": "IFRS 1",
+						"subtitle": "IFRS 1 First-time Adoption of International Financial Reporting Standards sets out the procedures that an entity must follow when it adopts IFRSs for the first time as the basis for preparing its general purpose financial statements.",
+						"imageUri": "https://www.secto.fi/wp-content/uploads/IFRS-2-480x320.jpg",
+						"buttons":[
+							{
+								'text': 'Read more...',
+      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs1'
+							}
+						]
+					}
+				}
+			]
+		})
 	}
 
 });
