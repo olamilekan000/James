@@ -17,8 +17,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var description = {}
 
 app.post('/webhook', (req, res) => {
-	if(req.body.queryResult.parameters["states"]){
-		let state = req.body.queryResult.parameters["states"];
+
+	if(req.body.queryResult.displayName === "getTheWeather"){
+		
+		if (req.body.queryResult.parameters["states"] != "") {
+
+			let state = req.body.queryResult.parameters["states"];
+		}else if (req.body.queryResult.parameters["geo-city"] != "") {
+
+			let state = req.body.queryResult.parameters["geo-city"];
+		}else{
+			let state = req.body.queryResult.parameters["geo-country"];
+		}
+		//fires get state function
 		getState(state).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
@@ -27,30 +38,10 @@ app.post('/webhook', (req, res) => {
 					}
 				}]
 			})
-		});
-	}else if(req.body.queryResult.parameters["geo-city"]){
-		let state = req.body.queryResult.parameters["geo-city"];
-		getState(state).then(() => {
-			res.json({
-				"fulfillmentMessages": [{
-					"text":{
-						"text": [description]
-					}
-				}]
-			})
-		});		
-	}else if(req.body.queryResult.parameters["geo-country"]){
-		let state = req.body.queryResult.parameters["geo-country"];
-		getState(state).then(() => {
-			res.json({
-				"fulfillmentMessages": [{
-					"text":{
-						"text": [description]
-					}
-				}]
-			})
-		});			
-	}else if (req.body.queryResult.parameters["history-of-ifrs"]) {
+		});	
+	}
+
+	if (req.body.queryResult.parameters["history-of-ifrs"]) {
 		let history = req.body.queryResult.parameters["history-of-ifrs"];
 		res.json({
 			"fulfillmentMessages": [{
