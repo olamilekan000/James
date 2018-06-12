@@ -19,8 +19,8 @@ var description = {}
 app.post('/webhook', (req, res) => {
 
 
-	if(req.body.queryResult.displayName === "getTheWeather"){
-		
+	if(req.body.queryResult.intent.displayName === "getTheWeather"){
+
 		let state;
 
 		if (req.body.queryResult.parameters["states"]) {
@@ -50,8 +50,7 @@ app.post('/webhook', (req, res) => {
 		});	
 	}
 
-	if (req.body.queryResult.parameters["history-of-ifrs"]) {
-		let history = req.body.queryResult.parameters["history-of-ifrs"];
+	if (req.body.queryResult.intent.displayName === "History of IFRS") {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
@@ -93,7 +92,7 @@ app.post('/webhook', (req, res) => {
 						}
 				}]
 			})
-	}else if (req.body.queryResult.parameters["IFRS1"] === "measurement IFRS 1") {
+	}else if (req.body.queryResult.intent.displayName === "IFRS1 - measurement") {
 		res.json({
 			"fulfillmentMessages": [
 				{
