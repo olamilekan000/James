@@ -15,14 +15,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var description = {}
-var state;
-
 
 app.post('/webhook', (req, res) => {
 
 
 	if(req.body.queryResult.displayName === "getTheWeather"){
 		
+		let state;
+
 		if (req.body.queryResult.parameters["states"]) {
 
 			state = req.body.queryResult.parameters["states"];
