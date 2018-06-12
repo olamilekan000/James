@@ -15,24 +15,28 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var description = {}
+var state;
 
 
 app.post('/webhook', (req, res) => {
 
-	if (req.body.queryResult.parameters["states"]) {
-
-			let state = req.body.queryResult.parameters["states"];
-
-	}else if (req.body.queryResult.parameters["geo-city"]) {
-
-			let state = req.body.queryResult.parameters["geo-city"];
-
-	}else if(req.body.queryResult.parameters["geo-country"]) {
-
-			let state = req.body.queryResult.parameters["geo-country"];
-	}
 
 	if(req.body.queryResult.displayName === "getTheWeather"){
+		
+		if (req.body.queryResult.parameters["states"]) {
+
+			state = req.body.queryResult.parameters["states"];
+
+		}
+		if (req.body.queryResult.parameters["geo-city"]) {
+
+			state = req.body.queryResult.parameters["geo-city"];
+
+		}
+		if(req.body.queryResult.parameters["geo-country"]) {
+
+			state = req.body.queryResult.parameters["geo-country"];
+		}
 
 		//fires get state function
 		getState(state).then(() => {
