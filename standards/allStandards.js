@@ -13,10 +13,17 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Read more...',
+									'text': 'Objective of IFRS 1',
 	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs1'
-								}
-							]
+								},
+								{
+									'text': 'Measurement of IFRS 1',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs1'
+								},
+								{
+									'text': 'Disclosure of IFRS 1',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs1'
+								}							]
 						}
 
 					},
@@ -27,10 +34,17 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Read more...',
+									'text': 'Objective of IFRS 2',
 	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs2'
-								}
-							]
+								},
+								{
+									'text': 'Measurement of IFRS 2',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs2'
+								},
+								{
+									'text': 'Disclosure of IFRS 2',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs2'
+								}							]
 						}
 
 					},
@@ -41,12 +55,167 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Read more...',
+									'text': 'Objective of IFRS 3',
 	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
 								}
 							]
 						}
-					}
+					},
+					{
+						"card":{
+							"title": "IFRS 4 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					},
+					{
+						"card":{
+							"title": "IFRS 5 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					},
+					{
+						"card":{
+							"title": "IFRS 6 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					},
+					{
+						"card":{
+							"title": "IFRS 7 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					},
+					{
+						"card":{
+							"title": "IFRS 8 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					},
+					{
+						"card":{
+							"title": "IFRS 9 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					},
+					{
+						"card":{
+							"title": "IFRS 10 — Business Combinations",
+							"subtitle": "IFRS 3 Business Combinations outlines the accounting when an acquirer obtains control of a business (e.g. an acquisition or merger). Such business combinations are accounted for using the 'acquisition method', which generally requires assets acquired and liabilities assumed to be measured at their fair values at the acquisition date. A revised version of IFRS 3 was issued in January 2008 and applies to business combinations occurring in an entity's first annual period beginning on or after 1 July 2009.",
+							"imageUri": textz.imgeUri,
+							"buttons":[
+								{
+									'text': 'Objective of IFRS 3',
+	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Measurement of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								},
+								{
+									'text': 'Disclosure of IFRS 3',
+									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
+								}
+							]
+						}
+					}																																				
 				]
 			}
 		)

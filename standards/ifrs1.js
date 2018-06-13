@@ -8,7 +8,8 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": textz.ifrsHistory,
 					  "quickReplies": [
-					    "ifrs 1"
+					    "ifrs 1",
+					    "All standards"
 					  ]
 				}
 			}]
