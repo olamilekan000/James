@@ -7,7 +7,7 @@ const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
 
 //STANDARDS
-const ifrsWebHook = require('./standards/ifrs1');
+const ifrs1WebHook = require('./standards/ifrs1');
 const wholeStandards = require('./standards/allStandards');
 
 //utility
@@ -21,15 +21,15 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+var description = {}
 
 app.post('/webhook', (req, res) => {
 
-
-	getTheWeather(req, res);
-
-	ifrsWebHook(req, res);
-
+	//fires the fuction for the weather webhook
+	getTheWeather(req, res, description);
+	//fires the fuction for the All standards webhook
+	ifrs1WebHook(req, res);
+	//fires the fuction for the IFRS 1 webhook
 	wholeStandards(req, res);
 
 });
