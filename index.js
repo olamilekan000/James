@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const request = require('request');
 const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
