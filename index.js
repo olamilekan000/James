@@ -8,6 +8,7 @@ const {Card, Suggestion} = require('dialogflow-fulfillment');
 //STANDARDS
 const ifrs1WebHook = require('./standards/ifrs1');
 const wholeStandards = require('./standards/allStandards');
+const allStandardsIAS = require('./standards/allStandardsIas');
 
 //utility
 const getTheWeather = require('./utility/getWeather');
