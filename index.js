@@ -6,13 +6,16 @@ const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
 
+//STANDARDS
 const ifrsWebHook = require('./standards/ifrs1');
+const wholeStandards = require('./standards/allStandards');
 
 //utility
 const getTheWeather = require('./utility/getWeather');
 
 const app = express();
 
+//set view engine to EJS
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
@@ -27,6 +30,7 @@ app.post('/webhook', (req, res) => {
 
 	ifrsWebHook(req, res);
 
+	wholeStandards(req, res);
 
 });
 

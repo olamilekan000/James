@@ -81,7 +81,7 @@ module.exports = (req, res) => {
 					"card":{
 						"title": "IFRS 1",
 						"subtitle": "IFRS 1 First-time Adoption of International Financial Reporting Standards sets out the procedures that an entity must follow when it adopts IFRSs for the first time as the basis for preparing its general purpose financial statements.",
-						"imageUri": "https://www.secto.fi/wp-content/uploads/IFRS-2-480x320.jpg",
+						"imageUri": textz.imgeUri,
 						"buttons":[
 							{
 								'text': 'Read more...',
