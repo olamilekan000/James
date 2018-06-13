@@ -10,7 +10,7 @@ const texts = require('./texts');
 const ifrsWebHook = require('./standards/ifrs1');
 
 //utility
-const getWeather = require('./utility/getWeather');
+const getTheWeather = require('./utility/getWeather');
 
 const app = express();
 
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/webhook', (req, res) => {
 
 
-	getWeather(req, res);
+	getTheWeather(req, res);
 
 	ifrsWebHook(req, res);
 

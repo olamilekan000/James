@@ -1,7 +1,7 @@
+
+var description = {}
+
 module.exports = (req, res) => {
-
-	var description = {}
-
 
 	if(req.body.queryResult.intent.displayName === "getTheWeather"){
 
