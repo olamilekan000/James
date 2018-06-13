@@ -35,7 +35,7 @@ module.exports = (req, res) => {
 	}
 }
 
-//api function
+//weather api function
 var getState = (state) => {
 		return new Promise((resolve, reject) => {
 			const apiKey = '1545ad0038b38ead324bfab9e11bb464';
