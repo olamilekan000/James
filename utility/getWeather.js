@@ -33,8 +33,10 @@ module.exports = (req, res) => {
 			})
 		});	
 	}
+}
 
-	var getState = (state) => {
+//api function
+var getState = (state) => {
 		return new Promise((resolve, reject) => {
 			const apiKey = '1545ad0038b38ead324bfab9e11bb464';
 			const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
@@ -53,5 +55,3 @@ module.exports = (req, res) => {
 			});
 		});
 	}
-
-}
