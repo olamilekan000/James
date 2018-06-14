@@ -320,7 +320,7 @@ module.exports = (req, res) => {
 								}
 							]
 						}
-					// },
+					}
 					// 					{
 					// 	"card":{
 					// 		"title": "IFRS 16 — Leases",
