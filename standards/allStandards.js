@@ -258,27 +258,27 @@ module.exports = (req, res) => {
 							]
 						}
 					},
-					{
-						"card":{
-							"title": "IFRS 13 — Fair Value Measurement",
-							"subtitle": "IFRS 13 was originally issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
-							"imageUri": textz.imgeUri,
-							"buttons":[
-								{
-									'text': 'Objective of IFRS 13',
-	      							'postback': 'Objective of IFRS 13'
-								},
-								{
-									'text': 'Measurement of IFRS 13',
-									'postback': 'Measurement of IFRS 13'
-								},
-								{
-									'text': 'Disclosure of IFRS 13',
-									'postback': 'Disclosure of IFRS 13'
-								}
-							]
-						}
-					},
+					// {
+					// 	"card":{
+					// 		"title": "IFRS 13 — Fair Value Measurement",
+					// 		"subtitle": "IFRS 13 was originally issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+					// 		"imageUri": textz.imgeUri,
+					// 		"buttons":[
+					// 			{
+					// 				'text': 'Objective of IFRS 13',
+	    //   							'postback': 'Objective of IFRS 13'
+					// 			},
+					// 			{
+					// 				'text': 'Measurement of IFRS 13',
+					// 				'postback': 'Measurement of IFRS 13'
+					// 			},
+					// 			{
+					// 				'text': 'Disclosure of IFRS 13',
+					// 				'postback': 'Disclosure of IFRS 13'
+					// 			}
+					// 		]
+					// 	}
+					// },
 					// {
 					// 	"card":{
 					// 		"title": "IFRS 14 — Regulatory Deferral Accounts",
