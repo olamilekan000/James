@@ -237,27 +237,27 @@ module.exports = (req, res) => {
 							]
 						}
 					},
-					{//START FROM HERE
-						"card":{
-							"title": "IFRS 12 — Disclosure of Interests in Other Entities",
-							"subtitle": "IFRS 12 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
-							"imageUri": textz.imgeUri,
-							"buttons":[
-								{
-									'text': 'Objective of IFRS 12',
-	      							'postback': 'Objective of IFRS 12'
-								},
-								{
-									'text': 'Measurement of IFRS 12',
-									'postback': 'Measurement of IFRS 12'
-								},
-								{
-									'text': 'Disclosure of IFRS 12',
-									'postback': 'Disclosure of IFRS 12'
-								}
-							]
-						}
-					},
+					// {//START FROM HERE
+					// 	"card":{
+					// 		"title": "IFRS 12 — Disclosure of Interests in Other Entities",
+					// 		"subtitle": "IFRS 12 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+					// 		"imageUri": textz.imgeUri,
+					// 		"buttons":[
+					// 			{
+					// 				'text': 'Objective of IFRS 12',
+	    //   							'postback': 'Objective of IFRS 12'
+					// 			},
+					// 			{
+					// 				'text': 'Measurement of IFRS 12',
+					// 				'postback': 'Measurement of IFRS 12'
+					// 			},
+					// 			{
+					// 				'text': 'Disclosure of IFRS 12',
+					// 				'postback': 'Disclosure of IFRS 12'
+					// 			}
+					// 		]
+					// 	}
+					// },
 					// {
 					// 	"card":{
 					// 		"title": "IFRS 13 — Fair Value Measurement",
