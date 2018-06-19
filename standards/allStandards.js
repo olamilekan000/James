@@ -216,27 +216,27 @@ module.exports = (req, res) => {
 							]
 						}
 					},
-					{
-						"card":{
-							"title": "IFRS 11 — Joint Arrangements",
-							"subtitle": "IFRS 11 was issued in May 2011 and applies to annual reporting periods beginning on or after 1 January 2013.",
-							"imageUri": textz.imgeUri,
-							"buttons":[
-								{
-									'text': 'Objective of IFRS 11',
-	      							'postback': 'Objective of IFRS 11'
-								},
-								{
-									'text': 'Measurement of IFRS 11',
-									'postback': 'Measurement of IFRS 11'
-								},
-								{
-									'text': 'Disclosure of IFRS 11',
-									'postback': 'Disclosure of IFRS 11'
-								}
-							]
-						}
-					},
+					// {
+					// 	"card":{
+					// 		"title": "IFRS 11 — Joint Arrangements",
+					// 		"subtitle": "IFRS 11 was issued in May 2011 and applies to annual reporting periods beginning on or after 1 January 2013.",
+					// 		"imageUri": textz.imgeUri,
+					// 		"buttons":[
+					// 			{
+					// 				'text': 'Objective of IFRS 11',
+	    //   							'postback': 'Objective of IFRS 11'
+					// 			},
+					// 			{
+					// 				'text': 'Measurement of IFRS 11',
+					// 				'postback': 'Measurement of IFRS 11'
+					// 			},
+					// 			{
+					// 				'text': 'Disclosure of IFRS 11',
+					// 				'postback': 'Disclosure of IFRS 11'
+					// 			}
+					// 		]
+					// 	}
+					// },
 					// {//START FROM HERE
 					// 	"card":{
 					// 		"title": "IFRS 12 — Disclosure of Interests in Other Entities",
