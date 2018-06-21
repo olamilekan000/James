@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
-require('dotenv').load();
+require('dotenv').config();
 
 //STANDARDS
 const ifrs1WebHook = require('./standards/ifrs1');
