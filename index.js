@@ -4,11 +4,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
+require('dotenv').config();
 
 //STANDARDS
 const ifrs1WebHook = require('./standards/ifrs1');
 const wholeStandards = require('./standards/allStandards');
 const allStandardsIAS = require('./standards/allStandardsIas');
+const allStandardsIFRSCont = require('./standards/allStndardsIfrsContd');
 
 //utility
 const getTheWeather = require('./utility/getWeather');
@@ -27,10 +29,12 @@ app.post('/webhook', (req, res) => {
 
 	//fires the fuction for the weather webhook
 	getTheWeather(req, res, description);
-	//fires the fuction for the All standards webhook
-	ifrs1WebHook(req, res);
 	//fires the fuction for the IFRS 1 webhook
+	ifrs1WebHook(req, res);
+	//fires the fuction for the All standards webhook
 	wholeStandards(req, res);
+	//fires the fuction for the remaining IFRS standards
+	allStandardsIFRSCont(req, res);
 
 });
 
