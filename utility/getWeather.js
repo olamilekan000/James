@@ -1,4 +1,5 @@
 const request = require('request');
+require('dotenv').config();
 
 module.exports = (req, res) => {
 
@@ -37,7 +38,7 @@ module.exports = (req, res) => {
 //weather api function
 var getState = (state) => {
 		return new Promise((resolve, reject) => {
-			const apiKey = process.env.WEATHER_SECRET_KEY
+			const apiKey = process.env.WEATHER_SECRET_KEY;
 			const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
 
 			request(url, (err, response, body) => {
@@ -54,3 +55,5 @@ var getState = (state) => {
 			});
 		});
 	}
+
+console.log(process.env.WEATHER_SECRET_KEY)
