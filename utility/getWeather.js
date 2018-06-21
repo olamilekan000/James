@@ -1,5 +1,4 @@
 const request = require('request');
-require('dotenv').config();
 
 module.exports = (req, res) => {
 
