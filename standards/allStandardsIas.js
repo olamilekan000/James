@@ -214,8 +214,19 @@ module.exports = (req, res) => {
 							}
 						]
 					}
-				}
-													
+				},
+				{
+					"card":{
+						"title": "IFRS",
+						"subtitle": "Click here for more IFRS standards",
+						"imageUri": textz.imgeUri,
+						"buttons":[
+							{
+								'text': 'More'
+							}
+						]
+					}
+				}													
 			]
 		});
 
