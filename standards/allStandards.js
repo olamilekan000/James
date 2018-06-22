@@ -197,21 +197,13 @@ module.exports = (req, res) => {
 					},
 					{
 						"card":{
-							"title": "IFRS 10 — Consolidated Financial Statements",
-							"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+							"title": "IFRS",
+							"subtitle": "",
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 10',
-	      							'postback': 'Objective of IFRS 10'
-								},
-								{
-									'text': 'Measurement of IFRS 10',
-									'postback': 'Measurement of IFRS 10'
-								},
-								{
-									'text': 'Disclosure of IFRS 10',
-									'postback': 'Disclosure of IFRS 10'
+									'text': 'More',
+	      							'postback': 'More of IFRS standards'
 								}
 							]
 						}
