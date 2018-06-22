@@ -11,6 +11,7 @@ const ifrs1WebHook = require('./standards/ifrs1');
 const wholeStandards = require('./standards/allStandards');
 const allStandardsIAS = require('./standards/allStandardsIas');
 const allStandardsIFRSCont = require('./standards/allStndardsIfrsContd');
+const allStandardsIas = require('./standards/allStandardsIas');
 
 //utility
 const getTheWeather = require('./utility/getWeather');
@@ -35,6 +36,8 @@ app.post('/webhook', (req, res) => {
 	wholeStandards(req, res);
 	//fires the fuction for the remaining IFRS standards
 	allStandardsIFRSCont(req, res);
+	//fires the fuction for the remaining IAS standards
+	allStandardsIas(req, res)
 
 });
 
