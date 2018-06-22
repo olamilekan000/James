@@ -1,7 +1,7 @@
 const textz = require('../texts');
 
 module.exports = (req, res) => {
-	if( req.body.queryResult.intent.displayName === "All standarddds" ){
+	if( req.body.queryResult.intent.displayName === "All standards contd" ){
 
 		res.json({
 			"fulfillmentMessages": [
