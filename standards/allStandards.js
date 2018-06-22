@@ -202,7 +202,7 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'More',
+									'text': 'More of IFRS standards',
 	      							'postback': 'More of IFRS standards'
 								}
 							]
