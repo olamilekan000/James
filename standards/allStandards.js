@@ -23,7 +23,8 @@ module.exports = (req, res) => {
 								{
 									'text': 'Disclosure of IFRS 1',
 									'postback': 'Disclosure of IFRS 1'
-								}							]
+								}							
+							]
 						}
 
 					},
