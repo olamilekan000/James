@@ -6,7 +6,7 @@ module.exports = (req, res) => {
 	if(req.body.queryResult.intent.displayName === "getTheWeather"){
 
 		let state;
-		const apiKey = process.env.WEATHERSECRET_KEY;
+		let apiKey = process.env.WEATHERSECRET_KEY;
 
 		if (req.body.queryResult.parameters["states"]) {
 			state = req.body.queryResult.parameters["states"];
@@ -34,7 +34,7 @@ module.exports = (req, res) => {
 //weather api function
 var getState = (state, apiKey) => {
 		return new Promise((resolve, reject) => {
-			console.log(process.env.WEATHERSECRET_KEY)
+			// console.log(process.env.WEATHERSECRET_KEY)
 			
 			const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
 			
@@ -56,6 +56,6 @@ var getState = (state, apiKey) => {
 		});
 	}
 
-getState('Abuja')
+getState('Abuja', process.env.WEATHERSECRET_KEY)
 
 

@@ -2,7 +2,7 @@ const textz = require('../texts');
 
 module.exports = (req, res) => {
 
-	if( req.body.queryResult.intent.displayName === "All standards" ){
+	if( req.body.queryResult.intent.displayName === "All standards IFRS" ){
 		res.json(
 			{
 				"fulfillmentMessages": [
