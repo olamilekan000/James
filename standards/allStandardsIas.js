@@ -196,8 +196,8 @@ module.exports = (req, res) => {
 				},
 				{
 					"card":{
-						"title": "IFRS",
-						"subtitle": "Click here for more IFRS standards",
+						"title": "IAS",
+						"subtitle": "Click here for more IAS standards",
 						"imageUri": textz.imgeUri,
 						"buttons":[
 							{
