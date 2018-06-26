@@ -34,12 +34,12 @@ app.post('/webhook', (req, res) => {
 	getTheWeather(req, res, description);
 	//fires the fuction for the IFRS 1 webhook
 	ifrs1WebHook(req, res);
-	//fires the fuction for the All standards webhook
+	//fires the fuction for the All standards webhook (IFRS).
 	wholeStandards(req, res);
 	//fires the fuction for the remaining IFRS standards
 	allStandardsIFRSCont(req, res);
 	//fires the fuction for the remaining IAS standards
-	allStandardsIas(req, res)
+	allStandardsIAS(req, res);
 
 });
 
