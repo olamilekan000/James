@@ -38,8 +38,10 @@ app.post('/webhook', (req, res) => {
 	wholeStandards(req, res);
 	//fires the fuction for the remaining IFRS standards
 	allStandardsIFRSCont(req, res);
-	//fires the fuction for the remaining IAS standards
+	//fires the fuction for IAS standards
 	allStandardsIAS(req, res);
+	//fires the fuction for the remaining IAS standards
+	allStandardsIAScont(req, res);
 
 });
 
