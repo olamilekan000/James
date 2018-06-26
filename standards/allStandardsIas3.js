@@ -5,7 +5,48 @@ module.exports = (req, res) => {
 
 		res.json({
 			"fulfillmentMessages": [
-
+				{
+					"card":{
+						"title": "IAS 31 — Interests In Joint Ventures",
+						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"imageUri": textz.imgeUri,
+						"buttons":[
+							{
+								'text': 'Objective of IFRS 10',
+      							'postback': 'Objective of IFRS 10'
+							},
+							{
+								'text': 'Measurement of IFRS 10',
+								'postback': 'Measurement of IFRS 10'
+							},
+							{
+								'text': 'Disclosure of IFRS 10',
+								'postback': 'Disclosure of IFRS 10'
+							}
+						]
+					}
+				},	
+				{
+					"card":{
+						"title": "IAS 32 — Financial Instruments: Presentation",
+						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"imageUri": textz.imgeUri,
+						"buttons":[
+							{
+								'text': 'Objective of IFRS 10',
+      							'postback': 'Objective of IFRS 10'
+							},
+							{
+								'text': 'Measurement of IFRS 10',
+								'postback': 'Measurement of IFRS 10'
+							},
+							{
+								'text': 'Disclosure of IFRS 10',
+								'postback': 'Disclosure of IFRS 10'
+							}
+						]
+					}
+				},
 				{
 					"card":{
 						"title": "IAS 33 — Earnings Per Share",

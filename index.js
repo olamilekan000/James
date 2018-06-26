@@ -6,12 +6,14 @@ const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
 require('dotenv').config();
 
-//STANDARDS
+//STANDARDS LIST
+const wholeStandards = require('./standards/allStandards'); //IFRS 1 - 9
+const allStandardsIFRSCont = require('./standards/allStndardsIfrsContd'); //IFRS 10 - 17
+const allStandardsIAS = require('./standards/allStandardsIas'); //IAS 1 - 17
+const allStandardsIAScont = require('./standards/allStandardsIas2'); //IAS 20 - 30
+
+//WEBHOOKS FOR EACH STANDARDS
 const ifrs1WebHook = require('./standards/ifrs1');
-const wholeStandards = require('./standards/allStandards');
-const allStandardsIAS = require('./standards/allStandardsIas');
-const allStandardsIFRSCont = require('./standards/allStndardsIfrsContd');
-const allStandardsIas = require('./standards/allStandardsIas');
 
 //utility
 const getTheWeather = require('./utility/getWeather');
