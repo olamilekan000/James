@@ -33,7 +33,7 @@ module.exports = (req, res) => {
 var getState = (state) => {
 		return new Promise((resolve, reject) => {
 
-			let apiKey = process.env.WEATHERSECRET_KEY;			
+			let apiKey = "1545ad0038b38ead324bfab9e11bb464";	
 			const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
 			console.log(apiKey)
 			request(url, (err, response, body) => {
@@ -54,6 +54,6 @@ var getState = (state) => {
 		});
 	}
 
-// getState('Lagos');
+getState('Lagos');
 
 
