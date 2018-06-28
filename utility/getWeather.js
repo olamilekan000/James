@@ -1,12 +1,11 @@
 const request = require('request');
+require('dotenv').config();
 
 module.exports = (req, res) => {
 
 	if(req.body.queryResult.intent.displayName === "getTheWeather"){
 
 		let state;
-		let apiKey = process.env.WEATHERSECRET_KEY;
-
 		if (req.body.queryResult.parameters["states"]) {
 			state = req.body.queryResult.parameters["states"];
 		}
@@ -18,7 +17,7 @@ module.exports = (req, res) => {
 		}
 
 		//fires get state function
-		getState(state, apiKey).then(() => {
+		getState(state).then(() => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
@@ -31,12 +30,12 @@ module.exports = (req, res) => {
 }
 
 //weather api function
-var getState = (state, apiKey) => {
+var getState = (state) => {
 		return new Promise((resolve, reject) => {
 
-			// let apiKey = process.env.WEATHERSECRET_KEY
+			let apiKey = process.env.WEATHERSECRET_KEY;			
 			const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
-			
+			console.log(apiKey)
 			request(url, (err, response, body) => {
 				if(err) console.log(err)
 
@@ -55,6 +54,6 @@ var getState = (state, apiKey) => {
 		});
 	}
 
-// getState('Abuja', process.env.WEATHERSECRET_KEY)
+// getState('Lagos');
 
 
