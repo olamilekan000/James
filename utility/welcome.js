@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports = (req, res) => {
 	if(req.body.queryResult.intent.displayName === "Default Welcome Intent"){
-		let Uname = ""
+		
 		getName().then(() => {
 			res.json({
 				"fulfillmentMessages": [{
@@ -24,7 +24,7 @@ module.exports = (req, res) => {
 
 var getName = () => {
 		return new Promise((resolve, reject) => {
-
+			let Uname
 			let apiKey = process.env.FB_PAGE_ACCESS_TOKEN;
 			console.log(apiKey)
 			const url = `https://graph.facebook.com/v2.6/me?fields=id,name&access_token=${apiKey}`;
@@ -39,5 +39,6 @@ var getName = () => {
 			
 		});
 	}
+	
 
 // getName();	
