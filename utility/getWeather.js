@@ -5,7 +5,7 @@ module.exports = (req, res) => {
 
 	if(req.body.queryResult.intent.displayName === "getTheWeather"){
 
-		let state;
+		let state = "";
 		if (req.body.queryResult.parameters["states"]) {
 			state = req.body.queryResult.parameters["states"];
 		}
