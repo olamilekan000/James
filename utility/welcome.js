@@ -4,7 +4,7 @@ module.exports = (req, res) => {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": `Hi **{{user_first_name}}**! What are the things you want to hear abou?`,
+					  "title": `Hi {{user_first_name}}! What are the things you want to hear abou?`,
 					  "quickReplies": [
 					    "The History of IFRS",
 					    "Conceptul Framework",
@@ -16,3 +16,13 @@ module.exports = (req, res) => {
 		})
 	}
 }
+
+	// request({
+ // 		url: 'https://graph.facebook.com/v2.6/me/messages',
+	// 	qs: { access_token: process.env.FB_PAGE_ACCESS_TOKEN },
+	// 	method: `POST`,
+	// 	json: {
+	// 		recipient: { id: senderId },
+	// 		message: { text },
+	// 	}
+	// });
