@@ -19,6 +19,7 @@ const ifrs1WebHook = require('./standards/ifrs1');
 
 //utility
 const getTheWeather = require('./utility/getWeather');
+const welcome = require('./utility/welcome');
 
 const app = express();
 
@@ -32,6 +33,7 @@ var description = {}
 
 app.post('/webhook', (req, res) => {
 
+	welcome(req, res); //fires the weather webhook.
 	getTheWeather(req, res, description); //fires the weather webhook.
 	ifrs1WebHook(req, res); //fires the IFRS 1 webhook.
 	wholeStandards(req, res); //fires the All standards webhook (IFRS).
