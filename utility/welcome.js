@@ -24,23 +24,23 @@ module.exports = (req, res) => {
 
 //gets the name of the user
 var getName = () => {
-		return new Promise((resolve, reject) => {
-			let Uname
-			let apiKey = process.env.FB_PAGE_ACCESS_TOKEN;
-			console.log(apiKey)
-			const url = `https://graph.facebook.com/v2.6/me?fields=name&access_token=${apiKey}`;
+	return new Promise((resolve, reject) => {
+	let Uname
+	let apiKey = process.env.FB_PAGE_ACCESS_TOKEN;
+	console.log(apiKey)
+	const url = `https://graph.facebook.com/v2.6/me?fields=name&access_token=${apiKey}`;
 
-			request(url, (err, response, body) => {
-				if(err) console.log(err)
+	request(url, (err, response, body) => {
+		if(err) console.log(err)
 
-				let Uname = JSON.parse(body)
-				let Unewname = Uname.name
-				resolve(Unewname)
-				console.log(Unewname)
-			});
-			
-		});
-	}
+		let Uname = JSON.parse(body)
+		let Unewname = Uname.name
+		resolve(Unewname)
+		console.log(Unewname)
+	});
+
+	});
+}
 
 
-// getName();	
+getName();	
