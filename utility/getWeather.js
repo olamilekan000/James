@@ -16,16 +16,32 @@ module.exports = (req, res) => {
 			state = req.body.queryResult.parameters["geo-country"];
 		}
 
-		//fires get state function
-		getState(state).then(() => {
+		try{
+			//fires get state function
+			getState(state).then(() => {
+				res.json({
+					"fulfillmentMessages": [{
+						"text":{
+							"text": [description]
+						}
+					}]
+				})
+			});	
+		}catch(e){
 			res.json({
 				"fulfillmentMessages": [{
-					"text":{
-						"text": [description]
+					"quickReplies": {
+						  "title": `Something isn't right... Choose a reply to `,
+						  "quickReplies": [
+						    "The History of IFRS",
+						    "Conceptul Framework",
+						    "IAS",
+						    "IFRS"
+						]
 					}
 				}]
-			})
-		});	
+			})			
+		}
 	}
 }
 
@@ -33,7 +49,7 @@ module.exports = (req, res) => {
 var getState = (state) => {
 		return new Promise((resolve, reject) => {
 
-			let apiKey = process.env.WEATHERSECRET_KEY;
+			let apiKey = process.env.WEATHERSECRET_KEyY;
 			const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
 			request(url, (err, response, body) => {
 				if(err) console.log(err)
@@ -53,6 +69,6 @@ var getState = (state) => {
 		});
 	}
 
-getState('Lagos');
+getState('abuja');
 
 
