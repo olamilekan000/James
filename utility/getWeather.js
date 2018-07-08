@@ -53,6 +53,6 @@ var getState = (state) => {
 		});
 	}
 
-getState('Lagos');
+// getState('Lagos');
 
 
