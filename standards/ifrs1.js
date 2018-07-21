@@ -9,7 +9,8 @@ module.exports = (req, res) => {
 					  "title": textz.ifrsHistory,
 					  "quickReplies": [
 					    "IAS",
-					    "IFRS"
+					    "IFRS",
+					    "Home 🏠"
 					]
 				}
 			}]
