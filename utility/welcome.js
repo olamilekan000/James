@@ -8,7 +8,8 @@ module.exports = (req, res) => {
 			res.json({
 				"fulfillmentMessages": [{
 					"quickReplies": {
-						  "title": `Hi What are the things you want to know about? 😃`,
+						  "title": `Hi! I am James, let's have a chat about IFRS? 😃
+						  You can click on the buttons below to save time typing.`,
 						  "quickReplies": [
 						    "The History of IFRS",
 						    "Conceptul Framework",
