@@ -51,10 +51,11 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
-//keeps keroku app awake
+//keeps heroku app awake
 setInterval(function() {
-    http.get("https://ifrshook.herokuapp.com/");
-}, 300000); // every 5 minutes (300000)
+    http.get("http://ifrshook.herokuapp.com/");
+    console.log('visited')
+}, 900000) // every 15 minutes (900000)
 
 
 const PORT = 5100;
