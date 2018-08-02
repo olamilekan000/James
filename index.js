@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
+const http = require('http');
 require('dotenv').config();
 
 //STANDARD LIST MODULE
@@ -49,6 +50,12 @@ app.post('/webhook', (req, res) => {
 app.get('/', (req, res) => {
 	res.render('index');
 });
+
+//keeps keroku app awake
+setInterval(function() {
+    http.get("https://ifrshook.herokuapp.com/");
+}, 300000); // every 5 minutes (300000)
+
 
 const PORT = 5100;
 
