@@ -22,7 +22,7 @@ module.exports = (req, res) => {
 						"quickReplies": {
 							"title": `IFRS 1 First-time Adoption of International Financial Reporting Standards sets out the procedures that an entity must follow when it adopts IFRSs for the first time as the basis for preparing its general purpose financial statements. 
 							The IFRS grants limited exemptions from the general requirement to comply with each IFRS effective at the end of its first IFRS reporting period. 
-							A restructured version of IFRS 1 was issued in November 2008 and applies if an entity's first IFRS financial statements are for a period beginning on or after 1 July 2009."`
+							A restructured version of IFRS 1 was issued in November 2008 and applies if an entity's first IFRS financial statements are for a period beginning on or after 1 July 2009."`,
 							"quickReplies": [
 								"Objective of IFRS 1",
 								"measurement of IFRS 1",
@@ -36,7 +36,7 @@ module.exports = (req, res) => {
 						"quickReplies": {
 							"title": `IFRS 1 First-time Adoption of International Financial Reporting Standards sets out the procedures that an entity must follow when it adopts IFRSs for the first time as the basis for preparing its general purpose financial statements. 
 							The IFRS grants limited exemptions from the general requirement to comply with each IFRS effective at the end of its first IFRS reporting period. 
-							A restructured version of IFRS 1 was issued in November 2008 and applies if an entity's first IFRS financial statements are for a period beginning on or after 1 July 2009."`
+							A restructured version of IFRS 1 was issued in November 2008 and applies if an entity's first IFRS financial statements are for a period beginning on or after 1 July 2009."`,
 							"quickReplies": [
 								"Objective of IFRS 1"
 							]
