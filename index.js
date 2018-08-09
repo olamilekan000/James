@@ -55,7 +55,6 @@ app.get('/', (req, res) => {
 //keeps heroku app awake
 // setInterval(function() {
 //     http.get("http://ifrshook.herokuapp.com/");
-//     console.log('visited')
 // }, 900000) // every 15 minutes (900000)
 
 
