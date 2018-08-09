@@ -5,7 +5,9 @@ module.exports = (req, res) => {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": `Hi! I am James, let's talk about IFRS? 😃.`,
+					  "title": `Hi! I am James, let's talk about IFRS? 😃.
+					  Click on the buttons below to begin a conversation
+					  `,
 					  "quickReplies": [
 					    "The History of IFRS",
 					    "Conceptul Framework",
@@ -14,7 +16,7 @@ module.exports = (req, res) => {
 					]
 				},
 				"quickReplies": {
-					  "title": `Click on the buttons below to begin a conversation`,
+					  "title": `Hope your good?`,
 					  "quickReplies": [
 					    "The History of IFRS",
 					    "Conceptul Framework",
