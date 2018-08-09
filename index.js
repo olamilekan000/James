@@ -47,10 +47,6 @@ app.post('/webhook', (req, res) => {
 
 });
 
-function(){
-	
-}
-
 //renders web demo
 app.get('/', (req, res) => {
 	res.render('index');
