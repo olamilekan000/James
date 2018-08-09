@@ -30,6 +30,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Description to be sent from weather webhook
 var description = {}
 
 app.post('/webhook', (req, res) => {
@@ -46,16 +47,20 @@ app.post('/webhook', (req, res) => {
 
 });
 
+function(){
+	
+}
+
 //renders web demo
 app.get('/', (req, res) => {
 	res.render('index');
 });
 
 //keeps heroku app awake
-setInterval(function() {
-    http.get("http://ifrshook.herokuapp.com/");
-    console.log('visited')
-}, 900000) // every 15 minutes (900000)
+// setInterval(function() {
+//     http.get("http://ifrshook.herokuapp.com/");
+//     console.log('visited')
+// }, 900000) // every 15 minutes (900000)
 
 
 const PORT = 5100;

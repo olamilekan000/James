@@ -42,7 +42,6 @@ var getState = (state) => {
 				if (wether.cod == 200 ) {
 					description = "it's " + wether.weather[0].description + " in " + wether.name;
 					resolve(description);
-					console.log(description)
 				}else if(wether.cod == 400 ){
 					description = "city not found";
 					resolve(description);
