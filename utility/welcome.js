@@ -7,8 +7,8 @@ module.exports = (req, res) => {
 			{
 				"quickReplies": {
 					  "title": `Hi! I am James, let's talk about IFRS? 😃. 
-					  Click on the buttons below to begin a conversation`,
-					  
+Click on the buttons below to begin a conversation`,
+
 					  "quickReplies": [
 					    "The History of IFRS",
 					    "Conceptul Framework",
