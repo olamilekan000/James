@@ -21,6 +21,7 @@ const ifrs1WebHook = require('./standards/ifrs1');
 //UTILITY MODULE
 const getTheWeather = require('./utility/getWeather');
 const welcome = require('./utility/welcome');
+const emoji = require('./utility/emoji');
 
 const app = express();
 
@@ -35,8 +36,11 @@ var description = {}
 
 app.post('/webhook', (req, res) => {
 
+	//utilities
 	welcome(req, res); //fires the weather webhook.
 	getTheWeather(req, res, description); //fires the weather webhook.
+	emoji(req, res);
+	//others
 	ifrs1WebHook(req, res); //fires the IFRS 1 webhook.
 	wholeStandards(req, res); //fires the All standards webhook (IFRS).
 	allStandardsIFRSCont(req, res); //fires the remaining IFRS standards webhook.
@@ -44,6 +48,7 @@ app.post('/webhook', (req, res) => {
 	allStandardsIAScont(req, res); //fires the remaining IAS standards webhook.
 	allStandardsIAScont2(req, res); //fires the remaining IAS standards webhook.
 	allStandardsIAScont3(req, res); //fires the remaining IAS standards webhook.
+
 
 });
 

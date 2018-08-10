@@ -21,7 +21,7 @@ module.exports = (req, res) => {
 			res.json({
 				"fulfillmentMessages": [{
 					"text":{
-						"text": [description]
+						"text": [description, "😊"]
 					}
 				}]
 			})
