@@ -42,5 +42,10 @@ IAS 1 requires an entity whose financial statements comply with IFRSs to make an
 Inappropriate accounting policies are not rectified either by disclosure of the accounting policies used or by notes or explanatory material. [IAS 1.18]
 
 IAS 1 acknowledges that, in extremely rare circumstances, management may conclude that compliance with an IFRS requirement would be so misleading that it would conflict with the objective of financial statements set out in the Framework. In such a case, the entity is required to depart from the IFRS requirement, with detailed disclosure of the nature, reasons, and impact of the departure. [IAS 1.19-21]
+`,
+	Going-concern:`
+The Conceptual Framework notes that financial statements are normally prepared assuming the entity is a going concern and will continue in operation for the foreseeable future. [Conceptual Framework, paragraph 4.1]
+
+IAS 1 requires management to make an assessment of an entity's ability to continue as a going concern.  If management has significant concerns about the entity's ability to continue as a going concern, the uncertainties must be disclosed. If management concludes that the entity is not a going concern, the financial statements should not be prepared on a going concern basis, in which case IAS 1 requires a series of disclosures. [IAS 1.25]
 	`
 }
