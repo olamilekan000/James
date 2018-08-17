@@ -53,5 +53,128 @@ IAS 1 requires that an entity prepare its financial statements, except for cash 
 `,
 	Consistency_of_presentation:`
 The presentation and classification of items in the financial statements shall be retained from one period to the next unless a change is justified either by a change in circumstances or a requirement of a new IFRS. [IAS 1.45]
-	`
+`,
+	Materiality_and_aggregation:`
+Each material class of similar items must be presented separately in the financial statements. Dissimilar items may be aggregated only if the are individually immaterial. [IAS 1.29]
+
+However, information should not be obscured by aggregating or by providing immaterial information, materiality considerations apply to the all parts of the financial statements, and even when a standard requires a specific disclosure, materiality considerations do apply. [IAS 1.30A-31]*
+
+* Added by Disclosure Initiative (Amendments to IAS 1), effective 1 January 2016.
+`,
+	Offsetting:`
+Assets and liabilities, and income and expenses, may not be offset unless required or permitted by an IFRS. [IAS 1.32]
+`,
+	comparative_info:`
+IAS 1 requires that comparative information to be disclosed in respect of the previous period for all amounts reported in the financial statements, both on the face of the financial statements and in the notes, unless another Standard requires otherwise. Comparative information is provided for narrative and descriptive where it is relevant to understanding the financial statements of the current period. [IAS 1.38]
+
+An entity is required to present at least two of each of the following primary financial statements: [IAS 1.38A]
+
+statement of financial position* statement of profit or loss and other comprehensive income separate statements of profit or loss (where presented) statement of cash flows statement of changes in equity related notes for each of the above items.
+* A third statement of financial position is required to be presented if the entity retrospectively applies an accounting policy, restates items, or reclassifies items, and those adjustments had a material effect on the information in the statement of financial position at the beginning of the comparative period. [IAS 1.40A]
+
+Where comparative amounts are changed or reclassified, various disclosures are required. [IAS 1.41]
+`,
+Structure_and_content_of_financial_statements: `
+IAS 1 requires an entity to clearly identify: [IAS 1.49-51]
+
+(i) - the financial statements, which must be distinguished from other information in a published document 
+(ii) - each financial statement and the notes to the financial statements.
+In addition, the following information must be displayed prominently, and repeated as necessary: [IAS 1.51]
+(i) - the name of the reporting entity and any change in the name 
+(ii) - whether the financial statements are a group of entities or an individual entity 
+(iii) - information about the reporting period 
+(iv) - the presentation currency (as defined by IAS 21 The Effects of Changes in Foreign Exchange Rates) 
+(v) - the level of rounding used (e.g. thousands, millions).
+`,
+Reporting_period:`
+There is a presumption that financial statements will be prepared at least annually. If the annual reporting period changes and financial statements are prepared for a different period, the entity must disclose the reason for the change and state that amounts are not entirely comparable. [IAS 1.36]
+`,
+Current_and_non_current_classification:`
+An entity must normally present a classified statement of financial position, separating current and non-current assets and liabilities, unless presentation based on liquidity provides information that is reliable. [IAS 1.60] In either case, if an asset (liability) category combines amounts that will be received (settled) after 12 months with assets (liabilities) that will be received (settled) within 12 months, note disclosure is required that separates the longer-term amounts from the 12-month amounts. [IAS 1.61]
+
+Current assetsare assets that are: [IAS 1.66]
+
+(i) - expected to be realised in the entity's normal operating cycle 
+(ii) - held primarily for the purpose of trading 
+(iii) - expected to be realised within 12 months after the reporting period 
+(iv) - cash and cash equivalents (unless restricted).
+All other assets are non-current. [IAS 1.66]
+Current liabilitiesare those: [IAS 1.69]
+
+(i) - expected to be settled within the entity's normal operating cycle 
+(ii) - held for purpose of trading 
+(iii) - due to be settled within 12 months 
+(iv) - for which the entity does not have an unconditional right to defer settlement beyond 12 months (settlement by the issue of equity instruments does not impact classification).
+Other liabilities are non-current.
+When a long-term debt is expected to be refinanced under an existing loan facility, and the entity has the discretion to do so, the debt is classified as non-current, even if the liability would otherwise be due within 12 months. [IAS 1.73]
+
+If a liability has become payable on demand because an entity has breached an undertaking under a long-term loan agreement on or before the reporting date, the liability is current, even if the lender has agreed, after the reporting date and before the authorisation of the financial statements for issue, not to demand payment as a consequence of the breach. [IAS 1.74] However, the liability is classified as non-current if the lender agreed by the reporting date to provide a period of grace ending at least 12 months after the end of the reporting period, within which the entity can rectify the breach and during which the lender cannot demand immediate repayment. [IAS 1.75]
+`,
+Line_items:`
+The line items to be included on the face of the statement of financial position are: [IAS 1.54]
+
+(a)	property, plant and equipment
+(b)	investment property
+(c)	intangible assets
+(d)	financial assets (excluding amounts shown under (e), (h), and (i))
+(e)	investments accounted for using the equity method
+(f)	biological assets
+(g)	inventories
+(h)	trade and other receivables
+(i)	cash and cash equivalents
+(j)	assets held for sale
+(k)	trade and other payables
+(l)	provisions
+(m)	financial liabilities (excluding amounts shown under (k) and (l))
+(n)	current tax liabilities and current tax assets, as defined in IAS 12
+(o)	deferred tax liabilities and deferred tax assets, as defined in IAS 12
+(p)	liabilities included in disposal groups
+(q)	non-controlling interests, presented within equity
+(r)	issued capital and reserves attributable to owners of the parent.
+Additional line items, headings and subtotals may be needed to fairly present the entity's financial position. [IAS 1.55] 
+
+When an entity presents subtotals, those subtotals shall be comprised of line items made up of amounts recognised and measured in accordance with IFRS; be presented and labelled in a clear and understandable manner; be consistent from period to period; and not be displayed with more prominence than the required subtotals and totals. [IAS 1.55A]*
+* Added by Disclosure Initiative (Amendments to IAS 1), effective 1 January 2016.
+
+Further sub-classifications of line items presented are made in the statement or in the notes, for example: [IAS 1.77-78]:
+
+(i) - classes of property, plant and equipment 
+(ii) - disaggregation of receivables 
+(iii) - disaggregation of inventories in accordance with IAS 2 Inventories 
+(iv) - disaggregation of provisions into employee benefits and other items 
+(v) - classes of equity and reserves.
+`,
+Format_of_statement:`
+IAS 1 does not prescribe the format of the statement of financial position. Assets can be presented current then non-current, or vice versa, and liabilities and equity can be presented current then non-current then equity, or vice versa. A net asset presentation (assets minus liabilities) is allowed. The long-term financing approach used in UK and elsewhere – fixed assets + current assets - short term payables = long-term debt plus equity – is also acceptable.
+`,
+Share_capital_and_reserves:`
+Regarding issued share capital and reserves, the following disclosures are required: [IAS 1.79]
+
+(i) - numbers of shares authorised, issued and fully paid, and issued but not fully paid 
+(ii) - par value (or that shares do not have a par value) 
+(iii) - a reconciliation of the number of shares outstanding at the beginning and the end of the period 
+(iv) - description of rights, preferences, and restrictions 
+(v) - treasury shares, including shares held by subsidiaries and associates 
+(vi) - shares reserved for issuance under options and contracts 
+(vii) - a description of the nature and purpose of each reserve within equity.
+Additional disclosures are required in respect of entities without share capital and where an entity has reclassified puttable financial instruments.  [IAS 1.80-80A]
+`,
+Concepts_of_profit_or_loss_and_comprehensive_income:`
+Profit or loss is defined as "the total of income less expenses, excluding the components of other comprehensive income".  Other comprehensive income is defined as comprising "items of income and expense (including reclassification adjustments) that are not recognised in profit or loss as required or permitted by other IFRSs".  Total comprehensive income is defined as "the change in equity during a period resulting from transactions and other events, other than those changes resulting from transactions with owners in their capacity as owners". [IAS 1.7]
+
+Comprehensive income for the period	 = 	Profit or loss	 + 	Other comprehensive income
+All items of income and expense recognised in a period must be included in profit or loss unless a Standard or an Interpretation requires otherwise. [IAS 1.88] Some IFRSs require or permit that some components to be excluded from profit or loss and instead to be included in other comprehensive income.
+
+`,
+items_recognised_outside_of_profit_or_loss:`
+(i) - Changes in revaluation surplus where the revaluation method is used under IAS 16 Property, Plant and Equipment and IAS 38 Intangible Assets 
+(ii) - Remeasurements of a net defined benefit liability or asset recognised in accordance with IAS 19 Employee Benefits (2011) 
+(iii) - Exchange differences from translating functional currencies into presentation currency in accordance with IAS 21 The Effects of Changes in Foreign Exchange Rates 
+(iv) - Gains and losses on remeasuring available-for-sale financial assets in accordance with IAS 39 Financial Instruments: Recognition and Measurement 
+(v) - The effective portion of gains and losses on hedging instruments in a cash flow hedge under IAS 39 or IFRS 9 Financial Instruments Gains and losses on remeasuring an investment in equity instruments where the entity has elected to present them in other comprehensive income in accordance with IFRS 9 The effects of changes in the credit risk of a financial liability designated as at fair value through profit and loss under IFRS 9.
+(vi) - IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors requires the correction of errors and the effect of changes in accounting policies to be recognised outside profit or loss for the current period. [IAS 1.89]
+
+`
+
+
 }
