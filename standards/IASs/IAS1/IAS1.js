@@ -28,6 +28,6 @@ module.exports = (req, res) => {
 				}
 			}]
 		})
-	},	
+	}	
 
 }
