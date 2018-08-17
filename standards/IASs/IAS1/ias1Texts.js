@@ -47,5 +47,8 @@ IAS 1 acknowledges that, in extremely rare circumstances, management may conclud
 The Conceptual Framework notes that financial statements are normally prepared assuming the entity is a going concern and will continue in operation for the foreseeable future. [Conceptual Framework, paragraph 4.1]
 
 IAS 1 requires management to make an assessment of an entity's ability to continue as a going concern.  If management has significant concerns about the entity's ability to continue as a going concern, the uncertainties must be disclosed. If management concludes that the entity is not a going concern, the financial statements should not be prepared on a going concern basis, in which case IAS 1 requires a series of disclosures. [IAS 1.25]
+	`,
+	Accrual_basis:`
+IAS 1 requires that an entity prepare its financial statements, except for cash flow information, using the accrual basis of accounting. [IAS 1.27]
 	`
 }

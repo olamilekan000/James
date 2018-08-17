@@ -118,6 +118,23 @@ module.exports = (req, res) => {
 				}
 			}]
 		})
-	}								
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 1 - Accrual basis of accounting") {
+		res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.Accrual_basis,
+					  "quickReplies": [
+					    "Objective of financial statements",
+					    "Fair presentation and compliance with IFRSs",
+					    "Going concern",
+					    "Components of financial statements",
+					    "IAS 1",
+					    "Home 🏠"
+					]
+				}
+			}]
+		})
+	}									
 
 }
