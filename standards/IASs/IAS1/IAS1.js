@@ -107,7 +107,7 @@ module.exports = (req, res) => {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.fairPresentoFFS,
+					  "title": texts.Going_concern,
 					  "quickReplies": [
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
