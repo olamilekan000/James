@@ -21,8 +21,22 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.objective,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 1",
 					    "Scope",
+					    "Home 🏠"
+					]
+				}
+			}]
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 1 - scope") {
+		res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.scope,
+					  "quickReplies": [
+					    "Objective",
+					    "IAS 1",
 					    "Home 🏠"
 					]
 				}
