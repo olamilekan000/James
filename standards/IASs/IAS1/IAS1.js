@@ -9,6 +9,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Objective",
 					    "Scope",
+					    "Objective of financial statements",
 					    "Home 🏠"
 					]
 				}
@@ -23,6 +24,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "IAS 1",
 					    "Scope",
+					    "Objective of financial statements",
 					    "Home 🏠"
 					]
 				}
@@ -37,11 +39,26 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Objective",
 					    "IAS 1",
+					    "Objective of financial statements",
 					    "Home 🏠"
 					]
 				}
 			}]
 		})
-	}	
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 1 - Objective of financial statements") {
+		res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.objOfFs,
+					  "quickReplies": [
+					    "Objective",
+					    "IAS 1",
+					    "Home 🏠"
+					]
+				}
+			}]
+		})
+	}			
 
 }

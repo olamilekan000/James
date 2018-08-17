@@ -11,5 +11,11 @@ The objective of IAS 1 (2007) is to prescribe the basis for presentation of gene
 IAS 1 applies to all general purpose financial statements that are prepared and presented in accordance with International Financial Reporting Standards (IFRSs). [IAS 1.2]
 
 General purpose financial statements are those intended to serve users who are not in a position to require financial reports tailored to their particular information needs. [IAS 1.7]
+`,
+	objOfFs:`
+The objective of general purpose financial statements is to provide information about the financial position, financial performance, and cash flows of an entity that is useful to a wide range of users in making economic decisions. To meet that objective, financial statements provide information about an entity's: [IAS 1.9]
+
+assets liabilities equity income and expenses, including gains and losses contributions by and distributions to owners (in their capacity as owners) cash flows.
+That information, along with other information in the notes, assists users of financial statements in predicting the entity's future cash flows and, in particular, their timing and certainty.
 	`
 }
