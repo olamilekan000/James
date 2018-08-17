@@ -182,7 +182,7 @@ module.exports = (req, res) => {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.Materiality_and_aggregation,
+					  "title": texts.Offsetting,
 					  "quickReplies": [
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
