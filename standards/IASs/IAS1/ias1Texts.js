@@ -4,4 +4,7 @@ IAS 1 Presentation of Financial Statements sets out the overall requirements for
 IAS 1 was reissued in September 2007 and applies to annual periods beginning on or after 1 January 2009.
 
 	`,
+	objective: `
+The objective of IAS 1 (2007) is to prescribe the basis for presentation of general purpose financial statements, to ensure comparability both with the entity's financial statements of previous periods and with the financial statements of other entities. IAS 1 sets out the overall requirements for the presentation of financial statements, guidelines for their structure and minimum requirements for their content. [IAS 1.1] Standards for recognising, measuring, and disclosing specific transactions are addressed in other Standards and Interpretations. [IAS 1.3]
+	`
 }
