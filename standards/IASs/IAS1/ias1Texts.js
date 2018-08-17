@@ -50,5 +50,8 @@ IAS 1 requires management to make an assessment of an entity's ability to contin
 	`,
 	Accrual_basis:`
 IAS 1 requires that an entity prepare its financial statements, except for cash flow information, using the accrual basis of accounting. [IAS 1.27]
+`,
+	Consistency_of_presentation:`
+The presentation and classification of items in the financial statements shall be retained from one period to the next unless a change is justified either by a change in circumstances or a requirement of a new IFRS. [IAS 1.45]
 	`
 }

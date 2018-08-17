@@ -13,6 +13,7 @@ module.exports = (req, res) => {
 					    "Components of financial statements",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
 					    "Home 🏠"
 					]
 				}
@@ -31,6 +32,7 @@ module.exports = (req, res) => {
 					    "Components of financial statements",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
 					    "Home 🏠"
 					]
 				}
@@ -49,6 +51,7 @@ module.exports = (req, res) => {
 					    "Components of financial statements",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
 					    "Home 🏠"
 					]
 				}
@@ -64,6 +67,7 @@ module.exports = (req, res) => {
 					    "Components of financial statements",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
 					    "IAS 1",
 					    "Home 🏠"
 					]
@@ -80,6 +84,7 @@ module.exports = (req, res) => {
 					    "Objective of financial statements",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
 					    "IAS 1",
 					    "Home 🏠"
 					]
@@ -96,6 +101,7 @@ module.exports = (req, res) => {
 					    "Objective of financial statements",
 					    "Going concern",
 					    "Components of financial statements",
+					    "Consistency of presentation",
 					    "IAS 1",
 					    "Home 🏠"
 					]
@@ -111,6 +117,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
 					    "Components of financial statements",
 					    "IAS 1",
 					    "Home 🏠"
@@ -128,6 +135,7 @@ module.exports = (req, res) => {
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
 					    "Going concern",
+					    "Consistency of presentation",
 					    "Components of financial statements",
 					    "IAS 1",
 					    "Home 🏠"
@@ -135,6 +143,23 @@ module.exports = (req, res) => {
 				}
 			}]
 		})
-	}									
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 1 - Consistency of presentation") {
+		res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.Accrual_basis,
+					  "quickReplies": [
+					    "Objective of financial statements",
+					    "Fair presentation and compliance with IFRSs",
+					    "Going concern",
+					    "Components of financial statements",
+					    "IAS 1",
+					    "Home 🏠"
+					]
+				}
+			}]
+		})
+	}											
 
 }
