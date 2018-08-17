@@ -8,20 +8,20 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 1 — Presentation of Financial Statements",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 1 Presentation of Financial Statements sets out the overall requirements for financial statements, including how they should be structured, the minimum requirements for their content and overriding concepts such as going concern, the accrual basis of accounting and the current/non-current distinction. The standard requires a complete set of financial statements to comprise a statement of financial position, a statement of profit or loss and other comprehensive income, a statement of changes in equity and a statement of cash flows.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
+								'text': 'Objective of IAS 1',
+	  							'postback': 'Objective of IAS 1'
 							},
 							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
+								'text': 'Measurement of IAS 1',
+								'postback': 'Measurement of IAS 1'
 							},
 							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Disclosure of IAS 1',
+								'postback': 'Disclosure of IAS 1'
 							}
 						]
 					}
