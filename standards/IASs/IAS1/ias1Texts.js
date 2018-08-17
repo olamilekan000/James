@@ -33,5 +33,14 @@ An entity may use titles for the statements other than those stated above.  All 
 When an entity applies an accounting policy retrospectively or makes a retrospective restatement of items in its financial statements, or when it reclassifies items in its financial statements, it must also present a statement of financial position (balance sheet) as at the beginning of the earliest comparative period.
 
 Reports that are presented outside of the financial statements – including financial reviews by management, environmental reports, and value added statements – are outside the scope of IFRSs. [IAS 1.14]
+	`,
+	fairPresentoFFS:`
+The financial statements must "present fairly" the financial position, financial performance and cash flows of an entity. Fair presentation requires the faithful representation of the effects of transactions, other events, and conditions in accordance with the definitions and recognition criteria for assets, liabilities, income and expenses set out in the Framework. The application of IFRSs, with additional disclosure when necessary, is presumed to result in financial statements that achieve a fair presentation. [IAS 1.15]
+
+IAS 1 requires an entity whose financial statements comply with IFRSs to make an explicit and unreserved statement of such compliance in the notes. Financial statements cannot be described as complying with IFRSs unless they comply with all the requirements of IFRSs (which includes International Financial Reporting Standards, International Accounting Standards, IFRIC Interpretations and SIC Interpretations). [IAS 1.16]
+
+Inappropriate accounting policies are not rectified either by disclosure of the accounting policies used or by notes or explanatory material. [IAS 1.18]
+
+IAS 1 acknowledges that, in extremely rare circumstances, management may conclude that compliance with an IFRS requirement would be so misleading that it would conflict with the objective of financial statements set out in the Framework. In such a case, the entity is required to depart from the IFRS requirement, with detailed disclosure of the nature, reasons, and impact of the departure. [IAS 1.19-21]
 	`
 }

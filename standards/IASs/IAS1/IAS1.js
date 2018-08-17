@@ -11,6 +11,7 @@ module.exports = (req, res) => {
 					    "Scope",
 					    "Objective of financial statements",
 					    "Components of financial statements",
+					    "Fair presentation and compliance with IFRSs",
 					    "Home 🏠"
 					]
 				}
@@ -27,6 +28,7 @@ module.exports = (req, res) => {
 					    "Scope",
 					    "Objective of financial statements",
 					    "Components of financial statements",
+					    "Fair presentation and compliance with IFRSs",
 					    "Home 🏠"
 					]
 				}
@@ -43,6 +45,7 @@ module.exports = (req, res) => {
 					    "IAS 1",
 					    "Objective of financial statements",
 					    "Components of financial statements",
+					    "Fair presentation and compliance with IFRSs",
 					    "Home 🏠"
 					]
 				}
@@ -56,6 +59,7 @@ module.exports = (req, res) => {
 					  "title": texts.objOfFs,
 					  "quickReplies": [
 					    "Components of financial statements",
+					    "Fair presentation and compliance with IFRSs",
 					    "IAS 1",
 					    "Home 🏠"
 					]
@@ -70,12 +74,28 @@ module.exports = (req, res) => {
 					  "title": texts.compOfFs,
 					  "quickReplies": [
 					    "Objective of financial statements",
+					    "Fair presentation and compliance with IFRSs",
 					    "IAS 1",
 					    "Home 🏠"
 					]
 				}
 			}]
 		})
-	}				
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 1 - Fair presentation and compliance with IFRSs") {
+		res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.fairPresentoFFS,
+					  "quickReplies": [
+					    "Objective of financial statements",
+					    "Components of financial statements",
+					    "IAS 1",
+					    "Home 🏠"
+					]
+				}
+			}]
+		})
+	}						
 
 }
