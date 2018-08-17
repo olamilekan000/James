@@ -9,7 +9,7 @@ module.exports = (req, res) => {
 					"card":{
 						"title": "IAS 40 — Investment Property",
 						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
-						"imageUri": textz.imgeUri,
+						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
 								'text': 'Objective of IFRS 10',
@@ -30,7 +30,7 @@ module.exports = (req, res) => {
 					"card":{
 						"title": "IAS 41 — Agriculture",
 						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
-						"imageUri": textz.imgeUri,
+						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
 								'text': 'Objective of IFRS 10',
