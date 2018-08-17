@@ -21,12 +21,7 @@ That information, along with other information in the notes, assists users of fi
 	compOfFs:`
 A complete set of financial statements includes: [IAS 1.10]
 
-(i) a statement of financial position (balance sheet) at the end of the period 
-(ii) a statement of profit or loss and other comprehensive income for the period (presented as a single statement, or by presenting the profit or loss section in a separate statement of profit or loss, immediately followed by a statement presenting comprehensive income beginning with profit or loss) 
-(iii) a statement of changes in equity for the period 
-(iv) a statement of cash flows for the period 
-(v) notes, comprising a summary of significant accounting policies and other explanatory notes 
-(vi) comparative information prescribed by the standard.
+(i) a statement of financial position (balance sheet) at the end of the period (ii) a statement of profit or loss and other comprehensive income for the period (presented as a single statement, or by presenting the profit or loss section in a separate statement of profit or loss, immediately followed by a statement presenting comprehensive income beginning with profit or loss) (iii) a statement of changes in equity for the period (iv) a statement of cash flows for the period (v) notes, comprising a summary of significant accounting policies and other explanatory notes (vi) comparative information prescribed by the standard.
 
 An entity may use titles for the statements other than those stated above.  All financial statements are required to be presented with equal prominence. [IAS 1.10] 
 
