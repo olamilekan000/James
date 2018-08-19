@@ -17,6 +17,20 @@ module.exports = (req, res) => {
 				}]
 			});
 			break;
+		case "Objective of IAS 2":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts.obj,
+						  "quickReplies": [
+						    "Objective",
+						    "Scope",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;			
 		default:
 			res.json({
 				"fulfillmentMessages": [{
