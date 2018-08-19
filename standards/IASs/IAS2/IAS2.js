@@ -1,7 +1,7 @@
 const texts = require('./ias2Texts');
 
 module.exports = (req, res) => {
-	if (req.body.queryResult.intent.displayName === "IAS 1") {
+	if (req.body.queryResult.intent.displayName === "IAS 2") {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
@@ -9,11 +9,6 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Objective",
 					    "Scope",
-					    "Objective of financial statements",
-					    "Components of financial statements",
-					    "Going concern",
-					    "Fair presentation and compliance with IFRSs",
-					    "Consistency of presentation",
 					    "Home 🏠"
 					]
 				}

@@ -12,8 +12,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 1',
-	  							'postback': 'Objective of IAS 1'
+								'text': 'About IAS 1',
+	  							'postback': 'About IAS 1'
 							}
 						]
 					}
@@ -25,8 +25,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 2',
-	  							'postback': 'Objective of IAS 2'
+								'text': 'About IAS 2',
+	  							'postback': 'About IAS 2'
 							}
 						]
 					}
@@ -38,16 +38,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 7',
+	  							'postback': 'Objective of IAS 7'
 							}
 						]
 					}
@@ -59,16 +51,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 8',
+	  							'postback': 'Objective of IAS 8'
 							}
 						]
 					}
@@ -82,14 +66,6 @@ module.exports = (req, res) => {
 							{
 								'text': 'Objective of IFRS 10',
 	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
 							}
 						]
 					}
@@ -101,16 +77,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 11',
+	  							'postback': 'Objective of IAS 11'
 							}
 						]
 					}
@@ -122,16 +90,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 12',
+	  							'postback': 'Objective of IAS 12'
 							}
 						]
 					}
@@ -143,16 +103,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 16',
+	  							'postback': 'Objective of IAS 16'
 							}
 						]
 					}
@@ -164,16 +116,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 17',
+	  							'postback': 'Objective of IAS 17'
 							}
 						]
 					}
