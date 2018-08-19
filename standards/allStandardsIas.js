@@ -21,7 +21,7 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 2 — Inventories",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 2 Inventories contains the requirements on how to account for most types of inventory. The standard requires inventories to be measured at the lower of cost and net realisable value (NRV) and outlines acceptable methods of determining cost, including specific identification (in some cases), first-in first-out (FIFO) and weighted average cost.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{

@@ -17,7 +17,7 @@ module.exports = (req, res) => {
 				}]
 			});
 			break;
-		case "Objective of IAS 2":
+		case "IAS2 - Objective of IAS 2":
 			res.json({
 				"fulfillmentMessages": [{
 					"quickReplies": {
