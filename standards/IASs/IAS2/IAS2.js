@@ -89,7 +89,7 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.disclosure,
 						  "quickReplies": [
-						    "diclosure",
+						    "IAS 2",
 						    "Home 🏠"
 						]
 					}
