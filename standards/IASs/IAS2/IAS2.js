@@ -10,6 +10,7 @@ module.exports = (req, res) => {
 						  "title": texts.overview,
 						  "quickReplies": [
 						    "Objective",
+						    "disclosure",
 						    "Scope",
 						    "Home 🏠"
 						]
@@ -23,8 +24,7 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.obj,
 						  "quickReplies": [
-						    "Scope",
-						    "diclosure",
+						    "IAS 2",
 						    "Home 🏠"
 						]
 					}
@@ -37,7 +37,7 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.Scope,
 						  "quickReplies": [
-						    "diclosure",
+						    "IAS 2",
 						    "Home 🏠"
 						]
 					}
@@ -50,7 +50,7 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.measurement,
 						  "quickReplies": [
-						    "diclosure",
+						    "IAS 2",
 						    "Home 🏠"
 						]
 					}
@@ -63,7 +63,7 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.NRV,
 						  "quickReplies": [
-						    "diclosure",
+						    "IAS 2",
 						    "Home 🏠"
 						]
 					}
@@ -76,7 +76,7 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.Expense_recognition,
 						  "quickReplies": [
-						    "diclosure",
+						    "IAS 2",
 						    "Home 🏠"
 						]
 					}
