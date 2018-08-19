@@ -23,14 +23,27 @@ module.exports = (req, res) => {
 					"quickReplies": {
 						  "title": texts.obj,
 						  "quickReplies": [
-						    "Objective",
 						    "Scope",
+						    "diclosure",
 						    "Home 🏠"
 						]
 					}
 				}]
 			});
-			break;			
+			break;
+		case "IAS2 - scope":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts.scope,
+						  "quickReplies": [
+						    "diclosure",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;							
 		default:
 			res.json({
 				"fulfillmentMessages": [{
