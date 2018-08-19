@@ -16,40 +16,6 @@ Cash flows must be analysed between operating, investing and financing activitie
 
 Key principles specified by IAS 7 for the preparation of a statement of cash flows are as follows:
 
-(i) - operating activities are the main revenue-producing activities of the entity that are not investing or financing activities, so operating cash flows include cash received from customers and cash paid to suppliers and employees
-(ii) - investing activities are the acquisition and disposal of long-term assets and other investments that are not considered to be cash equivalents
-(iii) - financing activities are activities that alter the equity capital and borrowing structure of the entity
-(iv) - interest and dividends received and paid may be classified as operating, investing, or financing cash flows, provided that they are classified consistently from period to period
-(v) - cash flows arising from taxes on income are normally classified as operating, unless they can be specifically identified with financing or investing activities
-(vi) -  for operating cash flows, the direct method of presentation is encouraged, but the indirect method is acceptable [IAS 7.18] 
-
-The direct method shows each major class of gross cash receipts and gross cash payments. The operating cash flows section of the statement of cash flows under the direct method would appear something like this:
-___________________________________________________________
-| Cash receipts from customers					| xx | xxx |
-| Cash paid to suppliers						| xx | xxx |
-| Cash paid to employees						| xx | xxx |
-| Cash paid for other operating expenses		| xx | xxx |
-| Interest paid									| xx | xxx |
-| Income taxes paid								| xx | xxx |
-___________________________________________________________
-| Net cash from operating activities			| xx | xxx |
-___________________________________________________________
-
-The indirect method adjusts accrual basis net profit or loss for the effects of non-cash transactions. The operating cash flows section of the statement of cash flows under the indirect method would appear something like this:
-___________________________________________________________
-| Profit before interest and income taxes		|	 | xx |
-| Add back depreciation							|	 | xx | 
-| Add back impairment of assets					|	 | xx |
-| Increase in receivables						|	 | xx |
-| Decrease in inventories				 		|	 | xx |
-| Increase in trade payables					|	 | xx |
-| Interest expense								| xx |	  |	
-| Less Interest accrued but not yet paid		| xx |    |	
-| Interest paid									|	 | xx |
-| Income taxes paid								|	 | xx |
-| ________________________________________________________
-| Net cash from operating activities			|	 | xx |
-___________________________________________________________
 
 (i) - the exchange rate used for translation of transactions denominated in a foreign currency should be the rate in effect at the date of the cash flows 
 (ii) - cash flows of foreign subsidiaries should be translated at the exchange rates prevailing when the cash flows took place
