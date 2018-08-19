@@ -11,7 +11,7 @@ The objective of IAS 2 is to prescribe the accounting treatment for inventories.
 	Scope:`
 Inventories include assets held for sale in the ordinary course of business (finished goods), assets in the production process for sale in the ordinary course of business (work in process), and materials and supplies that are consumed in production (raw materials). [IAS 2.6]
 
-However, IAS 2 excludes certain inventories from its scope: [IAS 2.2]
+However, IAS 2 excludes certain inventories from its scope:
 
 work in process arising under construction contracts (see IAS 11 Construction Contracts) financial instruments (see IAS 39 Financial Instruments: Recognition and Measurement) biological assets related to agricultural activity and agricultural produce at the point of harvest (see IAS 41 Agriculture).
 Also, while the following are within the scope of the standard, IAS 2 does not apply to the measurement of inventories held by: [IAS 2.3]

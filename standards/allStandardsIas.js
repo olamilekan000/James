@@ -34,12 +34,12 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 7 — Statement of Cash Flows",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 7 Statement of Cash Flows requires an entity to present a statement of cash flows as an integral part of its primary financial statements. Cash flows are classified and presented into operating activities (either using the 'direct' or 'indirect' method), investing activities or financing activities, with the latter two categories generally presented on a gross basis.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 7',
-	  							'postback': 'Objective of IAS 7'
+								'text': 'About IAS 7',
+	  							'postback': 'About IAS 7'
 							}
 						]
 					}
