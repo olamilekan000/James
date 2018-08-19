@@ -35,7 +35,7 @@ module.exports = (req, res) => {
 			res.json({
 				"fulfillmentMessages": [{
 					"quickReplies": {
-						  "title": texts.scope,
+						  "title": texts.Scope,
 						  "quickReplies": [
 						    "diclosure",
 						    "Home 🏠"
