@@ -54,7 +54,7 @@ app.post('/webhook', (req, res) => {
 	allStandardsIAScont3(req, res); //fires the remaining IAS standards webhook.
 	//individual standards
 	IAS1(req, res);
-	IAS7(req, res);
+	// IAS7(req, res);
 	IAS2(req, res);
 
 

@@ -1,4 +1,5 @@
 const texts = require('./ias2Texts');
+const texts7 = require('../IAS7/ias7Texts');
 
 module.exports = (req, res) => {
 	
@@ -95,7 +96,47 @@ module.exports = (req, res) => {
 					}
 				}]
 			});
-			break;																			
+			break;
+		case "IAS7": //ias 7
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts7.overview,
+						  "quickReplies": [
+						    "Objective",
+						    "measurement",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;
+		case "IAS7 - Objective":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts7.obj,
+						  "quickReplies": [
+						  	"IAS7",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;	
+		case "IAS7 - Presentation of the Statement of Cash Flows":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts7.presentation,
+						  "quickReplies": [
+							"IAS7",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;																						
 		default:
 			res.json({
 				"fulfillmentMessages": [{
