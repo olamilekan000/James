@@ -14,14 +14,6 @@ module.exports = (req, res) => {
 							{
 								'text': 'Objective of IAS 1',
 	  							'postback': 'Objective of IAS 1'
-							},
-							{
-								'text': 'Measurement of IAS 1',
-								'postback': 'Measurement of IAS 1'
-							},
-							{
-								'text': 'Disclosure of IAS 1',
-								'postback': 'Disclosure of IAS 1'
 							}
 						]
 					}
@@ -33,16 +25,8 @@ module.exports = (req, res) => {
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'Objective of IAS 2',
+	  							'postback': 'Objective of IAS 2'
 							}
 						]
 					}
