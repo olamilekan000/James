@@ -87,19 +87,20 @@ In addition, the following information must be displayed prominently, and repeat
 (v) - the level of rounding used (e.g. thousands, millions).
 `,
 Reporting_period:`
-There is a presumption that financial statements will be prepared at least annually. If the annual reporting period changes and financial statements are prepared for a different period, the entity must disclose the reason for the change and state that amounts are not entirely comparable. [IAS 1.36]
+There is a presumption that financial statements will be prepared at least annually. If the annual reporting period changes and financial statements are prepared for a different period, the entity must disclose the reason for the change and state that amounts are not entirely comparable.
 `,
 Current_and_non_current_classification:`
 An entity must normally present a classified statement of financial position, separating current and non-current assets and liabilities, unless presentation based on liquidity provides information that is reliable. [IAS 1.60] In either case, if an asset (liability) category combines amounts that will be received (settled) after 12 months with assets (liabilities) that will be received (settled) within 12 months, note disclosure is required that separates the longer-term amounts from the 12-month amounts. [IAS 1.61]
 
-Current assetsare assets that are: [IAS 1.66]
+Current assetsare assets that are:
 
 (i) - expected to be realised in the entity's normal operating cycle 
 (ii) - held primarily for the purpose of trading 
 (iii) - expected to be realised within 12 months after the reporting period 
 (iv) - cash and cash equivalents (unless restricted).
-All other assets are non-current. [IAS 1.66]
-Current liabilitiesare those: [IAS 1.69]
+All other assets are non-current. 
+
+Current liabilities are those: 
 
 (i) - expected to be settled within the entity's normal operating cycle 
 (ii) - held for purpose of trading 
@@ -108,10 +109,10 @@ Current liabilitiesare those: [IAS 1.69]
 Other liabilities are non-current.
 When a long-term debt is expected to be refinanced under an existing loan facility, and the entity has the discretion to do so, the debt is classified as non-current, even if the liability would otherwise be due within 12 months. [IAS 1.73]
 
-If a liability has become payable on demand because an entity has breached an undertaking under a long-term loan agreement on or before the reporting date, the liability is current, even if the lender has agreed, after the reporting date and before the authorisation of the financial statements for issue, not to demand payment as a consequence of the breach. [IAS 1.74] However, the liability is classified as non-current if the lender agreed by the reporting date to provide a period of grace ending at least 12 months after the end of the reporting period, within which the entity can rectify the breach and during which the lender cannot demand immediate repayment. [IAS 1.75]
+If a liability has become payable on demand because an entity has breached an undertaking under a long-term loan agreement on or before the reporting date, the liability is current, even if the lender has agreed, after the reporting date and before the authorisation of the financial statements for issue, not to demand payment as a consequence of the breach. [IAS 1.74] However, the liability is classified as non-current if the lender agreed by the reporting date to provide a period of grace ending at least 12 months after the end of the reporting period, within which the entity can rectify the breach and during which the lender cannot demand immediate repayment.
 `,
 Line_items:`
-The line items to be included on the face of the statement of financial position are: [IAS 1.54]
+The line items to be included on the face of the statement of financial position are:
 
 (a)	property, plant and equipment
 (b)	investment property
@@ -157,13 +158,13 @@ Regarding issued share capital and reserves, the following disclosures are requi
 (v) - treasury shares, including shares held by subsidiaries and associates 
 (vi) - shares reserved for issuance under options and contracts 
 (vii) - a description of the nature and purpose of each reserve within equity.
-Additional disclosures are required in respect of entities without share capital and where an entity has reclassified puttable financial instruments.  [IAS 1.80-80A]
+Additional disclosures are required in respect of entities without share capital and where an entity has reclassified puttable financial instruments.
 `,
 Concepts_of_profit_or_loss_and_comprehensive_income:`
-Profit or loss is defined as "the total of income less expenses, excluding the components of other comprehensive income".  Other comprehensive income is defined as comprising "items of income and expense (including reclassification adjustments) that are not recognised in profit or loss as required or permitted by other IFRSs".  Total comprehensive income is defined as "the change in equity during a period resulting from transactions and other events, other than those changes resulting from transactions with owners in their capacity as owners". [IAS 1.7]
+Profit or loss is defined as "the total of income less expenses, excluding the components of other comprehensive income".  Other comprehensive income is defined as comprising "items of income and expense (including reclassification adjustments) that are not recognised in profit or loss as required or permitted by other IFRSs".  Total comprehensive income is defined as "the change in equity during a period resulting from transactions and other events, other than those changes resulting from transactions with owners in their capacity as owners".
 
 Comprehensive income for the period	 = 	Profit or loss	 + 	Other comprehensive income
-All items of income and expense recognised in a period must be included in profit or loss unless a Standard or an Interpretation requires otherwise. [IAS 1.88] Some IFRSs require or permit that some components to be excluded from profit or loss and instead to be included in other comprehensive income.
+All items of income and expense recognised in a period must be included in profit or loss unless a Standard or an Interpretation requires otherwise. Some IFRSs require or permit that some components to be excluded from profit or loss and instead to be included in other comprehensive income.
 
 `,
 items_recognised_outside_of_profit_or_loss:`

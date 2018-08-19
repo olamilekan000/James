@@ -15,6 +15,7 @@ const allStandardsIAScont = require('./standards/allStandardsIas2'); //IAS 20 - 
 const allStandardsIAScont2 = require('./standards/allStandardsIas3'); //IAS 31 - 39
 const allStandardsIAScont3 = require('./standards/allStandardsIas4'); //IAS 40 - 41
 const IAS1 = require('./standards/IASs/IAS1/IAS1'); //for ias-1
+const IAS2 = require('./standards/IASs/IAS2/IAS2'); //for ias-2
 
 
 //WEBHOOKS FOR EACH STANDARDS MODULE
@@ -52,6 +53,7 @@ app.post('/webhook', (req, res) => {
 	allStandardsIAScont3(req, res); //fires the remaining IAS standards webhook.
 	//individual standards
 	IAS1(req, res);
+	IAS2(req, res);
 
 
 });
