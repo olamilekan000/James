@@ -19,7 +19,7 @@ assets liabilities equity income and expenses, including gains and losses contri
 That information, along with other information in the notes, assists users of financial statements in predicting the entity's future cash flows and, in particular, their timing and certainty.
 `,
 	compOfFs:`
-A complete set of financial statements includes: [IAS 1.10]
+A complete set of financial statements includes: 
 
 (i) a statement of financial position (balance sheet) at the end of the period 
 (ii) a statement of profit or loss and other comprehensive income for the period (presented as a single statement, or by presenting the profit or loss section in a separate statement of profit or loss, immediately followed by a statement presenting comprehensive income beginning with profit or loss) 
@@ -72,14 +72,14 @@ An entity is required to present at least two of each of the following primary f
 statement of financial position* statement of profit or loss and other comprehensive income separate statements of profit or loss (where presented) statement of cash flows statement of changes in equity related notes for each of the above items.
 * A third statement of financial position is required to be presented if the entity retrospectively applies an accounting policy, restates items, or reclassifies items, and those adjustments had a material effect on the information in the statement of financial position at the beginning of the comparative period. [IAS 1.40A]
 
-Where comparative amounts are changed or reclassified, various disclosures are required. [IAS 1.41]
+Where comparative amounts are changed or reclassified, various disclosures are required. 
 `,
 Structure_and_content_of_financial_statements: `
-IAS 1 requires an entity to clearly identify: [IAS 1.49-51]
+IAS 1 requires an entity to clearly identify: 
 
 (i) - the financial statements, which must be distinguished from other information in a published document 
 (ii) - each financial statement and the notes to the financial statements.
-In addition, the following information must be displayed prominently, and repeated as necessary: [IAS 1.51]
+In addition, the following information must be displayed prominently, and repeated as necessary: 
 (i) - the name of the reporting entity and any change in the name 
 (ii) - whether the financial statements are a group of entities or an individual entity 
 (iii) - information about the reporting period 
