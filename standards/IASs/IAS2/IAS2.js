@@ -104,7 +104,7 @@ module.exports = (req, res) => {
 						  "title": texts7.overview,
 						  "quickReplies": [
 						    "Objective",
-						    "presentation",
+						    "Presentation",
 						    "Home 🏠"
 						]
 					}
@@ -126,16 +126,16 @@ module.exports = (req, res) => {
 			break;	
 		case "Presentation of the Statement of Cash Flows":
 			res.json({
-				"fulfillmentMessages": [{
-					"quickReplies": {
-						  "title": texts7.presentation,
-						  "quickReplies": [
-							"IAS7",
-						    "Home 🏠"
-						]
-					}
-				}]
-			});
+				"fulfillmentMessages": [
+				      {
+				        "text": {
+				          "text": [
+				            texts7.presentation
+				          ]
+				        }
+				      }
+				    ]		
+				})			
 			break;																						
 		default:
 			res.json({
