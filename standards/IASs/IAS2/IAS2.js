@@ -104,7 +104,7 @@ module.exports = (req, res) => {
 						  "title": texts7.overview,
 						  "quickReplies": [
 						    "Objective",
-						    "measurement",
+						    "presentation",
 						    "Home 🏠"
 						]
 					}
