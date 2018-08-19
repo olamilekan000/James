@@ -43,7 +43,59 @@ module.exports = (req, res) => {
 					}
 				}]
 			});
-			break;							
+			break;	
+		case "IAS2 - measurement":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts.measurement,
+						  "quickReplies": [
+						    "diclosure",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;
+		case "IAS2 - NRV":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts.NRV,
+						  "quickReplies": [
+						    "diclosure",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;	
+		case "IAS2 - Expense recognition":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts.Expense_recognition,
+						  "quickReplies": [
+						    "diclosure",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;	
+		case "IAS2 - disclosure":
+			res.json({
+				"fulfillmentMessages": [{
+					"quickReplies": {
+						  "title": texts.disclosure,
+						  "quickReplies": [
+						    "diclosure",
+						    "Home 🏠"
+						]
+					}
+				}]
+			});
+			break;																			
 		default:
 			res.json({
 				"fulfillmentMessages": [{
