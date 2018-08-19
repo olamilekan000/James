@@ -124,7 +124,7 @@ module.exports = (req, res) => {
 				}]
 			});
 			break;	
-		case "IAS7 - Presentation of the Statement of Cash Flows":
+		case "Presentation of the Statement of Cash Flows":
 			res.json({
 				"fulfillmentMessages": [{
 					"quickReplies": {
