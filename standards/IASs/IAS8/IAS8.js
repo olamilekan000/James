@@ -17,6 +17,7 @@ module.exports = (req, res) => {
 					}
 				}]
 			});
+			break;
 		default:
 			res.json({
 				"fulfillmentMessages": [{
