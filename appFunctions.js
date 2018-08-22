@@ -7,6 +7,7 @@ module.exports = (req, res) => {
 	//individual standards
 	IAS1(req, res);
 	// IAS7(req, res);
-	IAS2(req, res);
 	IAS8(req, res);
+	IAS2(req, res);
+	
 }
