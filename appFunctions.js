@@ -5,7 +5,7 @@ const IAS8 = require('./standards/IASs/IAS8/IAS8'); //for ias-7
 
 module.exports = (req, res) => {
 	//individual standards
-	IAS1(req, res);
+	// IAS1(req, res);
 	// IAS7(req, res);
 	IAS8(req, res);
 	IAS2(req, res);
