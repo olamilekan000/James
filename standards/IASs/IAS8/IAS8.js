@@ -7,7 +7,7 @@ module.exports = (req, res) => {
 			res.json({
 				"fulfillmentMessages": [{
 					"quickReplies": {
-						  "title": IAS8texts.overview,
+						  "title": "IAS8texts.overview",
 						  "quickReplies": [
 						    "Objective",
 						    "disclosure",
@@ -21,7 +21,7 @@ module.exports = (req, res) => {
 			res.json({
 				"fulfillmentMessages": [{
 					"quickReplies": {
-						  "title": "oops, I haven't learnt that... 🙈",
+						  "title": "oops, I haven't learnt IAS8... 🙈",
 						  "quickReplies": [
 						  	"IAS",
 						    "Home 🏠"
