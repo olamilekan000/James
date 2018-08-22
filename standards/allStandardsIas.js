@@ -47,12 +47,12 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 8 — Accounting Policies, Changes in Accounting Estimates and Errors",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors is applied in selecting and applying accounting policies, accounting for changes in estimates and reflecting corrections of prior period errors.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 8',
-	  							'postback': 'Objective of IAS 8'
+								'text': 'About IAS 8',
+	  							'postback': 'About IAS 8'
 							}
 						]
 					}
