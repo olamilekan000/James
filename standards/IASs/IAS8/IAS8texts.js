@@ -19,9 +19,6 @@ International Financial Reporting Standardsare standards and interpretations ado
 	materiality:`
 Materiality. Omissions or misstatements of items are material if they could, by their size or nature, individually or collectively, influence the economic decisions of users taken on the basis of the financial statements.
 `,
-	priorPeriodErrors:`
-Prior period errors are omissions from, and misstatements in, an entity's financial statements for one or more prior periods arising from a failure to use, or misuse of, reliable information that was available and could reasonably be expected to have been obtained and taken into account in preparing those statements. Such errors result from mathematical mistakes, mistakes in applying accounting policies, oversights or misinterpretations of facts, and fraud.
-`,
 	selectionOfplocies:`
 When a Standard or an Interpretation specifically applies to a transaction, other event or condition, the accounting policy or policies applied to that item must be determined by applying the Standard or Interpretation and considering any relevant Implementation Guidance issued by the IASB for the Standard or Interpretation.
 
@@ -81,11 +78,6 @@ Financial statements of subsequent periods need not repeat these disclosures.
 If an entity has not applied a new standard or interpretation that has been issued but is not yet effective, the entity must disclose that fact and any and known or reasonably estimable information relevant to assessing the possible impact that the new pronouncement will have in the year it is applied. [IAS 8.30]
 
 `,
-discAcctngEstm:`
-(i) - the nature and amount of a change in an accounting estimate that has an effect in the current period or is expected to have an effect in future periods.
-(ii) - if the amount of the effect in future periods is not disclosed because estimating it is impracticable, an entity shall disclose that fact. [IAS 8.39-40].
-
-`,
 chngOfAcctEstm:`
 A change in accounting estimate is an adjustment of the carrying amount of an asset or liability, or related expense, resulting from reassessing the expected future benefits and obligations associated with that asset or liability.
 
@@ -94,6 +86,10 @@ The effect of a change in an accounting estimate shall be recognised prospective
 (ii) - the period of the change and future periods, if the change affects both.
 
 However, to the extent that a change in an accounting estimate gives rise to changes in assets and liabilities, or relates to an item of equity, it is recognised by adjusting the carrying amount of the related asset, liability, or equity item in the period of the change. [IAS 8.37]
+
+Disclosing Accounting Estimates:
+(i) - the nature and amount of a change in an accounting estimate that has an effect in the current period or is expected to have an effect in future periods.
+(ii) - if the amount of the effect in future periods is not disclosed because estimating it is impracticable, an entity shall disclose that fact. [IAS 8.39-40].
 
 `,
 Errors:`
@@ -105,8 +101,9 @@ However, if it is impracticable to determine the period-specific effects of an e
 
 Further, if it is impracticable to determine the cumulative effect, at the beginning of the current period, of an error on all prior periods, the entity must restate the comparative information to correct the error prospectively from the earliest date practicable. [IAS 8.45]
 
-`,
-discErrors:`
+Prior period errors are omissions from, and misstatements in, an entity's financial statements for one or more prior periods arising from a failure to use, or misuse of, reliable information that was available and could reasonably be expected to have been obtained and taken into account in preparing those statements. Such errors result from mathematical mistakes, mistakes in applying accounting policies, oversights or misinterpretations of facts, and fraud.
+
+Disclosures relating to prior period errors include: [IAS 8.49]
 (i) - the nature of the prior period error
 (ii) - for each prior period presented, to the extent practicable, the amount of the correction:
 	* for each financial statement line item affected, and
