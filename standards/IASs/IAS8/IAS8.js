@@ -1,7 +1,7 @@
 const IAS8texts = require('./IAS8texts')
 
 module.exports = (req, res) => {
-	if (req.body.queryResult.intent.displayName === "IAS8 - IAS8") {
+	if (req.body.queryResult.intent.displayName === "IAS8") {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {

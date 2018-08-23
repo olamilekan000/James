@@ -60,12 +60,12 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 10 — Events After the Reporting Period",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 10 Events After The Reporting Period contains requirements for when events after the end of the reporting period should be adjusted in the financial statements. Adjusting events are those providing evidence of conditions existing at the end of the reporting period, whereas non-adjusting events are indicative of conditions arising after the reporting period (the latter being disclosed where material).",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-	  							'postback': 'Objective of IFRS 10'
+								'text': 'About IAS10',
+	  							'postback': 'About IAS10'
 							}
 						]
 					}
