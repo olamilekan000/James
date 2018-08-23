@@ -76,7 +76,7 @@ module.exports = (req, res) => {
 			}]
 		});		
 	}	
-	if (req.body.queryResult.intent.displayName === "IAS10 - Going concern issues arising after end of the reporting period") {
+	if (req.body.queryResult.intent.displayName === "IAS10 - Disclosure") {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
@@ -92,3 +92,4 @@ module.exports = (req, res) => {
 		});		
 	}								
 }
+
