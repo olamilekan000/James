@@ -10,6 +10,7 @@ module.exports = (req, res) => {
 					    "Accounting Policies",
 					    "Prior Period Errors",
 					    "Changes of Accounting Policies",
+					    "Consistency of accounting policies",					    
 					    "Home 🏠"
 					]
 				}
@@ -24,6 +25,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "IAS8",
 					    "Prior Period Errors",
+					    "Consistency of accounting policies",					    
 					    "Changes of Accounting Policies",
 					    "Home 🏠"
 					]
@@ -39,6 +41,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "IAS8",
 					    "Prior Period Errors",
+					    "Consistency of accounting policies",					    
 					    "Changes of Accounting Policies",
 					    "Home 🏠"
 					]
@@ -54,6 +57,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "IAS8",
 					    "Prior Period Errors",
+					    "Consistency of accounting policies",
 					    "Changes of Accounting Policies",
 					    "Home 🏠"
 					]
@@ -99,6 +103,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "IAS8",
 					    "Prior Period Errors",
+					    "Disclosing Accounting Estimates",
 					    "Changes of Accounting Policies",
 					    "Home 🏠"
 					]
@@ -113,6 +118,7 @@ module.exports = (req, res) => {
 					  "title": IAS8texts.discRelatedToANewStndAcctngPolicies,
 					  "quickReplies": [
 					    "IAS8",
+					    "Disclosures relating to voluntary changes in accounting policy",
 					    "Home 🏠"
 					]
 				}
@@ -126,6 +132,8 @@ module.exports = (req, res) => {
 					  "title": IAS8texts.discRelatedToVoluntaryAcctngPolicies,
 					  "quickReplies": [
 					    "IAS8",
+					    "Disclosing Accounting Estimates",
+					    "Disclosures relating to changes in accounting policy",
 					    "Home 🏠"
 					]
 				}
@@ -139,6 +147,7 @@ module.exports = (req, res) => {
 					  "title": IAS8texts.chngOfAcctEstm,
 					  "quickReplies": [
 					    "IAS8",
+					    "Disclosures relating to changes in accounting policy",
 					    "Home 🏠"
 					]
 				}
@@ -147,15 +156,15 @@ module.exports = (req, res) => {
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Errors") {
 		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": IAS8texts.Errors,
-					  "quickReplies": [
-					    "IAS8",
-					    "Home 🏠"
-					]
+			"fulfillmentMessages": [
+				{
+					"text": {
+				        "text": [
+				    	    IAS8texts.Errors
+				        ]
+				    }
 				}
-			}]
+			]
 		});		
 	}											
 }
