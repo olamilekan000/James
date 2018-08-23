@@ -31,21 +31,6 @@ module.exports = (req, res) => {
 			}]
 		});		
 	}
-	if (req.body.queryResult.intent.displayName === "IAS8 - International Financial Reporting Standards") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": IAS8texts.IFRS,
-					  "quickReplies": [
-					    "IAS8",
-					    "Prior Period Errors",
-					    "Changes of Accounting Policies",
-					    "Home 🏠"
-					]
-				}
-			}]
-		});		
-	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Materiality") {
 		res.json({
 			"fulfillmentMessages": [{

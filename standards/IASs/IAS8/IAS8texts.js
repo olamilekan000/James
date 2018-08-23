@@ -1,5 +1,5 @@
 module.exports = {
-	overview:`
+overview:`
 IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors is applied in selecting and applying accounting policies, accounting for changes in estimates and reflecting corrections of prior period errors.
 
 The standard requires compliance with any specific IFRS applying to a transaction, event or condition, and provides guidance on developing accounting policies for other items that result in relevant and reliable information. Changes in accounting policies and corrections of errors are generally retrospectively accounted for, whereas changes in accounting estimates are generally accounted for on a prospective basis.
@@ -7,19 +7,13 @@ The standard requires compliance with any specific IFRS applying to a transactio
 IAS 8 was reissued in December 2005 and applies to annual periods beginning on or after 1 January 2005.
 
 `,
-	acctngPolicies:`
+acctngPolicies:`
 Accounting policies are the specific principles, bases, conventions, rules and practices applied by an entity in preparing and presenting financial statements.
 `,
-	IFRS:`
-International Financial Reporting Standardsare standards and interpretations adopted by the International Accounting Standards Board (IASB). They comprise:
-(i) - International Financial Reporting Standards (IFRSs) 
-(ii) - International Accounting Standards (IASs) 
-(iii) - Interpretations developed by the International Financial Reporting Interpretations Committee (IFRIC) or the former Standing Interpretations Committee (SIC) and approved by the IASB.
-	`,
-	materiality:`
+materiality:`
 Materiality. Omissions or misstatements of items are material if they could, by their size or nature, individually or collectively, influence the economic decisions of users taken on the basis of the financial statements.
 `,
-	selectionOfplocies:`
+selectionOfplocies:`
 When a Standard or an Interpretation specifically applies to a transaction, other event or condition, the accounting policy or policies applied to that item must be determined by applying the Standard or Interpretation and considering any relevant Implementation Guidance issued by the IASB for the Standard or Interpretation.
 
 In the absence of a Standard or an Interpretation that specifically applies to a transaction, other event or condition, management must use its judgement in developing and applying an accounting policy that results in information that is relevant and reliable. [IAS 8.10]. In making that judgement, management must refer to, and consider the applicability of, the following sources in descending order:
