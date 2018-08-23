@@ -11,7 +11,7 @@ acctngPolicies:`
 Accounting policies are the specific principles, bases, conventions, rules and practices applied by an entity in preparing and presenting financial statements.
 `,
 materiality:`
-Materiality. Omissions or misstatements of items are material if they could, by their size or nature, individually or collectively, influence the economic decisions of users taken on the basis of the financial statements.
+Omissions or misstatements of items are material if they could, by their size or nature, individually or collectively, influence the economic decisions of users taken on the basis of the financial statements.
 `,
 selectionOfplocies:`
 When a Standard or an Interpretation specifically applies to a transaction, other event or condition, the accounting policy or policies applied to that item must be determined by applying the Standard or Interpretation and considering any relevant Implementation Guidance issued by the IASB for the Standard or Interpretation.
