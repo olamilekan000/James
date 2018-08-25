@@ -73,12 +73,12 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 11 — Construction Contracts (Will be superseded by IFRS 15 as of 1 January 2018)",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 11 Construction Contracts provides requirements on the allocation of contract revenue and contract costs to accounting periods in which construction work is performed. Contract revenues and expenses are recognised by reference to the stage of completion of contract activity where the outcome of the construction contract can be estimated reliably, otherwise revenue is recognised only to the extent of recoverable contract costs incurred.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 11',
-	  							'postback': 'Objective of IAS 11'
+								'text': 'About IAS11',
+	  							'postback': 'About IAS11'
 							}
 						]
 					}
@@ -86,12 +86,12 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 12 — Income Taxes",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 12 Income Taxes implements a so-called 'comprehensive balance sheet method' of accounting for income taxes which recognises both the current tax consequences of transactions and events and the future tax consequences of the future recovery or settlement of the carrying amount of an entity's assets and liabilities. Differences between the carrying amount and tax base of assets and liabilities, and carried forward tax losses and credits, are recognised, with limited exceptions, as deferred tax liabilities or deferred tax assets, with the latter also being subject to a 'probable profits' test.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 12',
-	  							'postback': 'Objective of IAS 12'
+								'text': 'About IAS 12',
+	  							'postback': 'About IAS 12'
 							}
 						]
 					}
