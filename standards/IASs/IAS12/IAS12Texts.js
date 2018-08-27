@@ -13,8 +13,6 @@ In meeting this objective, IAS 12 notes the following:
 
 `,
 keyTerms:`
-Tax base: The tax base of an asset or liability is the amount attributed to that asset or liability for tax purposes
-
 Temporary differences: Differences between the carrying amount of an asset or liability in the statement of financial position and its tax bases
 
 Taxable temporary differences: Temporary differences that will result in taxable amounts in determining taxable profit (tax loss) of future periods when the carrying amount of the asset or liability is recovered or settled
@@ -44,6 +42,8 @@ The following formula can be used in the calculation of deferred taxes arising f
 (i) Deferred tax asset	 = 	Unused tax loss or unused tax credits  x Tax rate
 `,
 TaxBases:`
+The tax base of an asset or liability is the amount attributed to that asset or liability for tax purposes
+
 The tax base of an item is crucial in determining the amount of any temporary difference, and effectively represents the amount at which the asset or liability would be recorded in a tax-based balance sheet. IAS 12 provides the following guidance on determining tax bases:
 (i) - Assets: The tax base of an asset is the amount that will be deductible against taxable economic benefits from recovering the carrying amount of the asset. Where recovery of an asset will have no tax consequences, the tax base is equal to the carrying amount. [IAS 12.7]
 
