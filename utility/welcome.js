@@ -26,7 +26,11 @@ Click on any of the buttons below to begin a conversation`,
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech": "this is a simple response"
+			              "textToSpeech": `
+Hi! I am James, let's talk about IFRS? 😃. 
+					  
+Click on any of the buttons below to begin a conversation
+			              `
 			            }
 			          }
 			        ]

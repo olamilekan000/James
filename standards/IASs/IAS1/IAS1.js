@@ -17,7 +17,22 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": texts.overview,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech": ` `
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}			
+
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - objective") {
