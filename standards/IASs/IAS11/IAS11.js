@@ -8,7 +8,7 @@ module.exports = (req, res) => {
 					  "title": IAS11texts.overview,
 					  "quickReplies": [
 					    "Objective",
-					    "Presentation",
+					    "construction contract",
 					    "Disclosure",
 					    "Home 🏠"
 					]
@@ -22,8 +22,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.Objective,
 					  "quickReplies": [
-					    "Presentation",
-					    "Disclosure",
+					    "IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -51,9 +50,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.included_in_contract_revenue_and_costs,
 					  "quickReplies": [
-					    "Objective",
-					    "Presentation",
-					    "Disclosure",
+					    "IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -66,9 +63,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.Accounting,
 					  "quickReplies": [
-					    "Objective",
-					    "Presentation",
-					    "Disclosure",
+					    "IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -81,9 +76,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.Disclosure,
 					  "quickReplies": [
-					    "Objective",
-					    "Presentation",
-					    "Disclosure",
+					    "IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -96,9 +89,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.presentation,
 					  "quickReplies": [
-					    "Objective",
-					    "Presentation",
-					    "Disclosure",
+					    "IAS 11",
 					    "Home 🏠"
 					]
 				}
