@@ -142,7 +142,6 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS12texts.measureOfDefTaxAssets,
 					  "quickReplies": [
-					    "Adjusting Events",
 					    "IAS 12",
 					    "Tax Base",
 					    "Deferred tax asset",
@@ -212,17 +211,14 @@ module.exports = (req, res) => {
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Disclosure") {
 		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": IAS12texts.Disclosure,
-					  "quickReplies": [
-					    "IAS 12",
-					    "Tax Base",
-					    "Deferred tax asset",
-					    "Home 🏠"
-					]
-				}
-			}]
+			"fulfillmentMessages": [
+				{
+					"text": {
+				        "text": [
+				    	    IAS12texts.Disclosure
+				        ]
+				    }
+			]
 		});		
 	}																	
 	// if (err) {
