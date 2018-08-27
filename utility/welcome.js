@@ -18,7 +18,21 @@ Click on any of the buttons below to begin a conversation`,
 					]
 				}
 			}
-			]			
+			],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech": "this is a simple response"
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}					
 		})
 	}
 }
