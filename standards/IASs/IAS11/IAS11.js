@@ -22,7 +22,6 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.Objective,
 					  "quickReplies": [
-					    "Objective",
 					    "Presentation",
 					    "Disclosure",
 					    "Home 🏠"
