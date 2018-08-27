@@ -211,27 +211,13 @@ module.exports = (req, res) => {
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Disclosure") {
 		res.json({
-			"fulfillmentMessages": [
-				{
-					"text": {
+			"fulfillmentMessages": [{
+				"text": {
 				        "text": [
 				    	    IAS12texts.Disclosure
 				        ]
 				    }
-			]
+			}]
 		});		
 	}																	
-	// if (err) {
-	// 	res.json({
-	// 		"fulfillmentMessages": [
-	// 			{
-	// 				"text": {
-	// 			        "text": [
-	// 			    	    "Something went wrong..."
-	// 			        ]
-	// 			    }
-	// 			}
-	// 		]
-	// 	});			
-	// }
 }
