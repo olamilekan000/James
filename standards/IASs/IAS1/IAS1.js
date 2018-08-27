@@ -87,7 +87,21 @@ IAS 1 was reissued in September 2007 and applies to annual periods beginning on 
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.scope,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Objective of financial statements") {
@@ -104,7 +118,21 @@ IAS 1 was reissued in September 2007 and applies to annual periods beginning on 
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.objOfFs,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Components of financial statements") {
