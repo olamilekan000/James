@@ -20,12 +20,12 @@ module.exports = (req, res) => {
 			}],
 			  "payload": {
 			    "google": {
-			      "expectUserResponse": texts.overview,
+			      "expectUserResponse": true,
 			      "richResponse": {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech": ` `
+			              "textToSpeech": texts.overview
 			            }
 			          }
 			        ]
