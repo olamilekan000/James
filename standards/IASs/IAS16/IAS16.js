@@ -35,7 +35,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.obj_IAS_16,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -63,7 +63,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Scope_ias18,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -91,7 +91,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.recognition,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -119,7 +119,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.ini_msrmnt,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -147,7 +147,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.measOfSubsequent,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -175,7 +175,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.revModel,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -203,7 +203,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Depreciation,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -231,7 +231,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.recovOfCarryingAmt,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -259,7 +259,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Derecognition,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -287,7 +287,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Disclosure,
 					  "quickReplies": [
-					    "Objective",
+					    "IAS 16",
 					    "Home 🏠"
 					]
 				}
