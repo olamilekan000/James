@@ -7,13 +7,27 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS12texts.overview,
 					  "quickReplies": [
-					    "Objective",
+					    "Objective of IAS12",
 					    "Presentation",
 					    "Disclosure",
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.overview,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Objective") {
@@ -28,7 +42,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.objective,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Key definitions") {
@@ -43,22 +71,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
-		});		
-	}
-	if (req.body.queryResult.intent.displayName === "IAS12 - Key definitions") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": IAS12texts.keyTerms,
-					  "quickReplies": [
-				    	"IAS 12",
-					    "Tax Base",
-					    "Deferred tax asset",
-					    "Home 🏠"
-					]
-				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.keyTerms,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS12 - Current tax") {
@@ -73,7 +100,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.currentTax,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Calculation of deferred taxes") {
@@ -88,7 +129,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.calOfDeferredTaxes,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS12 - Tax bases") {
@@ -103,7 +158,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.TaxBases,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - exceptions to the requirement to recognise a deferred tax liability") {
@@ -118,7 +187,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.exceptionsTOrecogOfDefTaxLiab,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS12 - Recognition of deferred tax assets") {
@@ -133,7 +216,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.recogOfDefTaxAssets,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Measurement of deferred tax") {
@@ -148,7 +245,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.measureOfDefTaxAssets,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS12 - guidance on measuring deferred taxes") {
@@ -161,7 +272,21 @@ module.exports = (req, res) => {
 				        ]
 				    }
 				}
-			]
+			],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.guidance_on_measuring_deferred_taxes,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Amount of income tax to recognise") {
@@ -176,7 +301,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.recogOfTaxAmt,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Where to recognise income tax for the period") {
@@ -191,7 +330,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.whereToRecogIncomeTax,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - presentation") {
@@ -206,7 +359,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.presentation,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS12 - Disclosure") {
@@ -217,7 +384,21 @@ module.exports = (req, res) => {
 				    	    IAS12texts.Disclosure
 				        ]
 				    }
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Disclosure,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}																	
 }
