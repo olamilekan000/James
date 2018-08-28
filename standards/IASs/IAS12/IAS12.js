@@ -21,7 +21,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.overview,
+			              "textToSpeech":IAS12texts.overview,
 			            }
 			          }
 			        ]
@@ -50,7 +50,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.objective,
+			              "textToSpeech":IAS12texts.objective,
 			            }
 			          }
 			        ]
@@ -79,7 +79,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.keyTerms,
+			              "textToSpeech":IAS12texts.keyTerms,
 			            }
 			          }
 			        ]
@@ -108,7 +108,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.currentTax,
+			              "textToSpeech":IAS12texts.currentTax,
 			            }
 			          }
 			        ]
@@ -137,7 +137,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.calOfDeferredTaxes,
+			              "textToSpeech":IAS12texts.calOfDeferredTaxes,
 			            }
 			          }
 			        ]
@@ -166,7 +166,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.TaxBases,
+			              "textToSpeech":IAS12texts.TaxBases,
 			            }
 			          }
 			        ]
@@ -195,7 +195,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.exceptionsTOrecogOfDefTaxLiab,
+			              "textToSpeech":IAS12texts.exceptionsTOrecogOfDefTaxLiab,
 			            }
 			          }
 			        ]
@@ -224,7 +224,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.recogOfDefTaxAssets,
+			              "textToSpeech":IAS12texts.recogOfDefTaxAssets,
 			            }
 			          }
 			        ]
@@ -253,7 +253,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.measureOfDefTaxAssets,
+			              "textToSpeech":IAS12texts.measureOfDefTaxAssets,
 			            }
 			          }
 			        ]
@@ -280,7 +280,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.guidance_on_measuring_deferred_taxes,
+			              "textToSpeech":IAS12texts.guidance_on_measuring_deferred_taxes,
 			            }
 			          }
 			        ]
@@ -309,7 +309,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.recogOfTaxAmt,
+			              "textToSpeech":IAS12texts.recogOfTaxAmt,
 			            }
 			          }
 			        ]
@@ -338,7 +338,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.whereToRecogIncomeTax,
+			              "textToSpeech":IAS12texts.whereToRecogIncomeTax,
 			            }
 			          }
 			        ]
@@ -367,7 +367,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.presentation,
+			              "textToSpeech":IAS12texts.presentation,
 			            }
 			          }
 			        ]
@@ -392,7 +392,7 @@ module.exports = (req, res) => {
 			        "items": [
 			          {
 			            "simpleResponse": {
-			              "textToSpeech":texts.Disclosure,
+			              "textToSpeech":IAS12texts.Disclosure,
 			            }
 			          }
 			        ]
