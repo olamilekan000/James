@@ -308,5 +308,33 @@ module.exports = (req, res) => {
 		}			
 
 		})
-	}																
+	}
+	if (req.body.queryResult.intent.displayName === "IAS16 - Revalued property, plant and equipment") {
+		res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.PPEatRevAmt,
+					  "quickReplies": [
+					    "IAS 16",
+					    "Home 🏠"
+					]
+				}
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.PPEatRevAmt,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}			
+
+		})
+	}																	
 }
