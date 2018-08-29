@@ -13,7 +13,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.overview,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS10 - Event after the reporting period") {
@@ -28,7 +42,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.EventsAfterReporting,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS10 - Adjusting event") {
@@ -43,7 +71,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.AdjustingEvents,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS10 - Non-adjusting event") {
@@ -58,7 +100,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.NonAdjustingEvents,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS10 - Going concern issues arising after end of the reporting period") {
@@ -73,7 +129,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.goingConcernIssues,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS10 - Disclosure") {
@@ -88,7 +158,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.disclosure,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		});		
 	}								
 }

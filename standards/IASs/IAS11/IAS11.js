@@ -13,7 +13,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.overview,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - Objective") {
@@ -26,7 +40,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Objective,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - construction contract") {
@@ -41,7 +69,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.constructionContract,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - included in contract revenue and costs") {
@@ -54,7 +96,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.included_in_contract_revenue_and_costs,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS11 - Accounting") {
@@ -67,7 +123,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Accounting,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - Disclosure") {
@@ -80,7 +150,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Disclosure,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - Presentation") {
@@ -93,7 +177,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.presentation,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}		
 		});		
 	}									
 }

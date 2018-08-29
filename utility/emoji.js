@@ -11,7 +11,21 @@ module.exports = (req, res) => {
 			          ]
 			        }
 			      }
-			    ]		
+			    ],
+				  "payload": {
+				    "google": {
+				      "expectUserResponse": true,
+				      "richResponse": {
+				        "items": [
+				          {
+				            "simpleResponse": {
+				              "textToSpeech":"👌",
+				            }
+				          }
+				        ]
+				     }
+				}	
+			}					    		
 			})
 	}
 }

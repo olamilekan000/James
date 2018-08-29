@@ -23,7 +23,22 @@ module.exports = (req, res) => {
 					"text":{
 						"text": [description, "😊"]
 					}
-				}]
+				}],
+				  "payload": {
+				    "google": {
+				      "expectUserResponse": true,
+				      "richResponse": {
+				        "items": [
+				          {
+				            "simpleResponse": {
+				              "textToSpeech":texts.description,
+				            }
+				          }
+				        ]
+				     }
+				}	
+			}		
+				
 			})
 		});	
 	}

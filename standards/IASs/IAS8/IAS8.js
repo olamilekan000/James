@@ -14,7 +14,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.overview,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Accounting policies") {
@@ -30,7 +44,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.acctngPolicies,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Materiality") {
@@ -46,7 +74,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.materiality,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}						
 	if (req.body.queryResult.intent.displayName === "IAS8 - Selection and application of accounting policies") {
@@ -62,7 +104,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.selectionOfplocies,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS8 - Consistency of accounting policies") {
@@ -77,7 +133,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.consistencyOfPolicies,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS8 - Changes in accounting policies") {
@@ -92,7 +162,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.changesOfAcctngPolicies,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - retrospective") {
@@ -108,7 +192,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.retrospective,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Disclosures relating to changes in accounting policy") {
@@ -122,7 +220,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.discRelatedToANewStndAcctngPolicies,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Disclosures relating to voluntary changes in accounting policy") {
@@ -137,7 +249,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.discRelatedToVoluntaryAcctngPolicies,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Disclosing Accounting Estimates") {//change in accounting estimate, effect of a change in an accounting estimate
@@ -151,7 +277,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.chngOfAcctEstm,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Errors") {
@@ -164,7 +304,21 @@ module.exports = (req, res) => {
 				        ]
 				    }
 				}
-			]
+			],
+			"payload": {
+				"google": {
+				   "expectUserResponse": true,
+				   "richResponse": {
+				       "items": [
+				        {
+				         "simpleResponse": {
+				          "textToSpeech":IAS8texts.Errors,
+				          }
+				        }
+				    ]
+				  }
+				}	
+			}
 		});		
 	}											
 }

@@ -7,10 +7,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.overview,
 					  "quickReplies": [
-					    "Objective",
-					    "Scope",
-					    "Objective of financial statements",
-					    "Components of financial statements",
+					    "Objective of IAS 1",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
 					    "Consistency of presentation",
@@ -42,9 +39,7 @@ module.exports = (req, res) => {
 					  "title": texts.objective,
 					  "quickReplies": [
 					    "IAS 1",
-					    "Scope",
-					    "Objective of financial statements",
-					    "Components of financial statements",
+					    "Scope OF IAS 1",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
 					    "Consistency of presentation",
@@ -74,10 +69,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.scope,
 					  "quickReplies": [
-					    "Objective",
 					    "IAS 1",
-					    "Objective of financial statements",
-					    "Components of financial statements",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
 					    "Consistency of presentation",
@@ -146,7 +138,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.compOfFs,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Fair presentation and compliance with IFRSs") {
@@ -163,7 +169,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.fairPresentoFFS,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Going concern") {
@@ -180,7 +200,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Going_concern,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Accrual basis of accounting") {
@@ -198,14 +232,28 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Accrual_basis,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Consistency of presentation") {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.Accrual_basis,
+					  "title": texts.Consistency_of_presentation,
 					  "quickReplies": [
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
@@ -215,7 +263,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Consistency_of_presentation,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Materiality and aggregation") {
@@ -232,7 +294,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Materiality_and_aggregation,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Offsetting") {
@@ -249,7 +325,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Offsetting,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - comparative info") {
@@ -262,7 +352,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.comparative_info,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Structure and content of financial statements") {
@@ -275,7 +379,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Structure_and_content_of_financial_statements,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}	
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Reporting period") {
@@ -288,7 +406,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Reporting_period,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Current and non current classification") {
@@ -301,7 +433,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Current_and_non_current_classification,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Line items") {
@@ -314,7 +460,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Line_items,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Format of statement") {
@@ -327,7 +487,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Format_of_statement,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Share capital and reserves") {
@@ -340,7 +514,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Share_capital_and_reserves,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Concepts of profit or loss and comprehensive income") {
@@ -353,7 +541,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.Concepts_of_profit_or_loss_and_comprehensive_income,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - items recognised outside of profit or loss") {
@@ -366,7 +568,21 @@ module.exports = (req, res) => {
 					    "Home 🏠"
 					]
 				}
-			}]
+			}],
+			  "payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [
+			          {
+			            "simpleResponse": {
+			              "textToSpeech":texts.items_recognised_outside_of_profit_or_loss,
+			            }
+			          }
+			        ]
+			     }
+			}	
+		}
 		})
 	}						
 }
