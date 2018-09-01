@@ -24,20 +24,18 @@ module.exports = (req, res) => {
 						"text": [description, "😊"]
 					}
 				}],
-				  "payload": {
+				"payload": {
 				    "google": {
 				      "expectUserResponse": true,
 				      "richResponse": {
-				        "items": [
-				          {
-				            "simpleResponse": {
-				              "textToSpeech":texts.description,
-				            }
-				          }
-				        ]
-				     }
-				}	
-			}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.description,
+					        	}
+				        	}]
+				    	}
+					}	
+				}		
 				
 			})
 		});	
@@ -66,6 +64,15 @@ var getState = (state) => {
 			
 		});
 	}
+
+// async function getState(state){
+
+// 	let apiKey = "1545ad0038b38ead324bfab9e11bb464";
+// 	const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
+// 	const parsedData = await request(url)
+// 	console.log(parsedData)	
+
+// }
 
 // getState('Lagos');
 
