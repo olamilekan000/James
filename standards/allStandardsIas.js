@@ -99,12 +99,12 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 16 — Property, Plant and Equipment",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": "IAS 16 Property, Plant and Equipment outlines the accounting treatment for most types of property, plant and equipment. Property, plant and equipment is initially measured at its cost, subsequently measured either using a cost or revaluation model, and depreciated so that its depreciable amount is allocated on a systematic basis over its useful life. IAS 16 was reissued in December 2003 and applies to annual periods beginning on or after 1 January 2005.",
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 16',
-	  							'postback': 'Objective of IAS 16'
+								'text': 'About IAS 16',
+	  							'postback': 'About IAS 16'
 							}
 						]
 					}
