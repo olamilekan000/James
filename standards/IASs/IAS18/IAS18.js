@@ -1,5 +1,6 @@
 const texts = require('./IAS18texts');
 
+// Will be superseded by IFRS 15 as of 1 January 2018
 module.exports = (req, res) => {
 	if (req.body.queryResult.intent.displayName === "IAS 18") {
 		res.json({
