@@ -3,10 +3,9 @@ const request = require('request');
 module.exports = (req, res) => {
 	if(req.body.queryResult.intent.displayName === "Default Welcome Intent"){
 		res.json({
-			"fulfillmentMessages": [
-			{
+			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": `Hi! I am James, let's talk about IFRS? 😃. 
+					  "title": `Hi! I am James, let's talk about IFRS!! 😃. 
 					  
 Click on any of the buttons below to begin a conversation`,
 
@@ -17,8 +16,19 @@ Click on any of the buttons below to begin a conversation`,
 					    "IFRS"
 					]
 				}
-			}
-			]					
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+			        "items": [{
+				        "simpleResponse": {
+				            "textToSpeech":`Hi! I am James, let's talk about IFRS!! 😃`
+				        	}
+			        	}]
+			    	}
+				}	
+			}					
 		})
 	}
 }
