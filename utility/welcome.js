@@ -18,23 +18,7 @@ Click on any of the buttons below to begin a conversation`,
 					]
 				}
 			}
-			],
-			  "payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech": `
-Hi! I am James, let's talk about IFRS
-			              `
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}					
+			]					
 		})
 	}
 }
