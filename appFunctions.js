@@ -6,7 +6,11 @@ const IAS10 = require('./standards/IASs/IAS10/IAS10');//for ias-10
 const IAS11 = require('./standards/IASs/IAS11/IAS11');//for ias-11
 const IAS12 = require('./standards/IASs/IAS12/IAS12');//for ias-12
 const IAS16 = require('./standards/IASs/IAS16/IAS16');//for ias-16
-const IAS18 = require('./standards/IASs/IAS18/IAS18');//for ias-17
+const IAS18 = require('./standards/IASs/IAS18/IAS18');//for ias-18
+const IAS19 = require('./standards/IASs/IAS19/IAS19');//for ias-19
+const IAS20 = require('./standards/IASs/IAS20/IAS20');//for ias-20
+const IAS21 = require('./standards/IASs/IAS21/IAS21');//for ias-20
+const IAS23 = require('./standards/IASs/IAS23/IAS23');//for ias-20
 
 module.exports = (req, res) => {
 	//individual standards
@@ -19,5 +23,9 @@ module.exports = (req, res) => {
 	IAS12(req, res);
 	IAS16(req, res);
 	IAS18(req, res);
+	IAS19(req, res);
+	IAS20(req, res);
+	IAS21(req, res);
+	IAS23(req, res);
 	
 }

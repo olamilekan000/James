@@ -111,13 +111,13 @@ module.exports = (req, res) => {
 				},
 				{
 					"card":{
-						"title": "IAS 17 — Leases (Will be superseded by IFRS 16 as of 1 January 2019)",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"title": "IAS 19 — Employee Benefits (2011)",
+						"subtitle": `IAS 19 Employee Benefits (amended 2011) outlines the accounting requirements for employee benefits, including short-term benefits (e.g. wages and salaries, annual leave), post-employment benefits such as retirement benefits, other long-term benefits (e.g. long service leave) and termination benefits. The standard establishes the principle that the cost of providing employee benefits should be recognised in the period in which the benefit is earned by the employee, rather than when it is paid or payable, and outlines how each category of employee benefits are measured, providing detailed guidance in particular about post-employment benefits. IAS 19 (2011) was issued in 2011, supersedes IAS 19 Employee Benefits (1998), and is applicable to annual periods beginning on or after 1 January 2013.`,
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IAS 17',
-	  							'postback': 'Objective of IAS 17'
+								'text': 'About IAS 19',
+	  							'postback': 'About IAS 19'
 							}
 						]
 					}

@@ -127,7 +127,7 @@ Assets:`
 A present economic resource controlled by the entity as a result of past events. An economic resource is a right that has the potential to produce economic benefits.
 `,
 liab:`
-A present obligation of the entity to transfer an economic resource as a result of past events.
+A present obligation of the entity to transfer an economic resource as a result of past events.  An obligation is a duty of responsibility that the entity has no practical ability to avoid
 `,
 equity:`
 The residual interest in the assets of the entity after deducting all its liabilities.
@@ -137,8 +137,21 @@ Increases in assets or decreases in liabilities that result in increases in equi
 `,
 Expenses:` Decreases in assets or increases in liabilities that result in decreases in equity, other than those relating to distributions to holders of equity claims.
 New is the introduction of a separate definition of an economic resource to move the references to future flows of economic benefits out of the definitions of an asset and a liability. The expression "economic resource" instead of simply "resource" stresses that the IASB no longer thinks of assets as physical objects but as sets of rights. The definitions of asets and liabilities also no longer refer to "expected" inflows or outflows. Instead, the definition of an economic resource refers to the potential of an asset/liability to produce/to require a transfer of economic benefits. Distinguishing between liabilities and equity is not part of the new framework but has been transferred to the IASB's research project on financial instruments with the characteristics of equity.`
+,
+recognition:`
+It is the process of capturing, for inclusion in the statement of financial position or the statement(s) of financial performance, an item that meets the definition of an asset, a liability, equity, income or expenses.
 
+Recognition is only appropriate if it results in both relevant information about the element being recognised, and faithful representation of that element.
+`,
+Derecognition:`
+It is the removal of all or part of a recognised asset of liability from an entity’s statement of financial position.
 
+Derecognition normally occurs:
+(a) - For an asset, when the entity loses control of all or part of the recognised asset.
+(b) - For a liability, when the entity no longer has a present obligation for all or part of the recognised liability
+
+Derecognition should aim to faithfully represent those assets and liabilities retained after the transaction, if any, and any change in assets and liabilities as a result of the transaction that led to the derecognition.
+`
 
 
 }
