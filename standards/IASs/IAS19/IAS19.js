@@ -55,7 +55,7 @@ module.exports = (req, res) => {
 		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.obj,
+					  "title": texts.scope,
 					  "quickReplies": [
 					    "Objective of ias 19",
 					    "Home 🏠"
@@ -68,7 +68,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 			        "items": [{
 				        "simpleResponse": {
-				            "textToSpeech":texts.obj,
+				            "textToSpeech":texts.scope,
 				        	}
 			        	}]
 			    	}
