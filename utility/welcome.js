@@ -23,7 +23,7 @@ Click on any of the buttons below to begin a conversation`,
 			      "richResponse": {
 			        "items": [{
 				        "simpleResponse": {
-				            "textToSpeech":`Hi! I am James, let's talk about IFRS!! 😃`
+				            "textToSpeech":`Hi! I am Fra Luca, let's talk about IFRS!! 😃`
 				        	}
 			        	}]
 			    	}
