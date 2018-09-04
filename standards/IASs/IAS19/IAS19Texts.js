@@ -41,17 +41,22 @@ The accounting treatment for a post-employment benefit plan depends on the econo
 
 `,
 definedContPlan:`
+It is a retirement benefit plan by which benefits to employees are based on the amount of funds contributed to the plan plus investment earnings thereon. [IAS 26.8]
+
 Under a defined contribution plan, the entity pays fixed contributions into a fund but has no legal or constructive obligation to make further payments if the fund does not have sufficient assets to pay all of the employees' entitlements to post-employment benefits. The entity's obligation is therefore effectively limited to the amount it agrees to contribute to the fund and effectively place actuarial and investment risk on the employee
 
 For defined contribution plans, the amount recognised in the period is the contribution payable in exchange for service rendered by employees during the period. [IAS 19(2011).51]
 
 Contributions to a defined contribution plan which are not expected to be wholly settled within 12 months after the end of the annual reporting period in which the employee renders the related service are discounted to their present value. [IAS 19.52]
+
+The report of a defined contribution plan should contain a statement of net assets available for benefits and a description of the funding policy. [IAS 26.13]
 `,
 definedBenefitPlan:`
+A retirement benefit plan by which employees receive benefits based on a formula usually linked to employee earnings. [IAS 26.8]
+
 These are post-employment benefit plans other than a defined contribution plans. These plans create an obligation on the entity to provide agreed benefits to current and past employees and effectively places actuarial and investment risk on the entity.
 
-Basic requirements
-
+Basic requirements:
 An entity is required to recognise the net defined benefit liability or asset in its statement of financial position. [IAS 19(2011).63] However, the measurement of a net defined benefit asset is the lower of any surplus in the fund and the 'asset ceiling' (i.e. the present value of any economic benefits available in the form of refunds from the plan or reductions in future contributions to the plan). [IAS 19(2011).64]
 `,
 measurementOfDefinedBenefitPlan:`

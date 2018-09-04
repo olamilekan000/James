@@ -11,6 +11,7 @@ const IAS19 = require('./standards/IASs/IAS19/IAS19');//for ias-19
 const IAS20 = require('./standards/IASs/IAS20/IAS20');//for ias-20
 const IAS21 = require('./standards/IASs/IAS21/IAS21');//for ias-20
 const IAS23 = require('./standards/IASs/IAS23/IAS23');//for ias-20
+const IAS24 = require('./standards/IASs/IAS24/IAS24');//for ias-20
 
 module.exports = (req, res) => {
 	//individual standards
@@ -27,5 +28,6 @@ module.exports = (req, res) => {
 	IAS20(req, res);
 	IAS21(req, res);
 	IAS23(req, res);
+	IAS24(req, res);
 	
 }
