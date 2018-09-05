@@ -59,8 +59,11 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 				        	{
-				        		"title": "0"
-				        	}
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "Components of Borrowing Costs"
+			        		}
 				       	]
 			    	}
 				}	

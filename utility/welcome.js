@@ -21,11 +21,16 @@ Click on any of the buttons below to begin a conversation`,
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":`Hi! I am Fra Luca, let's talk about IFRS!! 😃`
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":`Hi! I am Fra Luca, let's talk about IFRS!! 😃`
+					        	}
+				        	}],
+				        "suggestions":[
+							{
+							  "title": "Conceptual Framework"
+							}
+				        ]	
 			    	}
 				}
 			}					
