@@ -1,4 +1,4 @@
-const request = require('request');
+const axios = require('axios');
 
 module.exports = (req, res) => {
 	if(req.body.queryResult.intent.displayName === "Default Welcome Intent"){
@@ -27,19 +27,10 @@ Click on any of the buttons below to begin a conversation`,
 				        	}
 			        	}]
 			    	}
-				},
-				"facebook": {
-					"text":`Hi ${userProfile(event)}`
-				}	
+				}
 			}					
 		})
 	}
 }
 
-
-const userProfile = async (event) => {
-	url = `https://graph.facebook.com/v2.6/${event.sender.id}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${process.env.FB_PAGE_ACCESS_TOKEN}`
-	const result = await request().get(url)
-	return result.first_name
-}
 
