@@ -26,7 +26,7 @@ module.exports = (req, res) => {
 				        		"title": "IAS 23"
 				        	},
 			        		{
-			        			"title": "Components of Borrowing Costs"
+			        			"title": "Home"
 			        		},
 			        		{
 			        			"title": "Objective of IAS 23"
@@ -62,7 +62,7 @@ module.exports = (req, res) => {
 				        		"title": "IAS 23"
 				        	},
 			        		{
-			        			"title": "Components of Borrowing Costs"
+			        			"title": "Home"
 			        		}
 				       	]
 			    	}
