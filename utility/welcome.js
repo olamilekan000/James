@@ -29,7 +29,12 @@ Click on any of the buttons below to begin a conversation`,
 			    	}
 				},
 				"facebook": {
-					"text": `Hi {{user_full_name}},`
+					"greeting":[
+					  {
+					    "locale":"default",
+					    "text":"Hello {{user_first_name}}!"
+					  }
+					]
 				}	
 			}					
 		})
