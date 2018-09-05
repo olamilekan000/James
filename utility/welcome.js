@@ -30,12 +30,7 @@ Click on any of the buttons below to begin a conversation`,
 				},
 				"facebook": {
 					"get_started":{
-						"greeting":[
-						  {
-						    "locale":"default",
-						    "text":"Hello {{user_first_name}}! let's talk about IFRS!! 😃"
-						  }
-						]					
+						"payload":`Hi {{user_first_name}}! I am Fra Luca, let's talk about IFRS!! 😃`
 					}					
 				}	
 			}					
