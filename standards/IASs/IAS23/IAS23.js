@@ -13,16 +13,14 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.overview,
-				        	}
-			        	}]
-			    	}
-				}	
+				"messages": [
+					{
+					"displayText": texts.overview,
+					"platform": "google",
+					"textToSpeech": texts.overview,
+					"type": "simple_response"
+					}
+				]	
 			}
 		})
 	}
