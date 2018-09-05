@@ -8,41 +8,24 @@ module.exports = (req, res) => {
 				{
 					"card":{
 						"title": "IAS 40 — Investment Property",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": `IAS 40 Investment Property applies to the accounting for property (land and/or buildings) held to earn rentals or for capital appreciation (or both). Investment properties are initially measured at cost and, with some exceptions. may be subsequently measured using a cost model or fair value model, with changes in the fair value under the fair value model being recognised in profit or loss.`,
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-      							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
-							}
-						]
+								'text': 'About IAS 40',
+      							'postback': 'About IAS 40'
+							}						]
 					}
 				},	
 				{
 					"card":{
 						"title": "IAS 41 — Agriculture",
-						"subtitle": "IFRS 10 was issued in May 2011 and applies to annual periods beginning on or after 1 January 2013.",
+						"subtitle": `IAS 41 Agriculture sets out the accounting for agricultural activity – the transformation of biological assets (living plants and animals) into agricultural produce (harvested product of the entity's biological assets). The standard generally requires biological assets to be measured at fair value less costs to sell.`,
 						"imageUri": textz.imgeUriIAS,
 						"buttons":[
 							{
-								'text': 'Objective of IFRS 10',
-      							'postback': 'Objective of IFRS 10'
-							},
-							{
-								'text': 'Measurement of IFRS 10',
-								'postback': 'Measurement of IFRS 10'
-							},
-							{
-								'text': 'Disclosure of IFRS 10',
-								'postback': 'Disclosure of IFRS 10'
+								'text': 'About IAS 41',
+      							'postback': 'About IAS 41'
 							}
 						]
 					}
