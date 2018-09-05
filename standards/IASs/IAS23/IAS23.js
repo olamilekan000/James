@@ -24,7 +24,6 @@ module.exports = (req, res) => {
 				                        {
 				                            "simpleResponse": {
 				                                "textToSpeech": "Howdy! I can tell you fun facts about almost any number, like 42. What do you have in mind?",
-				                                "displayText": "Howdy! I can tell you fun facts about almost any number. What do you have in mind?"
 				                            }
 				                        }
 				                    ],
