@@ -13,27 +13,27 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google":{
-				    "conversationToken": "",
-				    "expectUserResponse": true,
-				    "expectedInputs": [
-				        {
-				            "inputPrompt": {
-				                "richInitialPrompt": {
-				                    "items": [
-				                        {
-				                            "simpleResponse": {
-				                                "textToSpeech": "Howdy! I can tell you fun facts about almost any number, like 42. What do you have in mind?",
-				                            }
-				                        }
-				                    ],
-				                    "suggestions": []
-				                }
-				            },
-				            "possibleIntents": []
-				        }
-				    ]
-				}
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "Components of Borrowing Costs"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 23"
+			        		}
+				       	]
+			    	}
+				}	
 			}
 		})
 	}
@@ -85,11 +85,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.borrowingCostComponents,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.borrowingCostComponents,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "qualifying asset"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -110,11 +118,22 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.qualifyingAsset,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.qualifyingAsset,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "qualifying asset"
+			        		},
+			        		{
+			        			"title": "Scope of IAS 23"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -135,11 +154,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.scope,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.scope,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "qualifying asset"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -160,11 +187,22 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.recognision,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.recognision,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "qualifying asset"
+			        		},
+			        		{
+			        			"title": "Measurement of IAS 23"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -185,11 +223,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.Measurement,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Measurement,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "Home"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -210,11 +256,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.Disclosure,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Disclosure,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "IAS 23"
+				        	},
+			        		{
+			        			"title": "Home"
+			        		}
+				       	]
 			    	}
 				}	
 			}
