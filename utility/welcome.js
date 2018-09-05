@@ -29,9 +29,7 @@ Click on any of the buttons below to begin a conversation`,
 			    	}
 				},
 				"facebook": {
-					"get_started":{
-						"payload":`Hi! I am Fra Luca, let's talk about IFRS!! 😃`
-					}
+					"text": "Hello, Facebook!"
 				}	
 			}					
 		})
