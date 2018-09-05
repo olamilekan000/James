@@ -53,11 +53,16 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.obj,
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+				        	{
+				        		"title": "0"
 				        	}
-			        	}]
+				       	]
 			    	}
 				}	
 			}
