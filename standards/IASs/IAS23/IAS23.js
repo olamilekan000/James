@@ -23,27 +23,15 @@ module.exports = (req, res) => {
 				                    "items": [
 				                        {
 				                            "simpleResponse": {
-				                                "textToSpeech": "Howdy! I can tell you fun facts about almost any number like 0, 42, or 100. What number do you have in mind?",
-				                                "displayText": "Howdy! I can tell you fun facts about almost any number. What number do you have in mind?"
+				                                "textToSpeech": "Howdy! I can tell you fun facts about almost any number, like 42. What do you have in mind?",
+				                                "displayText": "Howdy! I can tell you fun facts about almost any number. What do you have in mind?"
 				                            }
 				                        }
 				                    ],
-				                    "suggestions": [
-				                        {
-				                            "title": "0"
-				                        },
-				                        {
-				                            "title": "42"
-				                        },
-				                        {
-				                            "title": "100"
-				                        },
-				                        {
-				                            "title": "Never mind"
-				                        }
-				                    ]
+				                    "suggestions": []
 				                }
-				            }
+				            },
+				            "possibleIntents": []
 				        }
 				    ]
 				}
