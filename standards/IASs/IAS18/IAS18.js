@@ -13,21 +13,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.overview,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Objective") {
@@ -41,21 +46,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.obj,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Key definition") {
@@ -69,21 +79,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.keyDef,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.keyDef,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Measurement of revenue") {
@@ -97,21 +112,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Measurement,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Measurement,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Recognition of revenue") {
@@ -125,21 +145,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.recog,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.recog,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}			
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Sale of goods") {
@@ -153,21 +178,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.recogForSalesofGoods,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.recogForSalesofGoods,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}			
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Rendering of services") {
@@ -181,21 +211,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.recogForServices,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.recogForServices,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Interest, royalties, and dividends") {
@@ -209,21 +244,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.recogForIntRoy,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.recogForSalesofGoods,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 18 - Disclosure") {
@@ -237,21 +277,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.disclosure,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}			
-
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.disclosure,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 18"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}											
 }

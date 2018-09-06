@@ -16,11 +16,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.overview,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -41,11 +49,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.obj,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -66,11 +82,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.scope,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.scope,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -91,11 +115,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.provison,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.provison,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -116,11 +148,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.ContingentLiability,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.ContingentLiability,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -141,11 +181,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.ContingentAsset,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.ContingentAsset,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -166,11 +214,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.RecognitionProvision,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.RecognitionProvision,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 37"
+			        		}
+				       	]
 			    	}
 				}	
 			}

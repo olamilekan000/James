@@ -16,11 +16,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.overview,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -41,11 +49,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.obj,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -66,11 +82,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.scope,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.scope,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -91,11 +115,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.ordShares,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.ordShares,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -116,11 +148,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.potentialOrdShare,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.potentialOrdShare,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -141,11 +181,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.dilution,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.dilution,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -166,11 +214,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.antiDilution,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.antiDilution,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -191,11 +247,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.reqToPresEPS,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.reqToPresEPS,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -216,11 +280,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.basicEPS,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.basicEPS,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -241,11 +313,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.dilutedEPS,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.dilutedEPS,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -266,11 +346,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.calDilution,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.calDilution,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -291,11 +379,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.retroSAdj,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.retroSAdj,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}
@@ -316,11 +412,19 @@ module.exports = (req, res) => {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [{
-				        "simpleResponse": {
-				            "textToSpeech":texts.Disclosure,
-				        	}
-			        	}]
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Disclosure,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 33"
+			        		}
+				       	]
 			    	}
 				}	
 			}

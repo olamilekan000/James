@@ -2,7 +2,7 @@ const texts = require('./ias7Texts');
 
 module.exports = (req, res) => {
 	if (req.body.queryResult.intent.displayName === "IAS7") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.overview,
@@ -13,24 +13,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.overview,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 7"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}	
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS7 - Objective") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.obj,
@@ -40,24 +46,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.obj,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 7"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}	
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS7 - Presentation of the Statement of Cash Flows") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.presentation,
@@ -67,20 +79,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.presentation,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.presentation,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 7"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}	
 		});		
 	}
 }

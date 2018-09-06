@@ -1,13 +1,13 @@
-const texts = require('./IAS16texts');
+const texts = require('./IAS41texts');
 
 module.exports = (req, res) => {
-	if (req.body.queryResult.intent.displayName === "IAS 16") {
-		res.json({
+	if (req.body.queryResult.intent.displayName === "IAS 41") {
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.Overview,
+					  "title": texts.overview,
 					  "quickReplies": [
-					    "Objective of ias 16",
+					    "Objective of IAS 41",
 					    "Home 🏠"
 					]
 				}
@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Overview,
+					            "textToSpeech":texts.overview,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -26,7 +26,7 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "Objective of IAS 16"
+			        			"title": "Objective of IAS 23"
 			        		}
 				       	]
 			    	}
@@ -34,13 +34,13 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Objective of IAS 16") {
-		res.json({
+	if (req.body.queryResult.intent.displayName === "IAS 41 - Objective") {
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.obj_IAS_16,
+					  "title": texts.Objective,
 					  "quickReplies": [
-					    "IAS 16",
+					    "Objective of IAS 41",
 					    "Home 🏠"
 					]
 				}
@@ -51,7 +51,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.obj_IAS_16,
+					            "textToSpeech":texts.Objective,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -59,74 +59,7 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-
-		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Scope") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.Scope_ias18,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.Scope_ias18,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}	
-		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Recognition") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.recognition,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.recognition,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
+			        			"title": "IAS 41"
 			        		}
 				       	]
 			    	}
@@ -134,13 +67,13 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Initial measurement") {
-		res.json({
+	if (req.body.queryResult.intent.displayName === "IAS 41 - Scope") {
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.ini_msrmnt,
+					  "title": texts.Scope,
 					  "quickReplies": [
-					    "IAS 16",
+					    "Objective of IAS 41",
 					    "Home 🏠"
 					]
 				}
@@ -151,7 +84,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.ini_msrmnt,
+					            "textToSpeech":texts.Scope,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -159,139 +92,7 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}	
-		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Measurement subsequent to initial recognition") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.measOfSubsequent,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.measOfSubsequent,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}	
-		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - The revaluation model") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.revModel,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.revModel,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}	
-		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Depreciation") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.Depreciation,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.Depreciation,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}	
-		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Recoverability of the carrying amount") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.recovOfCarryingAmt,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.recovOfCarryingAmt,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
+			        			"title": "IAS 41"
 			        		}
 				       	]
 			    	}
@@ -299,13 +100,13 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Derecognition") {
-		res.json({
+	if (req.body.queryResult.intent.displayName === "IAS 41 - Biological Asset") {
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.Derecognition,
+					  "title": texts.BiologicalAsset,
 					  "quickReplies": [
-					    "IAS 16",
+					    "Objective of IAS 41",
 					    "Home 🏠"
 					]
 				}
@@ -316,7 +117,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Derecognition,
+					            "textToSpeech":texts.BiologicalAsset,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -324,7 +125,7 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "IAS 16"
+			        			"title": "IAS 41"
 			        		}
 				       	]
 			    	}
@@ -332,13 +133,244 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Disclosure") {
-		res.json({
+	if (req.body.queryResult.intent.displayName === "IAS 41 - Bearer Plant") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.BearerPlant,
+					  "quickReplies": [
+					    "Objective of IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.BearerPlant,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 41 - AgriculturalProduce") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.AgriculturalProduce,
+					  "quickReplies": [
+					    "IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.AgriculturalProduce,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 41 - costs oF sale") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.costsoFsale,
+					  "quickReplies": [
+					    "IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.costsoFsale,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 41 - initial Recognition") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.initRecog,
+					  "quickReplies": [
+					    "IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.initRecog,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 41 - Measurement") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.Measurement,
+					  "quickReplies": [
+					    "IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Measurement,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 41 - other Issues") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.otherIssues,
+					  "quickReplies": [
+					    "IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.otherIssues,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}
+	if (req.body.queryResult.intent.displayName === "IAS 41 - govt Grants") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.govtGrants,
+					  "quickReplies": [
+					    "IAS 41",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.govtGrants,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 41"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}	
+	if (req.body.queryResult.intent.displayName === "IAS 41 - Disclosure") {
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Disclosure,
 					  "quickReplies": [
-					    "IAS 16",
+					    "IAS 41",
 					    "Home 🏠"
 					]
 				}
@@ -357,7 +389,7 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "IAS 16"
+			        			"title": "IAS 41"
 			        		}
 				       	]
 			    	}
@@ -365,37 +397,5 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS16 - Revalued property, plant and equipment") {
-		res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.PPEatRevAmt,
-					  "quickReplies": [
-					    "IAS 16",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech":texts.PPEatRevAmt,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		})
-	}																	
+
 }

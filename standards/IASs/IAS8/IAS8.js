@@ -2,7 +2,7 @@ const IAS8texts = require('./IAS8texts')
 
 module.exports = (req, res) => {
 	if (req.body.queryResult.intent.displayName === "IAS8") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.overview,
@@ -16,23 +16,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.overview,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Accounting policies"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Accounting policies") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.acctngPolicies,
@@ -46,23 +52,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.acctngPolicies,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.acctngPolicies,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Materiality") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.materiality,
@@ -76,23 +88,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.materiality,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.materiality,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}						
 	if (req.body.queryResult.intent.displayName === "IAS8 - Selection and application of accounting policies") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.selectionOfplocies,
@@ -106,23 +124,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.selectionOfplocies,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.selectionOfplocies,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS8 - Consistency of accounting policies") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.consistencyOfPolicies,
@@ -135,23 +159,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.consistencyOfPolicies,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.consistencyOfPolicies,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS8 - Changes in accounting policies") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.changesOfAcctngPolicies,
@@ -164,23 +194,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.changesOfAcctngPolicies,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.changesOfAcctngPolicies,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - retrospective") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.retrospective,
@@ -194,23 +230,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.retrospective,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.retrospective,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Disclosures relating to changes in accounting policy") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.discRelatedToANewStndAcctngPolicies,
@@ -222,23 +264,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.discRelatedToANewStndAcctngPolicies,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.discRelatedToANewStndAcctngPolicies,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Disclosures relating to voluntary changes in accounting policy") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.discRelatedToVoluntaryAcctngPolicies,
@@ -251,23 +299,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.discRelatedToVoluntaryAcctngPolicies,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.discRelatedToVoluntaryAcctngPolicies,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Disclosing Accounting Estimates") {//change in accounting estimate, effect of a change in an accounting estimate
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": IAS8texts.chngOfAcctEstm,
@@ -279,23 +333,29 @@ module.exports = (req, res) => {
 				}
 			}],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.chngOfAcctEstm,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.chngOfAcctEstm,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS8 - Errors") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [
 				{
 					"text": {
@@ -306,17 +366,23 @@ module.exports = (req, res) => {
 				}
 			],
 			"payload": {
-				"google": {
-				   "expectUserResponse": true,
-				   "richResponse": {
-				       "items": [
-				        {
-				         "simpleResponse": {
-				          "textToSpeech":IAS8texts.Errors,
-				          }
-				        }
-				    ]
-				  }
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS8texts.Errors,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 8"
+			        		}
+				       	]
+			    	}
 				}	
 			}
 		});		

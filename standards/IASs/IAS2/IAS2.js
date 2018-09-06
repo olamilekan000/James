@@ -14,20 +14,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.overview,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}	
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS2 - Objective of IAS 2") {
@@ -41,20 +47,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.obj,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.obj,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}	
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS2 - scope") {
@@ -68,20 +80,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Scope,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}	
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Scope,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS2 - measurement") {
@@ -95,20 +113,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.measurement,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}	
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.measurement,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS2 - NRV") {
@@ -122,20 +146,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.NRV,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}	
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.NRV,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS2 - Expense recognition") {
@@ -149,20 +179,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Expense_recognition,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}	
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.Expense_recognition,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS2 - disclosure") {
@@ -176,20 +212,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.disclosure,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}	
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech":texts.disclosure,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 2"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		});
 	}
 	

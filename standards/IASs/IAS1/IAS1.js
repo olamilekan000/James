@@ -2,7 +2,7 @@ const texts = require('./ias1Texts');
 
 module.exports = (req, res) => {
 	if (req.body.queryResult.intent.displayName === "IAS 1") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.overview,
@@ -15,25 +15,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.overview,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}			
-
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - objective") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.objective,
@@ -47,24 +52,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.objective,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.objective,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}	
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - scope") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.scope,
@@ -77,24 +88,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.scope,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.scope,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Objective of financial statements") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.objOfFs,
@@ -108,24 +125,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.objOfFs,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.objOfFs,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Components of financial statements") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.compOfFs,
@@ -139,24 +162,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.compOfFs,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.compOfFs,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Fair presentation and compliance with IFRSs") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.fairPresentoFFS,
@@ -170,24 +199,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.fairPresentoFFS,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.fairPresentoFFS,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Going concern") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Going_concern,
@@ -201,24 +236,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Going_concern,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Going_concern,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Accrual basis of accounting") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Accrual_basis,
@@ -233,24 +274,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Accrual_basis,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Accrual_basis,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Consistency of presentation") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Consistency_of_presentation,
@@ -264,24 +311,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Consistency_of_presentation,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Consistency_of_presentation,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Materiality and aggregation") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Materiality_and_aggregation,
@@ -295,24 +348,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Materiality_and_aggregation,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Materiality_and_aggregation,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Offsetting") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Offsetting,
@@ -326,24 +385,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Offsetting,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Offsetting,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - comparative info") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.comparative_info,
@@ -353,24 +418,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.comparative_info,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.comparative_info,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Structure and content of financial statements") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Structure_and_content_of_financial_statements,
@@ -380,24 +451,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Structure_and_content_of_financial_statements,
-			            }
-			          }
-			        ]
-			     }
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Structure_and_content_of_financial_statements,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
 			}	
-		}	
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Reporting period") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Reporting_period,
@@ -407,24 +484,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Reporting_period,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Reporting_period,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Current and non current classification") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Current_and_non_current_classification,
@@ -434,24 +517,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Current_and_non_current_classification,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Current_and_non_current_classification,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Line items") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Line_items,
@@ -461,24 +550,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Line_items,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Line_items,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Format of statement") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Format_of_statement,
@@ -488,24 +583,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Format_of_statement,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Format_of_statement,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Share capital and reserves") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Share_capital_and_reserves,
@@ -515,24 +616,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Share_capital_and_reserves,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Share_capital_and_reserves,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - Concepts of profit or loss and comprehensive income") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.Concepts_of_profit_or_loss_and_comprehensive_income,
@@ -542,24 +649,30 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Concepts_of_profit_or_loss_and_comprehensive_income,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.Concepts_of_profit_or_loss_and_comprehensive_income,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS 1 - items recognised outside of profit or loss") {
-		res.json({
+		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
 					  "title": texts.items_recognised_outside_of_profit_or_loss,
@@ -569,20 +682,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.items_recognised_outside_of_profit_or_loss,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.items_recognised_outside_of_profit_or_loss,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 1"
+			        		}
+				       	]
+			    	}
+				}	
+			}
 		})
 	}						
 }

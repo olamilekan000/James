@@ -28,8 +28,20 @@ Click on any of the buttons below to begin a conversation`,
 				        	}],
 				        "suggestions":[
 							{
-							  "title": "Conceptual Framework"
-							}
+							  "title": "IAS 1"
+							},
+							{
+							  "title": "IAS 2"
+							},
+							{
+							  "title": "IAS 8"
+							},
+							{
+							  "title": "IAS 16"
+							},
+							{
+							  "title": "IAS 11"
+							}								
 				        ]	
 			    	}
 				}

@@ -14,20 +14,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.overview,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.overview,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - Objective") {
@@ -41,20 +47,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Objective,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.Objective,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}			
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - construction contract") {
@@ -70,20 +82,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.constructionContract,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.constructionContract,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - included in contract revenue and costs") {
@@ -97,20 +115,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.included_in_contract_revenue_and_costs,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.included_in_contract_revenue_and_costs,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}		
 		});		
 	}	
 	if (req.body.queryResult.intent.displayName === "IAS11 - Accounting") {
@@ -124,20 +148,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Accounting,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.Accounting,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}		
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - Disclosure") {
@@ -151,20 +181,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.Disclosure,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.Disclosure,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}			
 		});		
 	}
 	if (req.body.queryResult.intent.displayName === "IAS11 - Presentation") {
@@ -178,20 +214,26 @@ module.exports = (req, res) => {
 					]
 				}
 			}],
-			  "payload": {
+			"payload": {
 			    "google": {
 			      "expectUserResponse": true,
 			      "richResponse": {
-			        "items": [
-			          {
-			            "simpleResponse": {
-			              "textToSpeech":texts.presentation,
-			            }
-			          }
-			        ]
-			     }
-			}	
-		}		
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": IAS11texts.presentation,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 11"
+			        		}
+				       	]
+			    	}
+				}	
+			}			
 		});		
 	}									
 }
