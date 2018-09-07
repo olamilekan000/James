@@ -17,11 +17,11 @@ module.exports = (req, res) => {
 			}],
 			"payload": {
 			    "google": {
-			      "expectUserResponse": false,
+			      "expectUserResponse": true,
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": texts.overview,
+					            "textToSpeech": `${texts.overview} What would you like to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
