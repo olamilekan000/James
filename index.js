@@ -4,6 +4,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { WebhookClient } = require('dialogflow-fulfillment');
 const {Card, Suggestion} = require('dialogflow-fulfillment');
+const EventEmitter = require('events');
+class MyEmitter extends EventEmitter {}
+const myEmitter = new MyEmitter();
+// increase the limit
+myEmitter.setMaxListeners(100);
+
 const http = require('http');
 require('dotenv').config();
 
@@ -15,7 +21,6 @@ const allStandardsIAScont = require('./standards/allStandardsIas2'); //IAS 20 - 
 const allStandardsIAScont2 = require('./standards/allStandardsIas3'); //IAS 31 - 39
 const allStandardsIAScont3 = require('./standards/allStandardsIas4'); //IAS 40 - 41
 const ALL_IAS = require('./appFunctions')
-
 //WEBHOOKS FOR EACH STANDARDS MODULE
 const ifrs1WebHook = require('./standards/ifrs1');
 

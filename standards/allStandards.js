@@ -13,16 +13,8 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 1',
-	      							'postback': 'Objective of IFRS 11'
-								},
-								{
-									'text': 'Measurement of IFRS 1',
-									'postback': 'Measurement of IFRS 1'
-								},
-								{
-									'text': 'Disclosure of IFRS 1',
-									'postback': 'Disclosure of IFRS 1'
+									'text': 'About IFRS 1',
+	      							'postback': 'About IFRS 1'
 								}							
 							]
 						}
@@ -35,17 +27,9 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 2',
-	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs2'
-								},
-								{
-									'text': 'Measurement of IFRS 2',
-									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs2'
-								},
-								{
-									'text': 'Disclosure of IFRS 2',
-									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs2'
-								}							]
+									'text': 'About IFRS 2',
+	      							'postback': 'About IFRS 2'
+								}						]
 						}
 
 					},
@@ -56,17 +40,9 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 3',
-	      							'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
-								},
-								{
-									'text': 'Measurement of IFRS 3',
-									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
-								},
-								{
-									'text': 'Disclosure of IFRS 3',
-									'postback': 'https://www.iasplus.com/en/standards/ifrs/ifrs3'
-								}
+									'text': 'About IFRS 3',
+	      							'postback': 'About IFRS 3'
+								}	
 							]
 						}
 					},
@@ -77,16 +53,8 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 4',
-	      							'postback': 'Objective of IFRS 4'
-								},
-								{
-									'text': 'Measurement of IFRS 4',
-									'postback': 'Measurement of IFRS 4'
-								},
-								{
-									'text': 'Disclosure of IFRS 4',
-									'postback': 'Disclosure of IFRS 4'
+									'text': 'About IFRS 4',
+	      							'postback': 'About IFRS 4'
 								}
 							]
 						}
@@ -98,16 +66,8 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 4',
-	      							'postback': 'Objective of IFRS 4'
-								},
-								{
-									'text': 'Measurement of IFRS 4',
-									'postback': 'Measurement of IFRS 4'
-								},
-								{
-									'text': 'Disclosure of IFRS 4',
-									'postback': 'Disclosure of IFRS 4'
+									'text': 'About IFRS 4',
+	      							'postback': 'About IFRS 4'
 								}
 							]
 						}
@@ -119,16 +79,8 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 4',
-	      							'postback': 'Objective of IFRS 4'
-								},
-								{
-									'text': 'Measurement of IFRS 4',
-									'postback': 'Measurement of IFRS 4'
-								},
-								{
-									'text': 'Disclosure of IFRS 4',
-									'postback': 'Disclosure of IFRS 4'
+									'text': 'About IFRS 6',
+	      							'postback': 'About IFRS 6'
 								}
 							]
 						}
@@ -139,17 +91,9 @@ module.exports = (req, res) => {
 							"subtitle": "IFRS 7 was originally issued in August 2005 and applies to annual periods beginning on or after 1 January 2007.",
 							"imageUri": textz.imgeUri,
 							"buttons":[
-								{
-									'text': 'Objective of IFRS 4',
-	      							'postback': 'Objective of IFRS 4'
-								},
-								{
-									'text': 'Measurement of IFRS 4',
-									'postback': 'Measurement of IFRS 4'
-								},
-								{
-									'text': 'Disclosure of IFRS 4',
-									'postback': 'Disclosure of IFRS 4'
+									{
+									'text': 'About IFRS 7',
+	      							'postback': 'About IFRS 7'
 								}
 							]
 						}
@@ -161,16 +105,8 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 4',
-	      							'postback': 'Objective of IFRS 4'
-								},
-								{
-									'text': 'Measurement of IFRS 4',
-									'postback': 'Measurement of IFRS 4'
-								},
-								{
-									'text': 'Disclosure of IFRS 4',
-									'postback': 'Disclosure of IFRS 4'
+									'text': 'About IFRS 8',
+	      							'postback': 'About IFRS 8'
 								}
 							]
 						}
@@ -182,16 +118,8 @@ module.exports = (req, res) => {
 							"imageUri": textz.imgeUri,
 							"buttons":[
 								{
-									'text': 'Objective of IFRS 4',
-	      							'postback': 'Objective of IFRS 4'
-								},
-								{
-									'text': 'Measurement of IFRS 4',
-									'postback': 'Measurement of IFRS 4'
-								},
-								{
-									'text': 'Disclosure of IFRS 4',
-									'postback': 'Disclosure of IFRS 4'
+									'text': 'About IFRS 9',
+	      							'postback': 'About IFRS 9'
 								}
 							]
 						}
