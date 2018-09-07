@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.overview,
+					            "textToSpeech": `${texts.overview} What would you like to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -54,7 +54,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.obj,
+					            "textToSpeech": `${ texts.obj } What would you like to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -87,7 +87,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.borrowingCostComponents,
+					            "textToSpeech": `${texts.borrowingCostComponents} what would you like to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -120,7 +120,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.qualifyingAsset,
+					            "textToSpeech": `${texts.qualifyingAsset} what do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -156,7 +156,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.scope,
+					            "textToSpeech": `${texts.scope} What do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -189,7 +189,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.recognision,
+					            "textToSpeech": `${texts.recognision} what do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -225,7 +225,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Measurement,
+					            "textToSpeech":`${texts.Measurement} What do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -258,7 +258,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Disclosure,
+					            "textToSpeech":`${texts.Disclosure} what do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
