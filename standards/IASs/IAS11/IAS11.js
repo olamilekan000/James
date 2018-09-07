@@ -121,7 +121,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.included_in_contract_revenue_and_costs,
+					            "textToSpeech": `${IAS11texts.included_in_contract_revenue_and_costs}. \n What do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [

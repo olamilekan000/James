@@ -258,7 +258,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":`${texts.Disclosure} what do you want to hear next?`,
+					            "textToSpeech":`${texts.Disclosure}. \n what do you want to hear next?`,
 					        	}
 				        	}],
 				        "suggestions": [
