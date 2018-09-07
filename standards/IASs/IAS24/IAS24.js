@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.overview,
+					            "textToSpeech": `${texts.overview} \n What do you want to listen next?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -27,6 +27,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 24"
+			        		},
+			        		{
+			        			"title": "IAS 24 Disclosures"
 			        		}
 				       	]
 			    	}
@@ -51,7 +54,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.obj,
+					            "textToSpeech": `${texts.obj} \n what other standard do you want to know more about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -59,7 +62,10 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "Objective of IAS 24"
+			        			"title": "IAS 24"
+			        		},
+			        		{
+			        			"title": "who are related parties?"
 			        		}
 				       	]
 			    	}
@@ -84,7 +90,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.whoAreRelatedParties,
+					            "textToSpeech":`${texts.whoAreRelatedParties} \n what other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -93,6 +99,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 24"
+			        		},
+			        		{
+			        			"title": "IAS 24"
 			        		}
 				       	]
 			    	}
@@ -107,6 +116,7 @@ module.exports = (req, res) => {
 					  "title": texts.notRelated,
 					  "quickReplies": [
 					    "IAS 24",
+					    "who are related parties?",
 					    "Home 🏠"
 					]
 				}
@@ -117,7 +127,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.notRelated,
+					            "textToSpeech": `${texts.notRelated} \n what other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -126,6 +136,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 24"
+			        		},
+			        		{
+			        			"title": "who are related parties?"
 			        		}
 				       	]
 			    	}
@@ -150,7 +163,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.relatedPartyTransact,
+					            "textToSpeech":`${texts.relatedPartyTransact} \n what other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -183,7 +196,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.disclosures,
+					            "textToSpeech":`${texts.disclosures} \n what other standard do you want to know about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -216,7 +229,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.examples,
+					            "textToSpeech":`${texts.examples} \n what other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
