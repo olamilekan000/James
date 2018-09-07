@@ -466,7 +466,11 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "IAS 2"
 			        		}
+
 				       	]
 			    	}
 				}	
