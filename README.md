@@ -5,6 +5,8 @@
 Fra Luca is a bot whose primary objective is to assist Accounting Professionals and Students 
 in making a quick reference to all Standards issued by the IASB.
 
+He can also tell you about the weather condition in your area.
+
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
