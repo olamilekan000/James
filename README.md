@@ -1,3 +1,10 @@
+## Fra Luca
+
+<img src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-1/p200x200/34436336_206634823286928_8714798452459962368_n.jpg?_nc_cat=0&_nc_eui2=AeEu7l87G6UjwICxkwPUBMTsHBy0mb80haRhd2bxSg1jpWDiNXCZPvptHOpeAXMU51FPmzc0zm_-2dw7yxfXCuXOY2mStPUYVkJaxSnPKiZe9w&oh=edf5bb5cc7d945ea19296817ba21fe4d&oe=5C1FAF29"/>
+
+Fra Luca is a bot whose primary objective is to assist Accounting Professionals and Students 
+in making a quick reference to all Standards issued by the IASB.
+
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
@@ -7,6 +14,16 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 
 ## Resources
 
-still on it...
+Deliotte - iasplus
 
-## Become a sponsor.
+## Platforms.
+
+The bot is now available on the following platforms:
+
+* [facebook Messenger](https://www.messenger.com/t/IFRSBot)
+* [facebook](https://web.facebook.com/IFRSBot)
+* Google Assistant - Fra Luca
+* Telegram - JamesBot
+
+NB: The Google Assistant version of the Bot is only available in Alpha mode, you can hit me up to become an Alpha User/tester.
+
