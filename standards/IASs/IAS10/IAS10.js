@@ -9,7 +9,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Adjusting Events",
 					    "Non Adjusting Events",
-					    "Disclosure",
+					    "Disclosure of IAS 10",
 					    "Home 🏠"
 					]
 				}
@@ -20,7 +20,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS10texts.overview,
+					            "textToSpeech": `${IAS10texts.overview} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -29,6 +29,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 10"
+			        		},
+			        		{
+			        			"title": "Non Adjusting Events"
 			        		}
 				       	]
 			    	}
@@ -44,7 +47,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Adjusting Events",
 					    "Non Adjusting Events",
-					    "Disclosure",
+					    "Disclosure of IAS 10",
 					    "Home 🏠"
 					]
 				}
@@ -55,7 +58,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS10texts.EventsAfterReporting,
+					            "textToSpeech": `${IAS10texts.EventsAfterReporting} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -64,6 +67,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 10"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 10"
 			        		}
 				       	]
 			    	}
@@ -79,7 +85,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Adjusting Events",
 					    "Non Adjusting Events",
-					    "Disclosure",
+					    "Disclosure of IAS 10",
 					    "Home 🏠"
 					]
 				}
@@ -90,7 +96,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS10texts.AdjustingEvents,
+					            "textToSpeech": `${IAS10texts.AdjustingEvents} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -99,6 +105,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 10"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 10"
 			        		}
 				       	]
 			    	}
@@ -114,7 +123,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Adjusting Events",
 					    "Non Adjusting Events",
-					    "Disclosure",
+					    "Disclosure of IAS 10",
 					    "Home 🏠"
 					]
 				}
@@ -125,7 +134,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS10texts.NonAdjustingEvents,
+					            "textToSpeech": `${IAS10texts.NonAdjustingEvents} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -134,6 +143,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 10"
+			        		},
+			        		{
+			        			"title": "Adjusting Events"
 			        		}
 				       	]
 			    	}
@@ -149,7 +161,7 @@ module.exports = (req, res) => {
 					  "quickReplies": [
 					    "Adjusting Events",
 					    "Non Adjusting Events",
-					    "Disclosure",
+					    "Disclosure of IAS 10",
 					    "Home 🏠"
 					]
 				}
@@ -160,7 +172,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS10texts.goingConcernIssues,
+					            "textToSpeech": `${IAS10texts.goingConcernIssues} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -169,6 +181,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 10"
+			        		},
+			        		{
+			        			"title": "Adjusting Events"
 			        		}
 				       	]
 			    	}
@@ -195,7 +210,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS10texts.disclosure,
+					            "textToSpeech": `${IAS10texts.disclosure} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -204,6 +219,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 10"
+			        		},
+			        		{
+			        			"title": "Non Adjusting Events"
 			        		}
 				       	]
 			    	}

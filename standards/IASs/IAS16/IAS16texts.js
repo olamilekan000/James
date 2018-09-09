@@ -7,7 +7,7 @@ IAS 16 was reissued in December 2003 and applies to annual periods beginning on 
 obj_IAS_16:`
 The objective of IAS 16 is to prescribe the accounting treatment for property, plant, and equipment. The principal issues are the recognition of assets, the determination of their carrying amounts, and the depreciation charges and impairment losses to be recognised in relation to them.
 `,
-Scope_ias18:`
+Scope_ias16:`
 IAS 16 applies to the accounting for property, plant and equipment, except where another standard requires or permits differing accounting treatments, for example:
 (i) - assets classified as held for sale in accordance with IFRS 5 Non-current Assets Held for Sale and Discontinued Operations.
 (ii) - biological assets related to agricultural activity accounted for under IAS 41 Agriculture

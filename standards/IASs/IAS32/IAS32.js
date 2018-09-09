@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.overview,
+					            "textToSpeech": `${texts.overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -51,7 +51,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.obj,
+					            "textToSpeech": `${texts.obj} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -84,7 +84,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.scope,
+					            "textToSpeech": `${texts.scope} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -117,7 +117,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.FinInstrument,
+					            "textToSpeech": `${texts.FinInstrument} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -150,7 +150,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.FinAsset,
+					            "textToSpeech": `${texts.FinAsset} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -183,7 +183,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.finLiab,
+					            "textToSpeech": `${texts.finLiab} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -216,7 +216,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.fv,
+					            "textToSpeech": `${texts.fv} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -249,7 +249,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.puttableInst,
+					            "textToSpeech": `${texts.puttableInst} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -282,7 +282,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.classification,
+					            "textToSpeech": `${texts.classification} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -315,7 +315,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.contigentSettlmntProv,
+					            "textToSpeech": `${texts.contigentSettlmntProv} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -348,7 +348,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.classiRightIssue,
+					            "textToSpeech": `${texts.classiRightIssue} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -381,7 +381,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.compoundFs,
+					            "textToSpeech": `${texts.compoundFs} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -414,7 +414,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.treasuryShares,
+					            "textToSpeech": `${texts.treasuryShares} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -447,7 +447,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.offsetting,
+					            "textToSpeech": `${texts.offsetting} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -480,7 +480,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.TheCostOfissuigEquityInstr,
+					            "textToSpeech": `${texts.TheCostOfissuigEquityInstr} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [

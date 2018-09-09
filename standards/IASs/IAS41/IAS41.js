@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.overview,
+					            "textToSpeech": `${texts.overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -51,7 +51,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Objective,
+					            "textToSpeech": `${texts.Objective} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -84,7 +84,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Scope,
+					            "textToSpeech": `${texts.Scope} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -117,7 +117,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.BiologicalAsset,
+					            "textToSpeech": `${texts.BiologicalAsset} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -150,7 +150,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.BearerPlant,
+					            "textToSpeech": `${texts.BearerPlant} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -183,7 +183,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.AgriculturalProduce,
+					            "textToSpeech": `${texts.AgriculturalProduce} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -216,7 +216,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.costsoFsale,
+					            "textToSpeech": `${texts.costsoFsale} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -249,7 +249,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.initRecog,
+					            "textToSpeech": `${texts.initRecog} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -282,7 +282,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Measurement,
+					            "textToSpeech": `${texts.Measurement} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -315,7 +315,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.otherIssues,
+					            "textToSpeech": `${texts.otherIssues} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -348,7 +348,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.govtGrants,
+					            "textToSpeech": `${texts.govtGrants} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -381,7 +381,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Disclosure,
+					            "textToSpeech": `${texts.Disclosure} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [

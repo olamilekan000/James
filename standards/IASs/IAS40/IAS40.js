@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.overview,
+					            "textToSpeech": `${texts.overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -51,7 +51,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.invtProperty,
+					            "textToSpeech": `${texts.invtProperty} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -84,7 +84,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.properTyUnderOperatingLease,
+					            "textToSpeech": `${texts.properTyUnderOperatingLease} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -117,7 +117,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.partialOwnUse,
+					            "textToSpeech": `${texts.partialOwnUse} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -150,7 +150,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.ancillaryServices,
+					            "textToSpeech": `${texts.ancillaryServices} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -183,7 +183,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.intraCoyRental,
+					            "textToSpeech": `${texts.intraCoyRental} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -216,7 +216,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Recognition,
+					            "textToSpeech": `${texts.Recognition} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -249,7 +249,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.initMeasurement,
+					            "textToSpeech": `${texts.initMeasurement} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -282,7 +282,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.measurementSuboInitialRecog,
+					            "textToSpeech": `${texts.measurementSuboInitialRecog} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -315,7 +315,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.fvModel,
+					            "textToSpeech": `${texts.fvModel} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -348,7 +348,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.costModel,
+					            "textToSpeech": `${texts.costModel} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -381,7 +381,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.TransfersToOrFromInvestmentPropertyClassification,
+					            "textToSpeech": `${texts.TransfersToOrFromInvestmentPropertyClassification} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -414,7 +414,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Disposal,
+					            "textToSpeech": `${texts.Disposal} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -447,7 +447,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Disclosure,
+					            "textToSpeech": `${texts.Disclosure} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [

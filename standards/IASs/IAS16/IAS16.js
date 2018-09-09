@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Overview,
+					            "textToSpeech": `${texts.Overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -41,6 +41,7 @@ module.exports = (req, res) => {
 					  "title": texts.obj_IAS_16,
 					  "quickReplies": [
 					    "IAS 16",
+					    "Scope of IAS 16",
 					    "Home 🏠"
 					]
 				}
@@ -51,7 +52,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.obj_IAS_16,
+					            "textToSpeech": `${texts.obj_IAS_16} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -60,6 +61,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 16"
+			        		},
+			        		{
+			        			"title": "Scope of IAS 16"
 			        		}
 				       	]
 			    	}
@@ -72,7 +76,7 @@ module.exports = (req, res) => {
 		res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.Scope_ias18,
+					  "title": texts.Scope_ias16,
 					  "quickReplies": [
 					    "IAS 16",
 					    "Home 🏠"
@@ -85,7 +89,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Scope_ias18,
+					            "textToSpeech": `${texts.Scope_ias16} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -118,7 +122,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.recognition,
+					            "textToSpeech": `${texts.recognition} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -151,7 +155,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.ini_msrmnt,
+					            "textToSpeech": `${texts.ini_msrmnt} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -184,7 +188,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.measOfSubsequent,
+					            "textToSpeech": `${texts.measOfSubsequent} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -217,7 +221,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.revModel,
+					            "textToSpeech": `${texts.revModel} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -250,7 +254,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Depreciation,
+					            "textToSpeech": `${texts.Depreciation} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -283,7 +287,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.recovOfCarryingAmt,
+					            "textToSpeech": `${texts.recovOfCarryingAmt} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -316,7 +320,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Derecognition,
+					            "textToSpeech": `${texts.Derecognition} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -349,7 +353,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.Disclosure,
+					            "textToSpeech": `${texts.Disclosure} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -382,7 +386,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.PPEatRevAmt,
+					            "textToSpeech": `${texts.PPEatRevAmt} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [

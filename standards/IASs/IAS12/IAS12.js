@@ -7,9 +7,9 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS12texts.overview,
 					  "quickReplies": [
-					    "Objective of IAS12",
-					    "Presentation",
-					    "Disclosure",
+					    "Objective of IAS 12",
+					    "Presentation of IAS 12",
+					    "Disclosure of IAS 12",
 					    "Home 🏠"
 					]
 				}
@@ -20,7 +20,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.overview,
+					            "textToSpeech": `${IAS12texts.overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -29,6 +29,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 12"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 12"
 			        		}
 				       	]
 			    	}
@@ -55,7 +58,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.objective,
+					            "textToSpeech": `${IAS12texts.objective} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -64,6 +67,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "current Tax"
 			        		}
 				       	]
 			    	}
@@ -90,7 +96,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.keyTerms,
+					            "textToSpeech": `${IAS12texts.keyTerms} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -99,6 +105,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 12"
 			        		}
 				       	]
 			    	}
@@ -125,7 +134,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.currentTax,
+					            "textToSpeech": `${IAS12texts.currentTax} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -134,6 +143,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Deferred tax asset"
 			        		}
 				       	]
 			    	}
@@ -160,7 +172,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.calOfDeferredTaxes,
+					            "textToSpeech": `${IAS12texts.calOfDeferredTaxes} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -169,6 +181,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Deferred tax asset"
 			        		}
 				       	]
 			    	}
@@ -195,7 +210,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.TaxBases,
+					            "textToSpeech": `${IAS12texts.TaxBases} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -204,6 +219,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Deferred tax asset"
+			        		},
+			        		{
+			        			"title": "Tax Base"
 			        		}
 				       	]
 			    	}
@@ -230,7 +251,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.exceptionsTOrecogOfDefTaxLiab,
+					            "textToSpeech": `${IAS12texts.exceptionsTOrecogOfDefTaxLiab} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -239,6 +260,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Tax Base"
 			        		}
 				       	]
 			    	}
@@ -265,7 +289,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.recogOfDefTaxAssets,
+					            "textToSpeech": `${IAS12texts.recogOfDefTaxAssets} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -274,6 +298,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Tax Base"
 			        		}
 				       	]
 			    	}
@@ -300,7 +327,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.measureOfDefTaxAssets,
+					            "textToSpeech": `${IAS12texts.measureOfDefTaxAssets} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -309,6 +336,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 12"
+			        		},
+			        		{
+			        			"title": "Deferred tax asset"
 			        		}
 				       	]
 			    	}
@@ -333,7 +363,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.guidance_on_measuring_deferred_taxes,
+					            "textToSpeech": `${IAS12texts.guidance_on_measuring_deferred_taxes} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -368,7 +398,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.recogOfTaxAmt,
+					            "textToSpeech": `${IAS12texts.recogOfTaxAmt} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -403,7 +433,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.whereToRecogIncomeTax,
+					            "textToSpeech": `${IAS12texts.whereToRecogIncomeTax} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -438,7 +468,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.presentation,
+					            "textToSpeech": `${IAS12texts.presentation} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -469,7 +499,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":IAS12texts.Disclosure,
+					            "textToSpeech": `${IAS12texts.Disclosure} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [

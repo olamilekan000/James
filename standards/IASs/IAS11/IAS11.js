@@ -7,9 +7,9 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.overview,
 					  "quickReplies": [
-					    "Objective",
+					    "Objective of IAS 11",
 					    "construction contract",
-					    "Disclosure",
+					    "Disclosure of IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -20,7 +20,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.overview,
+					            "textToSpeech": `${IAS11texts.overview} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -29,6 +29,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 11"
+			        		},
+			        		{
+			        			"title": "construction contract"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 11"
 			        		}
 				       	]
 			    	}
@@ -43,6 +49,7 @@ module.exports = (req, res) => {
 					  "title": IAS11texts.Objective,
 					  "quickReplies": [
 					    "IAS 11",
+					    "Disclosure of IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -53,7 +60,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.Objective,
+					            "textToSpeech": `${IAS11texts.Objective} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -62,6 +69,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 11"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 11"
 			        		}
 				       	]
 			    	}
@@ -75,9 +85,9 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": IAS11texts.constructionContract,
 					  "quickReplies": [
-					    "Objective",
-					    "Presentation",
-					    "Disclosure",
+					    "Objective of IAS 11",
+					    "Presentation of IAS 11",
+					    "Disclosure of IAS 11",
 					    "Home 🏠"
 					]
 				}
@@ -88,7 +98,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.constructionContract,
+					            "textToSpeech": `${IAS11texts.constructionContract} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -97,6 +107,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 11"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 11"
 			        		}
 				       	]
 			    	}
@@ -130,6 +143,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 11"
+			        		},
+			        		{
+			        			"title": "construction contract"
 			        		}
 				       	]
 			    	}
@@ -154,7 +170,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.Accounting,
+					            "textToSpeech": `${IAS11texts.Accounting} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -163,6 +179,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 11"
+			        		},
+			        		{
+			        			"title": "construction contract"
 			        		}
 				       	]
 			    	}
@@ -187,7 +206,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.Disclosure,
+					            "textToSpeech": `${IAS11texts.Disclosure} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -220,7 +239,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS11texts.presentation,
+					            "textToSpeech": `${IAS11texts.presentation} \n What other standard do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -229,6 +248,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 11"
+			        		},
+			        		{
+			        			"title": "Disclosure of IAS 11"
 			        		}
 				       	]
 			    	}

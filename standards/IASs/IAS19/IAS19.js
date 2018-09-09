@@ -18,7 +18,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.overview,
+					            "textToSpeech": `${texts.overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -51,7 +51,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.obj,
+					            "textToSpeech": `${texts.obj} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -84,7 +84,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 			        "items": [{
 				        "simpleResponse": {
-				            "textToSpeech":texts.scope,
+				            "textToSpeech": `${texts.scope} \n What else do you want to hear about?`,
 				        	}
 			        	}]
 			    	}
@@ -109,7 +109,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.shortTermBenefit,
+					            "textToSpeech": `${texts.shortTermBenefit} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -142,7 +142,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.profit_sharing,
+					            "textToSpeech": `${texts.profit_sharing} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -175,7 +175,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.TypesOfPostEmploymnetBenefitPlan,
+					            "textToSpeech": `${texts.TypesOfPostEmploymnetBenefitPlan} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -208,7 +208,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.definedContPlan,
+					            "textToSpeech": `${texts.definedContPlan} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -241,7 +241,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.definedBenefitPlan,
+					            "textToSpeech": `${texts.definedBenefitPlan} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -274,7 +274,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.measurementOfDefinedBenefitPlan,
+					            "textToSpeech": `${texts.measurementOfDefinedBenefitPlan} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -307,7 +307,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.actuarialAssumptions,
+					            "textToSpeech": `${texts.actuarialAssumptions} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -340,7 +340,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.pastServiceCost,
+					            "textToSpeech": `${texts.pastServiceCost} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -373,7 +373,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.recogOfDefinedBenefitCost,
+					            "textToSpeech": `${texts.recogOfDefinedBenefitCost} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -406,7 +406,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.disclosureOfDefinedBednefitPlans,
+					            "textToSpeech": `${texts.disclosureOfDefinedBednefitPlans} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -439,7 +439,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.otherLongTermPlans,
+					            "textToSpeech": `${texts.otherLongTermPlans} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -472,7 +472,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech":texts.terminationBenefit,
+					            "textToSpeech": `${texts.terminationBenefit} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [

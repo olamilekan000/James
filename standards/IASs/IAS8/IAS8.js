@@ -21,7 +21,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.overview,
+					            "textToSpeech": `${IAS8texts.overview} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -57,7 +57,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.acctngPolicies,
+					            "textToSpeech": `${IAS8texts.acctngPolicies} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -93,7 +93,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.materiality,
+					            "textToSpeech": `${IAS8texts.materiality} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -129,7 +129,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.selectionOfplocies,
+					            "textToSpeech": `${IAS8texts.selectionOfplocies} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -164,7 +164,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.consistencyOfPolicies,
+					            "textToSpeech": `${IAS8texts.consistencyOfPolicies} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -199,7 +199,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.changesOfAcctngPolicies,
+					            "textToSpeech": `${IAS8texts.changesOfAcctngPolicies} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -235,7 +235,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.retrospective,
+					            "textToSpeech": `${IAS8texts.retrospective} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -269,7 +269,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.discRelatedToANewStndAcctngPolicies,
+					            "textToSpeech": `${IAS8texts.discRelatedToANewStndAcctngPolicies} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -304,7 +304,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.discRelatedToVoluntaryAcctngPolicies,
+					            "textToSpeech": `${IAS8texts.discRelatedToVoluntaryAcctngPolicies} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -338,7 +338,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.chngOfAcctEstm,
+					            "textToSpeech": `${IAS8texts.chngOfAcctEstm} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
@@ -371,7 +371,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": IAS8texts.Errors,
+					            "textToSpeech": `${IAS8texts.Errors} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
