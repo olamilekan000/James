@@ -8,7 +8,7 @@ obj:`
 IAS 27 has the objective of setting standards to be applied in accounting for investments in subsidiaries, jointly ventures, and associates when an entity elects, or is required by local regulations, to present separate (non-consolidated) financial statements.
 `,
 ConsolidatedFS:`
-Financial statements of a group in which the assets, liabilities, equity, income, expenses and cash flows of the parent and its subsidiaries are presented as those of a single economic entity
+It is the Financial statements of a group in which the assets, liabilities, equity, income, expenses and cash flows of the parent and its subsidiaries are presented as those of a single economic entity
 `,
 SeparateFS:`
 Financial statements presented by a parent (i.e. an investor with control of a subsidiary), an investor with joint control of, or significant influence over, an investee, in which the investments are accounted for at cost or in accordance with IFRS 9 Financial Instruments

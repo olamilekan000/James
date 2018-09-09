@@ -40,7 +40,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.obj,
 					  "quickReplies": [
-					    "Objective of IAS 27",
+					    "IAS 27",
 					    "Home 🏠"
 					]
 				}
@@ -166,7 +166,7 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS 27 - Requirement for separate financial statements") {
+	if (req.body.queryResult.intent.displayName === "IAS 27 - choice Of acct Method") {
 		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
