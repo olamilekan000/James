@@ -305,6 +305,7 @@ module.exports = (req, res) => {
 					  "title": texts.equityMethod,
 					  "quickReplies": [
 					    "IAS 28",
+					    "Discontinuing the equity method",
 					    "Home 🏠"
 					]
 				}
@@ -324,6 +325,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 28"
+			        		},
+			        		{
+			        			"title": "Discontinue equity method"
 			        		}
 				       	]
 			    	}
