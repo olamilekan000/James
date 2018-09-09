@@ -170,7 +170,7 @@ module.exports = (req, res) => {
 		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
-					  "title": texts.Associate,
+					  "title": texts.associate,
 					  "quickReplies": [
 					    "IAS 28",
 					    "Home 🏠"
@@ -183,7 +183,7 @@ module.exports = (req, res) => {
 			      "richResponse": {
 				        "items": [{
 					        "simpleResponse": {
-					            "textToSpeech": `${texts.Associate} \n What else do you want to hear about?`,
+					            "textToSpeech": `${texts.associate} \n What else do you want to hear about?`,
 					        	}
 				        	}],
 				        "suggestions": [
