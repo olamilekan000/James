@@ -363,38 +363,5 @@ module.exports = (req, res) => {
 				}	
 			}
 		})
-	}
-	if (req.body.queryResult.intent.displayName === "IAS 27 - Separate financial statements") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.AccountingInvInanAss,
-					  "quickReplies": [
-					    "Objective of IAS 27",
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": `${texts.AccountingInvInanAss} \n What else do you want to hear about?`,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		},
-			        		{
-			        			"title": "IAS 27"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		})
 	}												
 }

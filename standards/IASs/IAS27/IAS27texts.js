@@ -23,6 +23,8 @@ An investment entity that is required, throughout the current period and all com
 [Note: The investment entity consolidation exemption was introduced into IFRS 10 by Investment Entities, issued on 31 October 2012 and effective for annual periods beginning on or after 1 January 2014.]
 `,
 choiceOfacctMethod:`
+An investment in an associate or a joint venture shall be accounted for in the entity's separate financial statements in accordance with IAS 27 Separate Financial Statements (as amended in 2011).
+
 When an entity prepares separate financial statements, investments in subsidiaries, associates, and jointly controlled entities are accounted for either: [IAS 27(2011).10]
 
 (a) - at cost, or 
@@ -88,9 +90,6 @@ An entity may apply IAS 27 (as amended in 2011) to an earlier accounting period,
 The amendments to IAS 27 (2011) made by Investment Entities are applicable to annual reporting periods beginning on or after 1 January 2014 and special transitional provisions apply.
 
 Equity Method in Separate Financial Statements (Amendments to IAS 27), issued in August 2014, amended paragraphs 4–7, 10, 11B and 12. An entity shall apply those amendments for annual periods beginning on or after 1 January 2016 retrospectively in accordance with IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors. Earlier application is permitted. If an entity applies those amendments for an earlier period, it shall disclose that fact. [IAS 27(2011).18A-18J].
-`,
-AccountingInvInanAss:`
-An investment in an associate or a joint venture shall be accounted for in the entity's separate financial statements in accordance with IAS 27 Separate Financial Statements (as amended in 2011).
 `
 
 }
