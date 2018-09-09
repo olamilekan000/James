@@ -107,6 +107,7 @@ module.exports = (req, res) => {
 					  "title": texts.FinInstrument,
 					  "quickReplies": [
 					    "IAS 32",
+					    "Financial Asset",
 					    "Home 🏠"
 					]
 				}
@@ -126,6 +127,9 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 32"
+			        		},
+			        		{
+			        			"title": "Financial Asset"
 			        		}
 				       	]
 			    	}
@@ -199,6 +203,43 @@ module.exports = (req, res) => {
 			}
 		})
 	}
+	if (req.body.queryResult.intent.displayName === "IAS 32  - Equity instrument") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.equityInst,
+					  "quickReplies": [
+					    "IAS 32",
+					    "IAS 32 Fair Value",
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": `${texts.equityInst} \n What else do you want to hear about?`,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home"
+			        		},
+			        		{
+			        			"title": "IAS 32"
+			        		},
+			        		{
+			        			"title": "IAS 32 Fair Value"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})
+	}	
 	if (req.body.queryResult.intent.displayName === "IAS 32  - Fair Value") {
 		return res.json({
 			"fulfillmentMessages": [{
