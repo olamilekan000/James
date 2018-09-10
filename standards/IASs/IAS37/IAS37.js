@@ -463,34 +463,34 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if ( req.body.webhookStatus.message === "Webhook call failed. Error: Request timeout.") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": "I could not process that... I'll get back to you soon",
-					  "quickReplies": [
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": "I could not process that... I'll get back to you soon",
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home"
-			        		}
-				       	]
-			    	}
-				}	
-			}			
-		})
-	}												
+	// if ( req.body.webhookStatus.message === "Webhook call failed. Error: Request timeout.") {
+	// 	return res.json({
+	// 		"fulfillmentMessages": [{
+	// 			"quickReplies": {
+	// 				  "title": "I could not process that... I'll get back to you soon",
+	// 				  "quickReplies": [
+	// 				    "Home 🏠"
+	// 				]
+	// 			}
+	// 		}],
+	// 		"payload": {
+	// 		    "google": {
+	// 		      "expectUserResponse": true,
+	// 		      "richResponse": {
+	// 			        "items": [{
+	// 				        "simpleResponse": {
+	// 				            "textToSpeech": "I could not process that... I'll get back to you soon",
+	// 				        	}
+	// 			        	}],
+	// 			        "suggestions": [
+	// 		        		{
+	// 		        			"title": "Home"
+	// 		        		}
+	// 			       	]
+	// 		    	}
+	// 			}	
+	// 		}			
+	// 	})
+	// }												
 }
 	
