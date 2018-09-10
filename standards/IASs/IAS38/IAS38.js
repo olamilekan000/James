@@ -67,7 +67,7 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "IAS 38 - scope") {
+	if (queryResult.fulfillmentMessages[0].text.text === [""]) {
 		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
