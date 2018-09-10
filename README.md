@@ -27,5 +27,4 @@ The bot is now available on the following platforms:
 * Google Assistant - Fra Luca
 * Telegram - JamesBot
 
-NB: The Google Assistant version of the Bot is only available in Alpha mode, you can hit me up to become an Alpha User/tester.
 

@@ -5,7 +5,7 @@ IAS 36 Impairment of Assets seeks to ensure that an entity's assets are not carr
 IAS 36 was reissued in March 2004 and applies to goodwill and intangible assets acquired in business combinations for which the agreement date is on or after 31 March 2004, and for all other assets prospectively from the beginning of the first annual period beginning on or after 31 March 2004.
 `,
 obj:`
-To ensure that assets are carried at no more than their recoverable amount, and to define how recoverable amount is determined.
+The objective of IAS 36 is to ensure that assets are carried at no more than their recoverable amount, and to define how recoverable amount is determined.
 `,
 scope:`
 IAS 36 applies to all assets except: [IAS 36.2]
@@ -32,18 +32,15 @@ investments in subsidiaries, associates, and joint ventures carried at cost
 assets carried at revalued amounts under IAS 16 and IAS 38
 `,
 impLoss:`
-the amount by which the carrying amount of an asset or cash-generating unit exceeds its recoverable amount
+It is the amount by which the carrying amount of an asset or cash-generating unit exceeds its recoverable amount
 `,
 carryingAmt:`
-the amount at which an asset is recognised in the balance sheet after deducting accumulated depreciation and accumulated impairment losses
+It is the amount at which an asset is recognised in the balance sheet after deducting accumulated depreciation and accumulated impairment losses
 `,
 recoverableAmt:`
-the higher of an asset's fair value less costs of disposal* (sometimes called net selling price) and its value in use
+it is the higher of an asset's fair value less costs of disposal* (sometimes called net selling price) and its value in use
 
 * Prior to consequential amendments made by IFRS 13 Fair Value Measurement, this was referred to as 'fair value less costs to sell'.
-`,
-fv:`
-the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date (see IFRS 13 Fair Value Measurement)
 `,
 valueInUse:`
 It is the present value of the future cash flows expected to be derived from an asset or cash-generating unit.

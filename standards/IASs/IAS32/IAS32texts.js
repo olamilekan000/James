@@ -58,7 +58,10 @@ equityInst:`
 Any contract that evidences a residual interest in the assets of an entity after deducting all of its liabilities.
 `,
 fv:`
-the amount for which an asset could be exchanged, or a liability settled, between knowledgeable, willing parties in an arm's length transaction.
+It is the amount for which an asset could be exchanged, or a liability settled, between knowledgeable, willing parties in an arm's length transaction.
+
+It is also the price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants at the measurement date (see IFRS 13 Fair Value Measurement)
+
 `,
 puttableInst:`
 a financial instrument that gives the holder the right to put the instrument back to the issuer for cash or another financial asset or is automatically put back to the issuer on occurrence of an uncertain future event or the death or retirement of the instrument holder.

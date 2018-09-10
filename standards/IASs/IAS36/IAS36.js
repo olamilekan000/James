@@ -562,7 +562,7 @@ module.exports = (req, res) => {
 			}
 		})
 	}
-	if (req.body.queryResult.intent.displayName === "Disclosure") {
+	if (req.body.queryResult.intent.displayName === "IAS 36 - Disclosure") {
 		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {
