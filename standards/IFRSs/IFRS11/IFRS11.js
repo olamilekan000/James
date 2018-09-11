@@ -67,39 +67,6 @@ module.exports = (req, res) => {
 			}
 		});		
 	}
-	if (req.body.queryResult.intent.displayName === "IFRS 11 - Joint Control") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.JointControl,
-					  "quickReplies": [
-					    "IFRS 11",	    
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": texts.JointControl,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home 🏠"
-			        		},
-			        		{
-			        			"title": "IFRS 11"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		});		
-	}
 	if (req.body.queryResult.intent.displayName === "IFRS 11 - types Of JA") {
 		return res.json({
 			"fulfillmentMessages": [{
@@ -151,39 +118,6 @@ module.exports = (req, res) => {
 				        "items": [{
 					        "simpleResponse": {
 					            "textToSpeech": texts.classJA,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home 🏠"
-			        		},
-			        		{
-			        			"title": "IFRS 11"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		});		
-	}
-	if (req.body.queryResult.intent.displayName === "IFRS 11 - FS of Parties To JA") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.FSofPartiesToJA,
-					  "quickReplies": [
-					    "IFRS 11",	    
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": texts.FSofPartiesToJA,
 					        	}
 				        	}],
 				        "suggestions": [

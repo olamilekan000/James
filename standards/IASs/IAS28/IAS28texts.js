@@ -34,6 +34,14 @@ An arrangement of which two or more parties have joint control
 `,
 jointControl:`
 The contractually agreed sharing of control of an arrangement, which exists only when decisions about the relevant activities require the unanimous consent of the parties sharing control
+
+It is also a contractually agreed sharing of control of an arrangement, which exists only when decisions about the relevant activities require the unanimous consent of the parties sharing control. [IFRS 11:7]
+
+Before assessing whether an entity has joint control over an arrangement, an entity first assesses whether the parties, or a group of the parties, control the arrangement (in accordance with the definition of control in IFRS 10 Consolidated Financial Statements). [IFRS 11:B5]
+
+After concluding that all the parties, or a group of the parties, control the arrangement collectively, an entity shall assess whether it has joint control of the arrangement. Joint control exists only when decisions about the relevant activities require the unanimous consent of the parties that collectively control the arrangement. [IFRS 11:B6]
+
+The requirement for unanimous consent means that any party with joint control of the arrangement can prevent any of the other parties, or a group of the parties, from making unilateral decisions (about the relevant activities) without its consent. [IFRS 11:B9]
 `,
 jointVenture:`
 A joint arrangement whereby the parties that have joint control of the arrangement have rights to the net assets of the arrangement

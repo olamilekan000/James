@@ -67,7 +67,7 @@ module.exports = (req, res) => {
 			}
 		});		
 	}
-	if (req.body.queryResult.intent.displayName === "IFRS 13 - FV") {
+	if (req.body.queryResult.intent.displayName === "IFRS 13 - FV") {/**transfer to ias32**/
 		return res.json({
 			"fulfillmentMessages": [{
 				"quickReplies": {

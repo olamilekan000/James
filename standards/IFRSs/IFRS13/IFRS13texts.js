@@ -64,8 +64,6 @@ Level 3 inputs inputs are unobservable inputs for the asset or liability. [IFRS 
 Unobservable inputs are used to measure fair value to the extent that relevant observable inputs are not available, thereby allowing for situations in which there is little, if any, market activity for the asset or liability at the measurement date. An entity develops unobservable inputs using the best information available in the circumstances, which might include the entity's own data, taking into account all information about market participant assumptions that is reasonably available. [IFRS 13:87-89]
 `,
 MeasurementofFV:`
-Overview of fair value measurement approach
-
 The objective of a fair value measurement is to estimate the price at which an orderly transaction to sell the asset or to transfer the liability would take place between market participants at the measurement date under current market conditions. A fair value measurement requires an entity to determine all of the following: [IFRS 13:B2]
 - the particular asset or liability that is the subject of the measurement (consistently with its unit of account)
 - for a non-financial asset, the valuation premise that is appropriate for the measurement (consistently with its highest and best use)

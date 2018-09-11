@@ -298,39 +298,6 @@ module.exports = (req, res) => {
 			}
 		});		
 	}
-	if (req.body.queryResult.intent.displayName === "IFRS 10 - control") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.control,
-					  "quickReplies": [
-					    "IFRS 10",	    
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": texts.control,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home 🏠"
-			        		},
-			        		{
-			        			"title": "IFRS 10"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		});		
-	}
 	if (req.body.queryResult.intent.displayName === "IFRS 10 - preparation Of Con Fs") {
 		return res.json({
 			"fulfillmentMessages": [{
@@ -528,5 +495,38 @@ module.exports = (req, res) => {
 				}	
 			}
 		});		
-	}													
+	}
+	if (req.body.queryResult.intent.displayName === "IFRS 10 - NCI") {
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": texts.NCI,
+					  "quickReplies": [
+					    "IFRS 10",	    
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": true,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": texts.NCI,
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home 🏠"
+			        		},
+			        		{
+			        			"title": "IFRS 10"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		});		
+	}														
 }

@@ -23,6 +23,20 @@ The financial statements of a group in which the assets, liabilities, equity, in
 controlOfAnInvestee:`
 An investor controls an investee when the investor is exposed, or has rights, to variable returns from its involvement with the investee and has the ability to affect those returns through its power over the investee
 
+An investor determines whether it is a parent by assessing whether it controls one or more investees. An investor considers all relevant facts and circumstances when assessing whether it controls an investee. An investor controls an investee when it is exposed, or has rights, to variable returns from its involvement with the investee and has the ability to affect those returns through its power over the investee. [IFRS 10:5-6; IFRS 10:8]
+
+An investor controls an investee if and only if the investor has all of the following elements: [IFRS 10:7]
+- power over the investee, i.e. the investor has existing rights that give it the ability to direct the relevant activities (the activities that significantly affect the investee's returns)
+- exposure, or rights, to variable returns from its involvement with the investee
+- the ability to use its power over the investee to affect the amount of the investor's returns.
+
+Power arises from rights. Such rights can be straightforward (e.g. through voting rights) or be complex (e.g. embedded in contractual arrangements). An investor that holds only protective rights cannot have power over an investee and so cannot control an investee [IFRS 10:11, IFRS 10:14].
+
+An investor must be exposed, or have rights, to variable returns from its involvement with an investee to control the investee. Such returns must have the potential to vary as a result of the investee's performance and can be positive, negative, or both. [IFRS 10:15]
+
+A parent must not only have power over an investee and exposure or rights to variable returns from its involvement with the investee, a parent must also have the ability to use its power over the investee to affect its returns from its involvement with the investee. [IFRS 10:17].
+
+When assessing whether an investor controls an investee an investor with decision-making rights determines whether it acts as principal or as an agent of other parties. A number of factors are considered in making this assessment. For instance, the remuneration of the decision-maker is considered in determining whether it is an agent. [IFRS 10:B58, IFRS 10:B60]
 `,
 InvestmentEntity:`
 An entity that:
@@ -41,22 +55,6 @@ Rights designed to protect the interest of the party holding those rights withou
 `,
 relevantActivities:`
 Activities of the investee that significantly affect the investee's returns
-`,
-control:`
-An investor determines whether it is a parent by assessing whether it controls one or more investees. An investor considers all relevant facts and circumstances when assessing whether it controls an investee. An investor controls an investee when it is exposed, or has rights, to variable returns from its involvement with the investee and has the ability to affect those returns through its power over the investee. [IFRS 10:5-6; IFRS 10:8]
-
-An investor controls an investee if and only if the investor has all of the following elements: [IFRS 10:7]
-- power over the investee, i.e. the investor has existing rights that give it the ability to direct the relevant activities (the activities that significantly affect the investee's returns)
-- exposure, or rights, to variable returns from its involvement with the investee
-- the ability to use its power over the investee to affect the amount of the investor's returns.
-
-Power arises from rights. Such rights can be straightforward (e.g. through voting rights) or be complex (e.g. embedded in contractual arrangements). An investor that holds only protective rights cannot have power over an investee and so cannot control an investee [IFRS 10:11, IFRS 10:14].
-
-An investor must be exposed, or have rights, to variable returns from its involvement with an investee to control the investee. Such returns must have the potential to vary as a result of the investee's performance and can be positive, negative, or both. [IFRS 10:15]
-
-A parent must not only have power over an investee and exposure or rights to variable returns from its involvement with the investee, a parent must also have the ability to use its power over the investee to affect its returns from its involvement with the investee. [IFRS 10:17].
-
-When assessing whether an investor controls an investee an investor with decision-making rights determines whether it acts as principal or as an agent of other parties. A number of factors are considered in making this assessment. For instance, the remuneration of the decision-maker is considered in determining whether it is an agent. [IFRS 10:B58, IFRS 10:B60]
 `,
 prepOfConFs:`
 A parent prepares consolidated financial statements using uniform accounting policies for like transactions and other events in similar circumstances. [IFRS 10:19]
