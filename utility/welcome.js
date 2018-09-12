@@ -39,7 +39,43 @@ module.exports = (req, res) => {
 							},
 							{
 							  "title": "IAS 11"
-							}								
+							},
+							{
+							  "title": "IAS 12"
+							},
+							{
+							  "title": "IAS 18"
+							},
+							{
+							  "title": "IAS 19"
+							},
+							{
+							  "title": "IAS 20"
+							},
+							{
+							  "title": "IAS 21"
+							},
+							{
+							  "title": "IAS 23"
+							},
+							{
+							  "title": "IFRS 1"
+							},
+							{
+							  "title": "IFRS 2"
+							},
+							{
+							  "title": "IFRS 5"
+							},
+							{
+							  "title": "IFRS 16"
+							},
+							{
+							  "title": "IFRS 17"
+							},
+							{
+							  "title": "IFRS 11"
+							}									
 				        ]	
 			    	}
 				}

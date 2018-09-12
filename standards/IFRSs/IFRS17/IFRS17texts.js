@@ -1,5 +1,5 @@
 module.exports = {
-	overview:`
+overview:`
 IFRS 17 establishes the principles for the recognition, measurement, presentation and disclosure of insurance contracts within the scope of the standard. The objective of IFRS 17 is to ensure that an entity provides relevant information that faithfully represents those contracts. This information gives a basis for users of financial statements to assess the effect that insurance contracts have on the entity's financial position, financial performance and cash flows.
 
 IFRS 17 was issued in May 2017 and applies to annual reporting periods beginning on or after 1 January 2021.

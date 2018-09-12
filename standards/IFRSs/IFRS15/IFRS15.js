@@ -203,7 +203,7 @@ module.exports = (req, res) => {
 			        			"title": "IFRS 15"
 			        		},
 			        		{
-			        			"title": "Continue to step 5"
+			        			"title": "Continue to step 5?"
 			        		}
 				       	]
 			    	}
@@ -217,8 +217,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.step5,
 					  "quickReplies": [
-					    "IFRS 15",
-					    "Continue to step 5...",	    
+					    "IFRS 15",	    
 					    "Home 🏠"
 					]
 				}

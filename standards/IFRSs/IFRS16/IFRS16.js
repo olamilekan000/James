@@ -265,39 +265,6 @@ module.exports = (req, res) => {
 			}
 		});		
 	}
-	if (req.body.queryResult.intent.displayName === "IFRS 16 - Accounting By Lesses") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.AccountingByLesses,
-					  "quickReplies": [
-					    "IFRS 16",	    
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": texts.AccountingByLesses,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home 🏠"
-			        		},
-			        		{
-			        			"title": "IFRS 16"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		});		
-	}
 	if (req.body.queryResult.intent.displayName === "IFRS 16 - Accounting By Lessors") {
 		return res.json({
 			"fulfillmentMessages": [{
