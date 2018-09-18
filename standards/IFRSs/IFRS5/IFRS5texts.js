@@ -3,8 +3,7 @@ overview:`
 IFRS 5 Non-current Assets Held for Sale and Discontinued Operations outlines how to account for non-current assets held for sale (or for distribution to owners). In general terms, assets (or disposal groups) held for sale are not depreciated, are measured at the lower of carrying amount and fair value less costs to sell, and are presented separately in the statement of financial position. Specific disclosures are also required for discontinued operations and disposals of non-current assets.
 
 IFRS 5 was issued in March 2004 and applies to annual periods beginning on or after 1 January 2005.
-`,
-Background:`
+
 IFRS 5 achieves substantial convergence with the requirements of US SFAS 144 Accounting for the Impairment or Disposal of Long-Lived Assets with respect to the timing of the classification of operations as discontinued operations and the presentation of such operations. With respect to long-lived assets that are not being disposed of, the impairment recognition and measurement standards in SFAS 144 are significantly different from those in IAS 36 Impairment of Assets. However those differences were not addressed in the short-term IASB-FASB convergence project.
 `,
 HeldForSale:`

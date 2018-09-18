@@ -34,39 +34,6 @@ module.exports = (req, res) => {
 			}
 		});		
 	}
-	if (req.body.queryResult.intent.displayName === "IFRS 4 - Background") {
-		return res.json({
-			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.Background,
-					  "quickReplies": [
-					    "Background",	    
-					    "Home 🏠"
-					]
-				}
-			}],
-			"payload": {
-			    "google": {
-			      "expectUserResponse": true,
-			      "richResponse": {
-				        "items": [{
-					        "simpleResponse": {
-					            "textToSpeech": texts.Background,
-					        	}
-				        	}],
-				        "suggestions": [
-			        		{
-			        			"title": "Home 🏠"
-			        		},
-			        		{
-			        			"title": "IFRS 4"
-			        		}
-				       	]
-			    	}
-				}	
-			}
-		});		
-	}
 	if (req.body.queryResult.intent.displayName === "IFRS 4 - Scope") {
 		return res.json({
 			"fulfillmentMessages": [{

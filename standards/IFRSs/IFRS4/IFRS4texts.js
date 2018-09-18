@@ -3,8 +3,7 @@ overview:`
 IFRS 4 Insurance Contracts applies, with limited exceptions, to all insurance contracts (including reinsurance contracts) that an entity issues and to reinsurance contracts that it holds. In light of the IASB's comprehensive project on insurance contracts, the standard provides a temporary exemption from the requirements of some other IFRSs, including the requirement to consider IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors when selecting accounting policies for insurance contracts.
 
 IFRS 4 was issued in March 2004 and applies to annual periods beginning on or after 1 January 2005. IFRS 4 will be replaced by IFRS 17 as of 1 Janaury 2021.
-`,
-Background:`
+
 IFRS 4 is the first guidance from the IASB on accounting for insurance contracts – but not the last. A comprehensive project on insurance contracts is under way. The Board issued IFRS 4 because it saw an urgent need for improved disclosures for insurance contracts, and some improvements to recognition and measurement practices, in time for the adoption of IFRS by listed companies throughout Europe and elsewhere in 2005.
 `,
 Scope:`

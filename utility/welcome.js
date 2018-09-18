@@ -26,9 +26,6 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions":[
 							{
-							  "title": "IAS 1"
-							},
-							{
 							  "title": "IAS 2"
 							},
 							{
@@ -36,27 +33,6 @@ module.exports = (req, res) => {
 							},
 							{
 							  "title": "IAS 16"
-							},
-							{
-							  "title": "IAS 11"
-							},
-							{
-							  "title": "IAS 12"
-							},
-							{
-							  "title": "IAS 18"
-							},
-							{
-							  "title": "IAS 19"
-							},
-							{
-							  "title": "IAS 20"
-							},
-							{
-							  "title": "IAS 21"
-							},
-							{
-							  "title": "IAS 23"
 							},
 							{
 							  "title": "IFRS 1"
@@ -72,10 +48,7 @@ module.exports = (req, res) => {
 							},
 							{
 							  "title": "IFRS 17"
-							},
-							{
-							  "title": "IFRS 11"
-							}									
+							}								
 				        ]	
 			    	}
 				}
