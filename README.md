@@ -24,7 +24,5 @@ The bot is now available on the following platforms:
 
 * [facebook Messenger](https://www.messenger.com/t/IFRSBot)
 * [facebook](https://web.facebook.com/IFRSBot)
-* Google Assistant - Fra Luca
-* Telegram - JamesBot
-
-
+* Google Assistant - Can be invoked by saying "Talk to Fra Luca"
+* Telegram - Fra Luca
