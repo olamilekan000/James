@@ -7,10 +7,13 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.overview,
 					  "quickReplies": [
+					  	"comparative information",
+					  	"Concepts Of profit or loss and Other",
 					    "Objective of IAS 1",
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
 					    "Consistency of presentation",
+					    "Accrual basis of accounting",
 					    "Home 🏠"
 					]
 				}
@@ -30,6 +33,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "Objective of IAS 1"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Consistency of presentation"
 			        		}
 				       	]
 			    	}
@@ -67,6 +76,15 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Consistency of presentation"
 			        		}
 				       	]
 			    	}
@@ -84,6 +102,7 @@ module.exports = (req, res) => {
 					    "Going concern",
 					    "Fair presentation and compliance with IFRSs",
 					    "Consistency of presentation",
+					    "Objective of IAS 1",
 					    "Home 🏠"
 					]
 				}
@@ -99,10 +118,19 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
-			        			"title": "IAS 1"
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Consistency of presentation"
+			        		},
+			        		{
+			        			"title": "Objective of IAS 1"
 			        		}
 				       	]
 			    	}
@@ -136,10 +164,19 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
 			        		}
 				       	]
 			    	}
@@ -173,10 +210,19 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Consistency of presentation"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
 			        		}
 				       	]
 			    	}
@@ -210,10 +256,19 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Objective of financial statements"
 			        		}
 				       	]
 			    	}
@@ -247,10 +302,19 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Objective of financial statements"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
 			        		}
 				       	]
 			    	}
@@ -264,6 +328,7 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Accrual_basis,
 					  "quickReplies": [
+					  	"Materiality and aggregation",
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
 					    "Going concern",
@@ -285,10 +350,19 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
 			        		}
 				       	]
 			    	}
@@ -322,10 +396,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -342,6 +428,7 @@ module.exports = (req, res) => {
 					    "Objective of financial statements",
 					    "Fair presentation and compliance with IFRSs",
 					    "Going concern",
+					    "Accrual Basis of Accounting",
 					    "Components of financial statements",
 					    "IAS 1",
 					    "Home 🏠"
@@ -359,10 +446,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -396,10 +495,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -414,6 +525,9 @@ module.exports = (req, res) => {
 					  "title": texts.comparative_info,
 					  "quickReplies": [
 					    "IAS 1",
+					    "Materiality and aggregation",
+					    "IAS 1 Offsetting",
+					    "Accrual Basis",
 					    "Home 🏠"
 					]
 				}
@@ -429,10 +543,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -462,15 +588,23 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
 			        		},
 			        		{
-			        			"title": "IAS 2"
-			        		}
-
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
+			        		}				        
 				       	]
 			    	}
 				}	
@@ -499,10 +633,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -532,10 +678,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -565,10 +723,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -598,10 +768,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -615,7 +797,13 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Share_capital_and_reserves,
 					  "quickReplies": [
-					    "IAS 1",
+					  	"comparative information",
+					  	"Concepts Of profit or loss and Other",
+					    "Objective of IAS 1",
+					    "Going concern",
+					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
+					    "Accrual basis of accounting",
 					    "Home 🏠"
 					]
 				}
@@ -631,10 +819,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -648,7 +848,13 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Concepts_of_profit_or_loss_and_comprehensive_income,
 					  "quickReplies": [
-					    "IAS 1",
+					  	"comparative information",
+					  	"Share capital and reserves",
+					    "Objective of IAS 1",
+					    "Going concern",
+					    "Fair presentation and compliance with IFRSs",
+					    "Consistency of presentation",
+					    "Accrual basis of accounting",
 					    "Home 🏠"
 					]
 				}
@@ -664,10 +870,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Share capital and reserves"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
@@ -697,10 +915,22 @@ module.exports = (req, res) => {
 				        	}],
 				        "suggestions": [
 			        		{
-			        			"title": "Home"
+			        			"title": "Home 🏠"
 			        		},
 			        		{
 			        			"title": "IAS 1"
+			        		},
+			        		{
+			        			"title": "Components of financial statements"
+			        		},
+			        		{
+			        			"title": "Going concern"
+			        		},
+			        		{
+			        			"title": "Fair presentation and compliance with IFRSs"
+			        		},
+			        		{
+			        			"title": "Accrual Basis of Accounting"
 			        		}
 				       	]
 			    	}
