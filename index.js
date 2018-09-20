@@ -42,21 +42,51 @@ var description = {}
 
 app.post('/webhook', (req, res) => {
 
-	//utilities
-	welcome(req, res); //fires the weather webhook.
-	getTheWeather(req, res, description); //fires the weather webhook.
-	emoji(req, res);
-	//others
-	ifrs1WebHook(req, res); //fires the IFRS 1 webhook.
-	wholeStandards(req, res); //fires the All standards webhook (IFRS).
-	allStandardsIFRSCont(req, res); //fires the remaining IFRS standards webhook.
-	allStandardsIAS(req, res); //fires IAS standards webhook.
-	allStandardsIAScont(req, res); //fires the remaining IAS standards webhook.
-	allStandardsIAScont2(req, res); //fires the remaining IAS standards webhook.
-	allStandardsIAScont3(req, res); //fires the remaining IAS standards webhook.
-	ALL_IAS(req, res)
+	try{
 
+		//utilities
+		welcome(req, res); //fires the weather webhook.
+		getTheWeather(req, res, description); //fires the weather webhook.
+		emoji(req, res);
+		//others
+		ifrs1WebHook(req, res); //fires the IFRS 1 webhook.
+		wholeStandards(req, res); //fires the All standards webhook (IFRS).
+		allStandardsIFRSCont(req, res); //fires the remaining IFRS standards webhook.
+		allStandardsIAS(req, res); //fires IAS standards webhook.
+		allStandardsIAScont(req, res); //fires the remaining IAS standards webhook.
+		allStandardsIAScont2(req, res); //fires the remaining IAS standards webhook.
+		allStandardsIAScont3(req, res); //fires the remaining IAS standards webhook.
+		ALL_IAS(req, res)		
 
+	}catch(err){
+		return res.json({
+			"fulfillmentMessages": [{
+				"quickReplies": {
+					  "title": "Something went wrong ",
+					  "quickReplies": [
+					    "Home 🏠"
+					]
+				}
+			}],
+			"payload": {
+			    "google": {
+			      "expectUserResponse": false,
+			      "richResponse": {
+				        "items": [{
+					        "simpleResponse": {
+					            "textToSpeech": "Something went wrong ",
+					        	}
+				        	}],
+				        "suggestions": [
+			        		{
+			        			"title": "Home 🏠"
+			        		}
+				       	]
+			    	}
+				}	
+			}
+		})		
+	}
 
 });
 
