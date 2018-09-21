@@ -103,12 +103,8 @@ module.exports = (req, res) => {
 	if (req.body.queryResult.intent.displayName === "IFRS 10 - Control of an investee") {
 		return res.json({
 			"fulfillmentMessages": [{
-				"quickReplies": {
-					  "title": texts.controlOfAnInvestee,
-					  "quickReplies": [
-					    "IFRS 10",	    
-					    "Home 🏠"
-					]
+				"text":{
+					"text": [texts.controlOfAnInvestee]
 				}
 			}],
 			"payload": {
