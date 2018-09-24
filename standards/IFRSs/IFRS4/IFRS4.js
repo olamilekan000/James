@@ -7,7 +7,11 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.overview,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",
+					    "IFRS 4 remeasuring Insurance Liability",	    
 					    "Home 🏠"
 					]
 				}
@@ -26,7 +30,19 @@ module.exports = (req, res) => {
 			        			"title": "Home 🏠"
 			        		},
 			        		{
-			        			"title": "Background"
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "Scope of IFRS 4"
+			        		},
+			        		{
+			        			"title": "Insurance Contract"
+			        		},
+			        		{
+			        			"title": "Disclosures of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 remeasuring Insurance Liability"
 			        		}
 				       	]
 			    	}
@@ -40,9 +56,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Scope,
 					  "quickReplies": [
-					    "Background",	    
-					    "Home 🏠"
-					]
+					    "Background of IFRS 4",
+					    "About IFRS 4",
+					    "Insurance Contract",	    
+					    "Home 🏠"					]
 				}
 			}],
 			"payload": {
@@ -60,6 +77,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "Insurance Contract"
 			        		}
 				       	]
 			    	}
@@ -73,7 +96,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.insuranceContract,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",	    
 					    "Home 🏠"
 					]
 				}
@@ -93,6 +119,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 Accounting Policies"
 			        		}
 				       	]
 			    	}
@@ -106,7 +138,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.AccountingPolicies,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",	    
 					    "Home 🏠"
 					]
 				}
@@ -126,6 +161,15 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 insurance Contract"
+			        		},
+			        		{
+			        			"title": "IFRS 4 Changes In Accounting Policies"
 			        		}
 				       	]
 			    	}
@@ -139,7 +183,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.ChangesInAccountingPolicies,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",	    
 					    "Home 🏠"
 					]
 				}
@@ -159,6 +206,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 insurance Contract"
 			        		}
 				       	]
 			    	}
@@ -172,7 +225,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.remeasuringInsuranceLiab,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",	    
 					    "Home 🏠"
 					]
 				}
@@ -192,6 +248,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 insurance Contract"
 			        		}
 				       	]
 			    	}
@@ -205,7 +267,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.Prudence,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",	    
 					    "Home 🏠"
 					]
 				}
@@ -225,6 +290,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 insurance Contract"
 			        		}
 				       	]
 			    	}
@@ -238,7 +309,10 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.FutureInvestmentMargins,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",
+					    "Disclosures of IFRS 4",	    
 					    "Home 🏠"
 					]
 				}
@@ -258,8 +332,13 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
-			        		}
-				       	]
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 insurance Contract"
+			        		}				       	]
 			    	}
 				}	
 			}
@@ -271,7 +350,9 @@ module.exports = (req, res) => {
 				"quickReplies": {
 					  "title": texts.AssetClassifications,
 					  "quickReplies": [
-					    "Background",	    
+					    "Background of IFRS 4",
+					    "Scope of IFRS 4",
+					    "Insurance Contract",	    
 					    "Home 🏠"
 					]
 				}
@@ -291,6 +372,12 @@ module.exports = (req, res) => {
 			        		},
 			        		{
 			        			"title": "IFRS 4"
+			        		},
+			        		{
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "IFRS 4 insurance Contract"
 			        		}
 				       	]
 			    	}
@@ -323,7 +410,13 @@ module.exports = (req, res) => {
 			        			"title": "Home 🏠"
 			        		},
 			        		{
-			        			"title": "IFRS 4"
+			        			"title": "Background of IFRS 4"
+			        		},
+			        		{
+			        			"title": "Scope of IFRS 4"
+			        		},
+			        		{
+			        			"title": "Insurance Contract"
 			        		}
 				       	]
 			    	}
