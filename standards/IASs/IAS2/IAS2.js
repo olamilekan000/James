@@ -61,7 +61,7 @@ module.exports = (req, res) => {
 			        			"title": "Home"
 			        		},
 			        		{
-			        			"title": "Objective of IAS 2"
+			        			"title": "Scope of IAS 2"
 			        		}
 				       	]
 			    	}
