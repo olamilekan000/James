@@ -127,7 +127,7 @@ Assets:`
 A present economic resource controlled by the entity as a result of past events. An economic resource is a right that has the potential to produce economic benefits.
 `,
 liab:`
-A present obligation of the entity to transfer an economic resource as a result of past events.  An obligation is a duty of responsibility that the entity has no practical ability to avoid
+A present obligation of the entity to transfer an economic resource as a result of past events. An obligation is a duty of responsibility that the entity has no practical ability to avoid
 `,
 equity:`
 The residual interest in the assets of the entity after deducting all its liabilities.
