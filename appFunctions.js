@@ -42,6 +42,8 @@ const IFRS15 = require('./standards/IFRSs/IFRS15/IFRS15');//for IFRS 15
 const IFRS16 = require('./standards/IFRSs/IFRS16/IFRS16');//for IFRS 16
 const IFRS17 = require('./standards/IFRSs/IFRS17/IFRS17');//for IFRS 17
 const CONCEPTUAL_FRAMEWORK = require('./standards/Conceptual framework/conceptual')
+const fullmeaning = require('./utility/fullMeaningOfIFRS');
+const adoptingIFRS = require('./utility/adoptingIFRS')
 
 module.exports = (req, res) => {
 	//individual standards
@@ -89,5 +91,7 @@ module.exports = (req, res) => {
 	IFRS16(req, res);
 	IFRS17(req, res);
 	CONCEPTUAL_FRAMEWORK(req, res);
+	fullmeaning(req, res);
+	adoptingIFRS(req, res);
 
 }
