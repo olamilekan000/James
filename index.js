@@ -64,10 +64,10 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
-//keeps heroku app awake
-// setInterval(function() {
-//     http.get("http://ifrshook.herokuapp.com/");
-// }, 900000) // every 15 minutes (900000)
+// keeps heroku app awake
+setInterval(function() {
+    http.get("http://ifrshook.herokuapp.com/");
+}, 900000) // every 15 minutes (900000)
 
 const PORT = 5100;
 
