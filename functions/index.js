@@ -3,11 +3,13 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-const { WebhookClient } = require('dialogflow-fulfillment');
-const {Card, Suggestion} = require('dialogflow-fulfillment');
+const functions = require('firebase-functions');
+const admin = require('firebase-admin');
+
 const EventEmitter = require('events');
 class MyEmitter extends EventEmitter {}
 const myEmitter = new MyEmitter();
+
 // increase the limit
 myEmitter.setMaxListeners(100);
 
@@ -30,6 +32,7 @@ const getTheWeather = require('./utility/getWeather');
 const welcome = require('./utility/welcome');
 const emoji = require('./utility/emoji');
 
+admin.initializeApp();
 const app = express();
 
 //set view engine to EJS
@@ -60,18 +63,20 @@ app.post('/webhook', (req, res) => {
 });
 
 //renders web demo
-app.get('/', (req, res) => {
-	res.render('index');
+app.get('/timestamp', (req, res) => {
+	res.send("Hello from Firebase!");
 });
 
 // keeps heroku app awake
-setInterval(function() {
-    http.get("http://ifrshook.herokuapp.com/");
-}, 900000) // every 15 minutes (900000)
+// setInterval(function() {
+//     http.get("http://ifrshook.herokuapp.com/");
+// }, 900000) // every 15 minutes (900000)
+exports.app = functions.https.onRequest(app);
 
-const PORT = 5100;
+// const PORT = 5100;
 
-app.listen(process.env.PORT || PORT, () => {
-	console.log('now listening to ' + PORT)
-});
+// app.listen(process.env.PORT || PORT, () => {
+// 	console.log('now listening to ' + PORT)
+// });
+
 

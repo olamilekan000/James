@@ -1,5 +1,4 @@
 const request = require('request');
-const axios = require('axios');
 require('dotenv').config();
 
 module.exports = (req, res) => {
@@ -66,15 +65,15 @@ var getState = (state) => {
 		});
 	}
 
-// getState('Lagos');
+// // getState('Lagos');
 
-const getIt = async (state) => {
-	let apiKey = process.env.WEATHERSECRET_KEY;
-	const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
+// const getIt = async (state) => {
+// 	let apiKey = process.env.WEATHERSECRET_KEY;
+// 	const url = `http://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
 
-	const result = await axios(url)
-	console.log(result.data)
-}
+// 	const result = await axios(url)
+// 	console.log(result.data)
+// }
 
 
 // getIt("Lagos")
